@@ -1,0 +1,4 @@
+Name = BW Key Items
+Version = 2.3.0
+Credits = KleinStudio, DeepBlue PacificWaves, Izanagi
+Website = https://reliccastle.com/resources/532/

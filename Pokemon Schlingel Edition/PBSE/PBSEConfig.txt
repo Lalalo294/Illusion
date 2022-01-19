@@ -1,0 +1,294 @@
+[Flags]
+a=The move makes physical contact.
+b=The target can protect itself from the move.
+c=The target can use Magic Coat.
+d=The target can use Snatch.
+e=The move can be copied by Mirror Move.
+f=Some item give 10% flinching.
+g=The move will thaw before it is used.
+h=The move has a high critical hit rate.
+i=The move is a biting move."
+j=The move is a punching move."
+k=The move is a sound-based move.
+l=The move is a powder-based move.
+m=The move is a pulse-based move.
+n=The move is a bomb-based move.
+o=The move is a dance move.
+[Targets]
+None
+User
+NearAlly
+UserOrNearAlly
+NearFoe 
+AllNearFoes
+RandomNearFoe
+Foe
+NearOther
+AllNearOthers
+Other
+UserSide
+FoeSide
+BothSides
+UserAndAllies
+AllFoes
+AllBattlers
+[Pockets]
+1=Items
+2=Medicine
+3=Poké Balls
+4=TMs & HMs
+5=Berries
+6=Mail
+7=Battle Items
+8=Key Items
+[SpecialItems]
+0=The item is none of the items below.
+1=The item is a Mail item.
+2=The item is a Mail item.
+3=The item is a Snag Ball.
+4=The item is a Poké Ball item.
+5=The item is a berry.
+6=The item is a Key Item.
+7=The item is an evolution stone.
+8=The item is a fossil.
+9=The item is an Apricorn.
+10=The item is a Gem.
+11=The item is mulch.
+12=The item is a Mega Stone.
+13=The item is a sweet.
+[GenderRate]
+AlwaysMale
+FemaleOneEighth
+Female25Percent
+Female50Percent
+Female75Percent
+FemaleSevenEighths
+AlwaysFemale
+Genderless
+[GrowthRate]
+Fast
+Medium
+MediumFast
+Slow
+Parabolic
+MediumSlow
+Erratic
+Fluctuating
+[EggGroup]
+Monster
+Water1
+Bug
+Flying
+Field
+Fairy
+Grass
+Humanlike
+Water3
+Mineral
+Amorphous
+Water2
+Ditto
+Dragon
+Undiscovered
+[Color]
+Black
+Blue
+Brown
+Gray
+Green
+Pink
+Purple
+Red
+White
+Yellow
+[Habitat]
+None
+Cave
+Forest
+Grassland
+Mountain
+Rare
+RoughTerrain
+Sea
+Urban
+WatersEdge
+[Shape]
+Head
+Serpentine
+Finned
+HeadArms
+HeadBase
+BipedalTail
+HeadLegs
+Quadruped
+Winged
+Multiped
+MultiBody
+Bipedal
+MultiWinged
+Insectoid
+[EvolutionMethods]
+Level=Integer
+LevelMale=Integer
+LevelFemale=Integer
+LevelDay=Integer
+LevelNight=Integer
+LevelMorning=Integer
+LevelAfternoon=Integer
+LevelEvening=Integer
+LevelNoWeather=Integer
+LevelSun=Integer
+LevelRain=Integer
+LevelSnow=Integer
+LevelSandstorm=Integer
+LevelCycling=Integer
+LevelSurfing=Integer
+LevelDiving=Integer
+LevelDarkness=Integer
+LevelDarkInParty=Integer
+AttackGreater=Integer
+AtkDefEqual=Integer
+DefenseGreater=Integer
+Silcoon=Integer
+Cascoon=Integer
+Ninjask=Integer
+Shedinja=Integer
+Happiness=null
+HappinessMale=null
+HappinessFemale=null
+HappinessDay=null
+HappinessNight=null
+HappinessMove=Move
+HappinessMoveType=Type
+HappinessHoldItem=Item
+MaxHappiness=null
+Beauty=Integer
+HoldItem=Item
+HoldItemMale=Item
+HoldItemFemale=Item
+DayHoldItem=Item
+NightHoldItem=Item
+HoldItemHappiness=Item
+HasMove=Move
+HasMoveType=Type
+HasInParty=Pokemon
+Location=Integer
+Region=Integer
+Item=Item
+ItemMale=Item
+ItemFemale=Item
+ItemDay=Item
+ItemNight=Item
+ItemHappiness=Item
+Trade=null
+TradeMale=null
+TradeFemale=null
+TradeDay=null
+TradeNight=null
+TradeItem=Item
+TradeSpecies=Pokemon
+CriticalHits=Integer
+Lossofhp=Integer
+Afterswhirl=Integer
+None=null
+[Encounters]
+Land=21
+Cave=5
+Water=2
+RockSmash=50
+OldRod=0
+GoodRod=0
+SuperRod=0
+HeadbuttLow=0
+HeadbuttHigh=0
+LandMorning=21
+LandAfternoon=21
+LandEvening=21
+LandDay=21
+LandNight=21
+CaveDay=5
+CaveNight=5
+CaveMorning=5
+CaveAfternoon=5
+CaveEvening=5
+WaterDay=2
+WaterNight=2
+WaterMorning=2
+WaterAfternoon=2
+WaterEvening=2
+BugContest=21
+[Natures]
+HARDY
+LONELY
+BRAVE
+ADAMANT
+NAUGHTY
+BOLD
+DOCILE
+RELAXED
+IMPISH
+LAX
+TIMID
+HASTY
+SERIOUS
+JOLLY
+NAIVE
+MODEST
+MILD
+QUIET
+BASHFUL
+RASH
+CALM
+GENTLE
+SASSY
+CAREFUL
+QUIRKY
+[BallTypes]
+POKEBALL
+GREATBALL
+SAFARIBALL
+ULTRABALL
+MASTERBALL
+NETBALL
+DIVEBALL
+NESTBALL
+REPEATBALL
+TIMERBALL
+LUXURYBALL
+PREMIERBALL
+DUSKBALL
+HEALBALL
+QUICKBALL
+CHERISHBALL
+FASTBALL
+LEVELBALL
+LUREBALL
+HEAVYBALL
+LOVEBALL
+FRIENDBALL
+MOONBALL
+SPORTBALL
+DREAMBALL
+BEASTBALL
+[UsabilityOut]
+0=The item cannot be used outside of battle.
+1=The item can be used on a Pokémon, and disappears after use.
+2=The item can be used out of battle, but it isn't used on a Pokémon.
+3=The item is a TM.
+4=The item is a HM.
+5=The item can be used on a Pokémon, but it does not disappear after use.
+6=The item is a TR.
+[UsabilityIn]
+0=The item cannot be used in battle.
+1=The item can be used on one of your Pokémon.
+2=The item can be used on a move of your Pokémon.
+3=The item is used on the Pokémon you choose.
+4=The item is used on an opposing Pokémon in battle.
+5=The item is used with no target, and disappears after use.
+6=Same as 1 but the item is not consumed after use.
+7=Same as 2 but the item is not consumed after use.
+8=Same as 3 but the item is not consumed after use.
+9=Same as 4 but the item is not consumed after use.
+10=Same as 5 but the item is not consumed after use.
+[TextOpener]
+notepad.exe
