@@ -1,0 +1,4 @@
+Pokemons (808): Evolutions: ItemCandy is invalid.
+Pokemons (868): Evolutions: ItemAlcremie is invalid.
+Pokemons (891): Evolutions: Kubfu is invalid.
+PokemonForms (YAMASK_1): Evolutions: DamageDone is invalid.
