@@ -1,0 +1,4 @@
+Name         = Enhanced Jukebox
+Version      = 1.0
+Credits      = Marin, Derxwna Kapsyla
+Requires     = Marin's Scripting Utilities, 1.7
