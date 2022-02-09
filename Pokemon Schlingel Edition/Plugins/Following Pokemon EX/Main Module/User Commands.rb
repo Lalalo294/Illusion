@@ -34,6 +34,7 @@ module FollowingPkmn
     else
       $PokemonGlobal.follower_toggled = !($PokemonGlobal.follower_toggled)
     end
+    FollowingPkmn.refresh_internal
     anim_2 = FollowingPkmn.active?
     anim = anim_1 != anim_2 if anim.nil?
     FollowingPkmn.refresh(anim)

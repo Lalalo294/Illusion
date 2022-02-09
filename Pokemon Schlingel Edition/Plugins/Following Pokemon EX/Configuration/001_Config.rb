@@ -40,7 +40,7 @@ module FollowingPkmn
   # Time Taken for Follower to find an item when first in party (in seconds)
   ITEM_TIME_TAKEN           = 375
 
-  # Whether the Follower always stays in its move cycle (like HGSS) or not.
+  # Whether the Follower always stays in its move cycle (like in HGSS) or not.
   ALWAYS_ANIMATE            = true
 
   # Whether the Follower always faces the player, or not like in HGSS.
@@ -55,7 +55,7 @@ module FollowingPkmn
 
   # Show the Ball Opening and Closing animation when Nurse Joy takes your
   # Pokeballs at the Pokecenter.
-  SHOW_POKECENTER_ANIMATION = false
+  SHOW_POKECENTER_ANIMATION = true
 
   # List of Pokemon that will always appear behind the player when surfing
   # Doesn't include any flying or water types because those are handled already
