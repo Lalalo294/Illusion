@@ -6,20 +6,26 @@ def pbSurf
   return false if $game_player.pbHasDependentEvents?
   move = :SURF
   movefinder = $Trainer.get_pokemon_with_move(move)
-  if !pbCheckHiddenMoveBadge(Settings::BADGE_FOR_SURF,false) || (!$DEBUG && !movefinder)
+  if !defined?(Item_Surf)
+    if !pbCheckHiddenMoveBadge(Settings::BADGE_FOR_SURF,false) || (!$DEBUG && !movefinder)
+      return false
+    end
+  elsif !pbCanUseItem(Item_Surf)
     return false
   end
-  return false if defined?(Item_Surf) && !pbCanUseItem(Item_Surf)
   if pbConfirmMessage(_INTL("The water is a deep blue...\nWould you like to surf on it?"))
-    if movefinder
+    if defined?(Item_Surf) && pbCanUseItem(Item_Surf)
+      speciesname = $Trainer.name
+      movename    = _INTL("the {1}", GameData::Item.get(Item_Surf[:internal_name]).name)
+    elsif movefinder
       speciesname = movefinder.name
+      movename    = GameData::Move.get(move).name
       $PokemonGlobal.current_surfing = movefinder
-    elsif defined?(Item_Surf)
-      speciesname = GameData::Item.get(Item_Surf[:internal_name].name) && $PokemonBag.pbHasItem?(Item_Surf[:internal_name])
     else
       speciesname = $Trainer.name
+      movename    = GameData::Move.get(move).name
     end
-    pbMessage(_INTL("{1} used {2}!",speciesname,GameData::Move.get(move).name))
+    pbMessage(_INTL("{1} used {2}!", speciesname, movename))
     pbCancelVehicles
     pbHiddenMoveAnimation(movefinder,false)
     surfbgm = GameData::Metadata.get.surf_BGM
