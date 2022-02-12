@@ -1,381 +1,425 @@
-﻿# See the documentation on the wiki to learn how to edit this file.
-#-------------------------------
+﻿#-------------------------------
 [000]
-Home = 42,5,6,2
-WildBattleBGM = Battle wild.mid
-TrainerBattleBGM = Battle trainer.mid
-WildVictoryME = Battle victory wild.ogg
-TrainerVictoryME = Battle victory trainer.ogg
-SurfBGM = Surfing.mid
-BicycleBGM = Bicycle.mid
-PlayerA = POKEMONTRAINER_Red,trchar000,boy_bike,boy_surf,boy_run,boy_surf,boy_fish_offset,boy_fish_offset
-PlayerB = POKEMONTRAINER_Leaf,trchar001,girl_bike,girl_surf,girl_run,girl_surf,girl_fish_offset,girl_fish_offset
+PlayerA=POKEMONTRAINER_Red,trchar000,boy_bike,boy_surf,boy_run,boy_surf,boy_fish_offset,xxx
+PlayerB=POKEMONTRAINER_Leaf,trchar001,girl_bike,girl_surf,girl_run,girl_surf,girl_fish_offset,xxx
+TrainerVictoryME=victoryTrainer.ogg
+WildVictoryME=victoryWild.ogg
+TrainerBattleBGM=battleTrainer.ogg
+SurfBGM=effectSurf.ogg
+BicycleBGM=effectBike.ogg
+Home=42,5,6,2
+WildBattleBGM=battleWild.ogg
 #-------------------------------
 [001]
-# Intro
+# PokéCenter
 #-------------------------------
 [002]
-Outdoor = true
-ShowArea = true
-SnapEdges = true
+# Spear Pillar
+SnapEdges=true
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [003]
-Outdoor = false
-ShowArea = true
-HealingSpot = 5,6,8
-SnapEdges = false
-BattleBack = FairyGym
+# Distortion World
+SnapEdges=false
+BattleBack=FairyGym
+Outdoor=false
+HealingSpot=5,6,8
+ShowArea=true
 #-------------------------------
 [004]
-Outdoor = false
-ShowArea = true
-MapPosition = 0,14,4
-SnapEdges = true
-BattleBack = Cave
+# Frostbyte Mt.
+SnapEdges=true
+BattleBack=Cave
+MapPosition=0,14,4
+Outdoor=false
+ShowArea=true
 #-------------------------------
 [005]
-Outdoor = false
-ShowArea = false
-SnapEdges = true
-BattleBack = Icy
+# Hailgem Gym
+SnapEdges=true
+BattleBack=Icy
+Outdoor=false
+ShowArea=false
 #-------------------------------
 [007]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,10,10
-MapSize = 2,11
+# Route 4
+MapSize=2,11
+MapPosition=0,10,10
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [008]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,10,8
-SafariMap = true
+# Safari Zone
+MapPosition=0,10,8
+SafariMap=true
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [014]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,12,13
+# Newfolk City
+MapPosition=0,12,13
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [015]
-BattleBack = Hideout
+# Rightful Base #4
+BattleBack=Hideout
 #-------------------------------
 [017]
-BattleBack = FireGym
+# Newfolk City Gym
+BattleBack=FireGym
 #-------------------------------
 [021]
-Outdoor = false
-ShowArea = false
+# Academia Administration
+Outdoor=false
+ShowArea=false
 #-------------------------------
 [022]
-Outdoor = true
-ShowArea = true
-Weather = Storm,10
-MapPosition = 0,7,10
+# Greystone Cavern
+Weather=Storm,10
+MapPosition=0,7,10
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [023]
-Outdoor = false
-ShowArea = true
-MapPosition = 0,7,10
+# Greystone Cave
+MapPosition=0,7,10
+Outdoor=false
+ShowArea=true
 #-------------------------------
 [029]
-Outdoor = true
-ShowArea = true
-Bicycle = true
-MapPosition = 0,9,14
-BattleBack = CaveDark
+# Interstellar Passage
+BattleBack=CaveDark
+Bicycle=true
+MapPosition=0,9,14
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [030]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,10,13
-BattleBack = Field
+# Route 5
+BattleBack=Field
+MapPosition=0,10,13
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [031]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,9,14
-BattleBack = Field
-MapSize = 2,1101
+# Heggate Town
+MapSize=2,1101
+BattleBack=Field
+MapPosition=0,9,14
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [032]
-# Stadt 1
-Outdoor = true
-ShowArea = true
-Bicycle = true
-MapPosition = 0,15,12
-SnapEdges = false
+# Titan Town
+Bicycle=true
+MapPosition=0,15,12
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [036]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,7,14
+# Route 6
+MapPosition=0,7,14
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [037]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,6,13
+# Enursia City
+MapPosition=0,6,13
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [038]
-MapPosition = 0,9,14
+# Interstellar Cave
+MapPosition=0,9,14
 #-------------------------------
 [040]
-BattleBack = FairyGym
+# Enursia City Gym
+BattleBack=FairyGym
 #-------------------------------
 [041]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,6,14
+# Route 7
+MapPosition=0,6,14
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [042]
-# \PN's Zuhause
-HealingSpot = 42,5,6
+# \PN's Home
+HealingSpot=42,5,6
 #-------------------------------
 [044]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,6,15
+# Royal River
+MapPosition=0,6,15
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [045]
-Outdoor = true
-ShowArea = true
-BicycleAlways = false
-MapPosition = 0,6,17
+# Route 8
+MapPosition=0,6,17
+Outdoor=true
+BicycleAlways=false
+ShowArea=true
 #-------------------------------
 [049]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,6,11
+# Route 9
+MapPosition=0,6,11
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [050]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,9,12
-BattleBack = Field
+# Wishing Well
+BattleBack=Field
+MapPosition=0,9,12
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [052]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,6,18
+# Downpour City
+MapPosition=0,6,18
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [053]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,14,4
-BattleBack = Mountain
+# Wishing Well
+BattleBack=Mountain
+MapPosition=0,14,4
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [054]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,3,18
-BattleBack = PaddedForest
+# Padded Forest
+BattleBack=PaddedForest
+MapPosition=0,3,18
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [055]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,5,18
+# Route 10
+MapPosition=0,5,18
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [056]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,3,16
+# Route 11
+MapPosition=0,3,16
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [058]
-BattleBack = PoisonGym
+# Downpour Gym
+BattleBack=PoisonGym
 #-------------------------------
 [059]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,3,15
+# Keishan City
+MapPosition=0,3,15
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [060]
-SnapEdges = true
-BattleBack = FieldSand
+# Keishan City Gym
+SnapEdges=true
+BattleBack=FieldSand
 #-------------------------------
 [061]
-BattleBack = Hideout
+# Rightful Base #2
+BattleBack=Hideout
 #-------------------------------
 [064]
 # Wishing Well
-Outdoor = true
-ShowArea = true
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [065]
 # Cerulean Link
-Outdoor = false
-ShowArea = true
-BattleBack = Cave
+BattleBack=Cave
+Outdoor=false
+ShowArea=true
 #-------------------------------
 [066]
-ShowArea = true
+# Bell Tower
+ShowArea=true
 #-------------------------------
 [067]
-Outdoor = true
-ShowArea = true
-SnapEdges = true
+# Bellchime Trail
+SnapEdges=true
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [068]
-Outdoor = true
-ShowArea = true
+# Bell Tower
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [069]
-Outdoor = false
-ShowArea = true
-BattleBack = Cave
+# Whirl Islands
+BattleBack=Cave
+Outdoor=false
+ShowArea=true
 #-------------------------------
 [070]
-Outdoor = true
-ShowArea = false
+# Whirl Islands (Outside)
+Outdoor=true
+ShowArea=false
 #-------------------------------
 [074]
-Outdoor = true
-ShowArea = true
+# Route 12
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [075]
-Outdoor = true
-ShowArea = true
+# Route 13
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [076]
-Outdoor = true
-ShowArea = false
-SnapEdges = true
+# Introduction
+SnapEdges=true
+Outdoor=true
+ShowArea=false
 #-------------------------------
 [077]
 # Route 1
-Outdoor = true
-ShowArea = true
-MapPosition = 0,17,13
-SnapEdges = false
+MapPosition=0,17,13
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [078]
-Outdoor = true
-ShowArea = true
-MapPosition = 0,18,13
+# Academia City
+MapPosition=0,18,13
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [081]
 # Deserted Path
-Outdoor = true
-ShowArea = true
-Weather = Sandstorm,100
-MapPosition = 0,15,10
-SnapEdges = false
-BattleBack = Mountain
+BattleBack=Mountain
+Weather=Sandstorm,100
+MapPosition=0,15,10
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [082]
-# Cave 1
-ShowArea = true
-Bicycle = true
-MapPosition = 0,19,11
-BattleBack = Cave
+# Brinkstone Cave
+BattleBack=Cave
+Bicycle=true
+MapPosition=0,19,11
+ShowArea=true
 #-------------------------------
 [083]
-# Tempel
-ShowArea = true
-DarkMap = true
-BattleBack = Cave
+# Temples of Azecca
+BattleBack=Cave
+DarkMap=true
+ShowArea=true
 #-------------------------------
 [085]
-Outdoor = true
-ShowArea = true
-Weather = Snow,100
-MapPosition = 0,14,6
-SnapEdges = true
-BattleBack = Snow
+# Route 3
+SnapEdges=true
+BattleBack=Snow
+Weather=Snow,100
+MapPosition=0,14,6
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [086]
 # Route 2
-Outdoor = true
-ShowArea = true
-MapPosition = 0,18,12
-BattleBack = Field
+BattleBack=Field
+MapPosition=0,18,12
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [087]
-# Stadt 2
-Outdoor = true
-ShowArea = true
-MapPosition = 0,20,12
-BattleBack = Field
+# New Harbour Town
+BattleBack=Field
+MapPosition=0,20,12
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [089]
-# Stadt 3
-Outdoor = true
-ShowArea = true
-MapPosition = 0,28,1
+# Norpeak Island
+MapPosition=0,28,1
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [090]
-# Stadt 3 Event
-Outdoor = true
-ShowArea = true
-Weather = Blizzard,100
-MapPosition = 0,28,1
+# Norpeak Island
+Weather=Blizzard,100
+MapPosition=0,28,1
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [097]
-# Stadt 3
-Outdoor = true
-ShowArea = true
-Weather = Snow,100
-MapPosition = 0,14,7
-SnapEdges = false
-#-------------------------------
-[098]
-# PokéCenter
-SnapEdges = false
+# Cyberhole City
+SnapEdges=true
+Weather=Snow,100
+MapPosition=0,14,7
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [100]
-Outdoor = true
-ShowArea = false
-MapPosition = 0,27,17
+# Cave of Creation Entrance
+MapPosition=0,27,17
+Outdoor=true
+ShowArea=false
 #-------------------------------
 [101]
-ShowArea = true
-MapPosition = 0,27,17
-SnapEdges = true
-BattleBack = Cave
+# Cave of Creation
+SnapEdges=true
+BattleBack=Cave
+MapPosition=0,27,17
+ShowArea=true
 #-------------------------------
 [102]
-# Cave
-ShowArea = true
-DarkMap = true
-SnapEdges = true
-BattleBack = Cave
+# Norpeak Tomb
+SnapEdges=true
+BattleBack=Cave
+DarkMap=true
+ShowArea=true
 #-------------------------------
 [103]
-# Arena
-SnapEdges = true
-BattleBack = NorpeakGym
+# Norpeak Gym
+SnapEdges=true
+BattleBack=NorpeakGym
 #-------------------------------
 [117]
-Outdoor = true
-ShowArea = true
-Weather = Snow,100
-MapPosition = 0,14,5
-SnapEdges = true
-BattleBack = Snow
+# Hailgem City
+SnapEdges=true
+BattleBack=Snow
+Weather=Snow,100
+MapPosition=0,14,5
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [124]
-Outdoor = false
-ShowArea = true
-BattleBack = FairyGym
+# Distortion World
+BattleBack=FairyGym
+Outdoor=false
+ShowArea=true
 #-------------------------------
 [125]
-Outdoor = true
-ShowArea = true
+# Eterna City
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [127]
-Outdoor = true
-ShowArea = true
-Weather = Rain,25
-BattleBack = Mountain
+# Route 211
+BattleBack=Mountain
+Weather=Rain,25
+Outdoor=true
+ShowArea=true
 #-------------------------------
 [128]
-ShowArea = true
-DarkMap = false
-BattleBack = Cave
+# Mt. Coronet
+BattleBack=Cave
+DarkMap=false
+ShowArea=true
 #-------------------------------
 [129]
-Outdoor = false
-ShowArea = true
-BattleBack = Cave
+# Mt. Coronet
+BattleBack=Cave
+Outdoor=false
+ShowArea=true
 #-------------------------------
 [130]
-ShowArea = true
-BattleBack = Cave
+# Mt. Coronet
+BattleBack=Cave
+ShowArea=true
