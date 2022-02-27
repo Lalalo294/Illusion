@@ -167,3 +167,16 @@ Pokemon = ESPURR,5
     Happiness = 70
     Ball = POKEBALL
 
+#-------------------------------
+[RIVALE,David,4]
+LoseText = "Zu rild"
+Pokemon = VULLABY,5
+    Ability = 0
+    Shiny = no
+    Shadow = no
+    Moves = GUST
+    IVs = 0,0,0,0,0,0
+    EVs = 0,0,0,0,0,0
+    Happiness = 70
+    Ball = POKEBALL
+
