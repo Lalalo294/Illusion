@@ -124,3 +124,46 @@ Pokemon = TOXEL,4
 [LASS,Iris]
 LoseText = "..."
 Pokemon = SIZZLIPEDE,5
+
+#-------------------------------
+[RIVALE,David]
+LoseText = "Einfach zu Rild..."
+Pokemon = WURMPLE,5
+    Ability = 0
+    Shiny = no
+    Shadow = no
+    Moves = TACKLE,STRINGSHOT
+    IVs = 0,0,0,0,0,0
+    EVs = 0,0,0,0,0,0
+    Happiness = 70
+    Ball = POKEBALL
+
+
+
+#-------------------------------
+[RIVALE,David,2]
+LoseText = "Zu rild"
+Pokemon = MIENFOO,5
+    Ability = 0
+    Shiny = no
+    Shadow = no
+    Moves = POUND
+    IVs = 0,0,0,0,0,0
+    EVs = 0,0,0,0,0,0
+    Happiness = 70
+    Ball = POKEBALL
+
+
+#-------------------------------
+[RIVALE,David,3]
+LoseText = "Zu rild"
+Pokemon = ESPURR,5
+    Ability = 0
+    Shiny = no
+    Shadow = no
+    Moves = SCRATCH
+    IVs = 0,0,0,0,0,0
+    EVs = 0,0,0,0,0,0
+    Happiness = 70
+    Ball = POKEBALL
+

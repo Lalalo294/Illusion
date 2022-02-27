@@ -30,7 +30,7 @@ Point = 13,13,Route 8,Diving area,,,,
 Point = 18,17,Berth Island,,,,,51
 Point = 22,16,Faraday Island,,,,,52
 Point = 15,16,,,,,,
-Point = 15,12,Steigetunder,,,,,
+Point = 15,12,Steigehtunter,,,,,
 Point = 17,13,Route 1,,,,,
 #-------------------------------
 [1]
