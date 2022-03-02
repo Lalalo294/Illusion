@@ -18,7 +18,7 @@ module ModularTitle
   # Configuration constant used to style the Title Screen
   # Add multiple modifiers to add visual effects to the Title Screen
   # Non additive modifiers do not stack i.e. you can only use one of each type
-  MODIFIERS = [
+  MODIFIERS = [ "background:dawn", "intro:2", "logoY:172", "logo:glow", "misc2", "effect11_x368_y112", "effect6_x368_y112", "effect4_x368_y112", "overlay3", "bgm:title_hgss"
   #-------------------------------------------------------------------------------
   #                                  PRESETS
   #-------------------------------------------------------------------------------
@@ -88,6 +88,6 @@ module ModularTitle
   START_POS = [nil, nil]
 
   # set to true to show Title Screen even when running the game in Debug mode
-  SHOW_IN_DEBUG = false
+  SHOW_IN_DEBUG = true
 
 end
