@@ -536,7 +536,7 @@ class PokemonBoxPartySprite < SpriteWrapper
     @contents.blt(0, 0, @boxbitmap.bitmap, Rect.new(0, 0, 172, 352))
     pbDrawTextPositions(self.bitmap,[
 	# Changed position of Back Menu
-       [_INTL("Back"), 86, 236, 2, Color.new(239,239,239), Color.new(132,132,132),0]
+       [_INTL("Zurück"), 86, 236, 2, Color.new(239,239,239), Color.new(132,132,132),0]
     ])
     xvalues = []   # [18, 90, 18, 90, 18, 90]
     yvalues = []   # [2, 18, 66, 82, 130, 146]
@@ -1294,7 +1294,7 @@ class PokemonStorageScene
   def pbMark(selected,heldpoke)
     @sprites["markingbg"].visible      = true
     @sprites["markingoverlay"].visible = true
-    msg = _INTL("Mark your Pokémon.")
+    msg = _INTL("Markiere dein Pokémon")
     msgwindow = Window_UnformattedTextPokemon.newWithSize("",180,0,Graphics.width-180,32)
     msgwindow.viewport       = @viewport
     msgwindow.visible        = true
@@ -1327,7 +1327,7 @@ class PokemonStorageScene
         end
         textpos = [
            [_INTL("OK"),402,204,2,Color.new(239,239,239),Color.new(132,132,132),0],
-           [_INTL("Cancel"),402,268,2,Color.new(239,239,239),Color.new(132,132,132),0]
+           [_INTL("Zurück"),402,268,2,Color.new(239,239,239),Color.new(132,132,132),0]
         ]
         pbDrawTextPositions(@sprites["markingoverlay"].bitmap,textpos)
         pbMarkingSetArrow(@sprites["arrow"],index)
@@ -1403,8 +1403,8 @@ class PokemonStorageScene
     buttonbase = Color.new(239,239,239)
     buttonshadow = Color.new(132,132,132)
     pbDrawTextPositions(overlay,[
-       [_INTL("PARTY: {1}",(@storage.party.length rescue 0)),274,338,2,buttonbase,buttonshadow],
-       [_INTL("Exit"),450,338,2,buttonbase,buttonshadow],
+       [_INTL("Team: {1}",(@storage.party.length rescue 0)),274,338,2,buttonbase,buttonshadow],
+       [_INTL("Zurück"),450,338,2,buttonbase,buttonshadow],
     ])
     pokemon = nil
     if @screen.pbHeldPokemon
@@ -1439,12 +1439,12 @@ class PokemonStorageScene
       if pokemon.ability
         textstrings.push([pokemon.ability.name,16,316,0,base,shadow])
       else
-        textstrings.push([_INTL("No ability"),16,316,0,nonbase,nonshadow])
+        textstrings.push([_INTL("Keine Fähigkeit"),16,316,0,nonbase,nonshadow])
       end
       if pokemon.item
         textstrings.push([pokemon.item.name,16,348,0,base,shadow])
       else
-        textstrings.push([_INTL("No item"),16,348,0,nonbase,nonshadow])
+        textstrings.push([_INTL("Kein Item"),16,348,0,nonbase,nonshadow])
       end
       if pokemon.shiny?
         imagepos.push(["Graphics/Pictures/shiny",68,262])
@@ -1497,18 +1497,18 @@ class PokemonStorageScreen
         selected = @scene.pbSelectBox(@storage.party)
         if selected==nil
           if pbHeldPokemon
-            pbDisplay(_INTL("You're holding a Pokémon!"))
+            pbDisplay(_INTL("Du hältst ein Pokémon!"))
             next
           end
-          next if pbConfirm(_INTL("Continue Box operations?"))
+          next if pbConfirm(_INTL("Boxenbetrieb fortsetzen?"))
           break
         elsif selected[0]==-3   # Close box
           if pbHeldPokemon
-            pbDisplay(_INTL("You're holding a Pokémon!"))
+            pbDisplay(_INTL("Du hältst ein Pokémon!"))
             next
           end
-          if pbConfirm(_INTL("Exit from the Box?"))
-            pbSEPlay("PC close")
+          if pbConfirm(_INTL("Box schließen?"))
+            pbSEPlay("PC schließen")
             break
           end
           next
@@ -1535,19 +1535,19 @@ class PokemonStorageScreen
             cmdDebug    = -1
             cmdCancel   = -1
             if heldpoke
-              helptext = _INTL("{1} is selected.",heldpoke.name)
-              commands[cmdMove=commands.length]   = (pokemon) ? _INTL("Shift") : _INTL("Place")
+              helptext = _INTL("{1} ist ausgewählt.",heldpoke.name)
+              commands[cmdMove=commands.length]   = (pokemon) ? _INTL("Tauschen") : _INTL("Platzieren")
             elsif pokemon
-              helptext = _INTL("{1} is selected.",pokemon.name)
-              commands[cmdMove=commands.length]   = _INTL("Move")
+              helptext = _INTL("{1} ist ausgewählt.",pokemon.name)
+              commands[cmdMove=commands.length]   = _INTL("Bewegen")
             end
-            commands[cmdSummary=commands.length]  = _INTL("Summary")
-            commands[cmdWithdraw=commands.length] = (selected[0]==-1) ? _INTL("Store") : _INTL("Withdraw")
+            commands[cmdSummary=commands.length]  = _INTL("Info")
+            commands[cmdWithdraw=commands.length] = (selected[0]==-1) ? _INTL("Lagern") : _INTL("Mitnehmen")
             commands[cmdItem=commands.length]     = _INTL("Item")
-            commands[cmdMark=commands.length]     = _INTL("Mark")
-            commands[cmdRelease=commands.length]  = _INTL("Release")
+            commands[cmdMark=commands.length]     = _INTL("Markieren")
+            commands[cmdRelease=commands.length]  = _INTL("Freilassen")
             commands[cmdDebug=commands.length]    = _INTL("Debug") if $DEBUG
-            commands[cmdCancel=commands.length]   = _INTL("Cancel")
+            commands[cmdCancel=commands.length]   = _INTL("Zurück")
             command=pbShowCommands(helptext,commands)
             if cmdMove>=0 && command==cmdMove   # Move/Shift/Place
               if @heldpkmn
@@ -1577,16 +1577,16 @@ class PokemonStorageScreen
       loop do
         selected = @scene.pbSelectBox(@storage.party)
         if selected==nil
-          next if pbConfirm(_INTL("Continue Box operations?"))
+          next if pbConfirm(_INTL("Boxenbetrieb fortsetzen?"))
           break
         else
           case selected[0]
           when -2   # Party Pokémon
-            pbDisplay(_INTL("Which one will you take?"))
+            pbDisplay(_INTL("Welches willst du nehmen?"))
             next
           when -3   # Close box
-            if pbConfirm(_INTL("Exit from the Box?"))
-              pbSEPlay("PC close")
+            if pbConfirm(_INTL("Box verlassen?"))
+              pbSEPlay("PC schließen")
               break
             end
             next
@@ -1596,12 +1596,12 @@ class PokemonStorageScreen
           end
           pokemon = @storage[selected[0],selected[1]]
           next if !pokemon
-          command = pbShowCommands(_INTL("{1} is selected.",pokemon.name),[
-             _INTL("Withdraw"),
-             _INTL("Summary"),
-             _INTL("Mark"),
-             _INTL("Release"),
-             _INTL("Cancel")
+          command = pbShowCommands(_INTL("{1} ist ausgewählt.",pokemon.name),[
+             _INTL("Mitnehmen"),
+             _INTL("Info"),
+             _INTL("Markieren"),
+             _INTL("Freilassen"),
+             _INTL("Zurück")
           ])
           case command
           when 0 then pbWithdraw(selected, nil)
@@ -1617,23 +1617,23 @@ class PokemonStorageScreen
       loop do
         selected = @scene.pbSelectParty(@storage.party)
         if selected==-3   # Close box
-          if pbConfirm(_INTL("Exit from the Box?"))
-            pbSEPlay("PC close")
+          if pbConfirm(_INTL("Box verlassen?"))
+            pbSEPlay("PC schließen")
             break
           end
           next
         elsif selected<0
-          next if pbConfirm(_INTL("Continue Box operations?"))
+          next if pbConfirm(_INTL("Boxenbetrieb fortsetzen?"))
           break
         else
           pokemon = @storage[-1,selected]
           next if !pokemon
-          command = pbShowCommands(_INTL("{1} is selected.",pokemon.name),[
-             _INTL("Store"),
-             _INTL("Summary"),
-             _INTL("Mark"),
-             _INTL("Release"),
-             _INTL("Cancel")
+          command = pbShowCommands(_INTL("{1} ist ausgewählt.",pokemon.name),[
+             _INTL("Lagern"),
+             _INTL("Mitnehmen"),
+             _INTL("Markieren"),
+             _INTL("Freilassen"),
+             _INTL("Zurück")
           ])
           case command
           when 0 then pbStore([-1, selected], nil)
@@ -1668,7 +1668,7 @@ class PokemonStorageScreen
   end
 
   def pbConfirm(str)
-    return pbShowCommands(str,[_INTL("Yes"),_INTL("No")])==0
+    return pbShowCommands(str,[_INTL("Ja"),_INTL("Nein")])==0
   end
 
   def pbShowCommands(msg,commands,index=0)
@@ -1695,10 +1695,10 @@ class PokemonStorageScreen
     box = selected[0]
     index = selected[1]
     if box==-1
-      raise _INTL("Can't withdraw from party...");
+      raise _INTL("Kann nicht aus dem Team genommen werden");
     end
     if @storage.party_full?
-      pbDisplay(_INTL("Your party's full!"))
+      pbDisplay(_INTL("Dein team ist voll!"))
       return false
     end
     @scene.pbWithdraw(selected,heldpoke,@storage.party.length)
@@ -1716,22 +1716,22 @@ class PokemonStorageScreen
     box = selected[0]
     index = selected[1]
     if box!=-1
-      raise _INTL("Can't deposit from box...")
+      raise _INTL("Kann nicht gelagert werden von Box...")
     end
     if pbAbleCount<=1 && pbAble?(@storage[box,index]) && !heldpoke
       pbPlayBuzzerSE
-      pbDisplay(_INTL("That's your last Pokémon!"))
+      pbDisplay(_INTL("Das ist dein letztes Pokemon!"))
     elsif heldpoke && heldpoke.mail
-      pbDisplay(_INTL("Please remove the Mail."))
+      pbDisplay(_INTL("Bitte entferne den Brief."))
     elsif !heldpoke && @storage[box,index].mail
-      pbDisplay(_INTL("Please remove the Mail."))
+      pbDisplay(_INTL("Bitte entferne den Brief."))
     else
       loop do
-        destbox = @scene.pbChooseBox(_INTL("Deposit in which Box?"))
+        destbox = @scene.pbChooseBox(_INTL("Lagern in welcher Box?"))
         if destbox>=0
           firstfree = @storage.pbFirstFreePos(destbox)
           if firstfree<0
-            pbDisplay(_INTL("The Box is full."))
+            pbDisplay(_INTL("Die box ist voll."))
             next
           end
           if heldpoke || selected[0]==-1
@@ -1759,7 +1759,7 @@ class PokemonStorageScreen
     index = selected[1]
     if box==-1 && pbAble?(@storage[box,index]) && pbAbleCount<=1
       pbPlayBuzzerSE
-      pbDisplay(_INTL("That's your last Pokémon!"))
+      pbDisplay(_INTL("Es ist dein letztes Pokemon!"))
       return
     end
     @scene.pbHold(selected)
@@ -1772,14 +1772,14 @@ class PokemonStorageScreen
     box = selected[0]
     index = selected[1]
     if @storage[box,index]
-      raise _INTL("Position {1},{2} is not empty...",box,index)
+      raise _INTL("Position {1},{2} ist nicht leer...",box,index)
     end
     if box!=-1 && index>=@storage.maxPokemon(box)
-      pbDisplay("Can't place that there.")
+      pbDisplay("Kann hier nicht platziert werden.")
       return
     end
     if box!=-1 && @heldpkmn.mail
-      pbDisplay("Please remove the mail.")
+      pbDisplay("Bitte entferne den Brief.")
       return
     end
     if box>=0
@@ -1800,15 +1800,15 @@ class PokemonStorageScreen
     box = selected[0]
     index = selected[1]
     if !@storage[box,index]
-      raise _INTL("Position {1},{2} is empty...",box,index)
+      raise _INTL("Position {1},{2} ist leerty...",box,index)
     end
     if box==-1 && pbAble?(@storage[box,index]) && pbAbleCount<=1 && !pbAble?(@heldpkmn)
       pbPlayBuzzerSE
-      pbDisplay(_INTL("That's your last Pokémon!"))
+      pbDisplay(_INTL("Es ist dein letztes Pokemon!"))
       return false
     end
     if box!=-1 && @heldpkmn.mail
-      pbDisplay("Please remove the mail.")
+      pbDisplay("Bitte entferne den Brief.")
       return false
     end
     if box>=0
@@ -1830,18 +1830,18 @@ class PokemonStorageScreen
     pokemon = (heldpoke) ? heldpoke : @storage[box,index]
     return if !pokemon
     if pokemon.egg?
-      pbDisplay(_INTL("You can't release an Egg."))
+      pbDisplay(_INTL("Du kannst kein Ei freilassen."))
       return false
     elsif pokemon.mail
-      pbDisplay(_INTL("Please remove the mail."))
+      pbDisplay(_INTL("Bitte entferne den Brief."))
       return false
     end
     if box==-1 && pbAbleCount<=1 && pbAble?(pokemon) && !heldpoke
       pbPlayBuzzerSE
-      pbDisplay(_INTL("That's your last Pokémon!"))
+      pbDisplay(_INTL("Es ist dein letztes Pokemon!"))
       return
     end
-    command = pbShowCommands(_INTL("Release this Pokémon?"),[_INTL("No"),_INTL("Yes")])
+    command = pbShowCommands(_INTL("Dieses Pokemon freilassen?"),[_INTL("Nein"),_INTL("Ja")])
     if command==1
       pkmnname = pokemon.name
       @scene.pbRelease(selected,heldpoke)
@@ -1851,7 +1851,7 @@ class PokemonStorageScreen
         @storage.pbDelete(box,index)
       end
       @scene.pbRefresh
-      pbDisplay(_INTL("{1} was released.",pkmnname))
+      pbDisplay(_INTL("{1} wurde freigelassen.",pkmnname))
       pbDisplay(_INTL("Bye-bye, {1}!",pkmnname))
       @scene.pbRefresh
     end
@@ -1883,19 +1883,19 @@ class PokemonStorageScreen
     index = selected[1]
     pokemon = (heldpoke) ? heldpoke : @storage[box,index]
     if pokemon.egg?
-      pbDisplay(_INTL("Eggs can't hold items."))
+      pbDisplay(_INTL("Eier können keine Briefe halten."))
       return
     elsif pokemon.mail
-      pbDisplay(_INTL("Please remove the mail."))
+      pbDisplay(_INTL("Bitte entferne den Brief."))
       return
     end
     if pokemon.item
       itemname = pokemon.item.name
-      if pbConfirm(_INTL("Take this {1}?",itemname))
+      if pbConfirm(_INTL("{1} nehmen?",itemname))
         if !$PokemonBag.pbStoreItem(pokemon.item)
-          pbDisplay(_INTL("Can't store the {1}.",itemname))
+          pbDisplay(_INTL("{1} kann nicht gelagert werden.",itemname))
         else
-          pbDisplay(_INTL("Took the {1}.",itemname))
+          pbDisplay(_INTL("Nimmt {1}.",itemname))
           pokemon.item = nil
           @scene.pbHardRefresh
         end
@@ -1906,7 +1906,7 @@ class PokemonStorageScreen
         itemname = GameData::Item.get(item).name
         pokemon.item = item
         $PokemonBag.pbDeleteItem(item)
-        pbDisplay(_INTL("{1} is now being held.",itemname))
+        pbDisplay(_INTL("{1} wird nun getragen.",itemname))
         @scene.pbHardRefresh
       end
     end
@@ -1917,13 +1917,13 @@ class PokemonStorageScreen
        _INTL("Jump"),
        _INTL("Wallpaper"),
        _INTL("Name"),
-       _INTL("Cancel"),
+       _INTL("Zurück"),
     ]
     command = pbShowCommands(
-       _INTL("What do you want to do?"),commands)
+       _INTL("Was möchtest du tun?"),commands)
     case command
     when 0
-      destbox = @scene.pbChooseBox(_INTL("Jump to which Box?"))
+      destbox = @scene.pbChooseBox(_INTL("Zu welcher Box?"))
       if destbox>=0
         @scene.pbJumpToBox(destbox)
       end
@@ -1935,12 +1935,12 @@ class PokemonStorageScreen
           index = i; break
         end
       end
-      wpaper = pbShowCommands(_INTL("Pick the wallpaper."),papers[0],index)
+      wpaper = pbShowCommands(_INTL("Wähle dein Wallpaper."),papers[0],index)
       if wpaper>=0
         @scene.pbChangeBackground(papers[1][wpaper])
       end
     when 2
-      @scene.pbBoxName(_INTL("Box name?"),0,12)
+      @scene.pbBoxName(_INTL("Box Name?"),0,12)
     end
   end
 
@@ -1951,14 +1951,14 @@ class PokemonStorageScreen
     loop do
       selected = @scene.pbSelectBox(@storage.party)
       if selected && selected[0]==-3   # Close box
-        if pbConfirm(_INTL("Exit from the Box?"))
-          pbSEPlay("PC close")
+        if pbConfirm(_INTL("Box verlassen?"))
+          pbSEPlay("PC schließen")
           break
         end
         next
       end
       if selected==nil
-        next if pbConfirm(_INTL("Continue Box operations?"))
+        next if pbConfirm(_INTL("Mit der Box fortfahren?"))
         break
       elsif selected[0]==-4   # Box name
         pbBoxCommands
@@ -1966,15 +1966,15 @@ class PokemonStorageScreen
         pokemon = @storage[selected[0],selected[1]]
         next if !pokemon
         commands = [
-           _INTL("Select"),
-           _INTL("Summary"),
-           _INTL("Withdraw"),
+           _INTL("Wählen"),
+           _INTL("Info"),
+           _INTL("Mitnehmen"),
            _INTL("Item"),
-           _INTL("Mark")
+           _INTL("Markieren")
         ]
-        commands.push(_INTL("Cancel"))
-        commands[2] = _INTL("Store") if selected[0]==-1
-        helptext = _INTL("{1} is selected.",pokemon.name)
+        commands.push(_INTL("Zurück"))
+        commands[2] = _INTL("Lagern") if selected[0]==-1
+        helptext = _INTL("{1} wurde ausgewählt.",pokemon.name)
         command = pbShowCommands(helptext,commands)
         case command
         when 0   # Select

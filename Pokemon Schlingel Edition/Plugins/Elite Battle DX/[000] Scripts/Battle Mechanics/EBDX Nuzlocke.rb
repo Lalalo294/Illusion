@@ -97,7 +97,7 @@ module EliteBattle
     added = [:NOREVIVE, :DUPSCLAUSE, :ONEROUTE, :STATIC, :SHINY]; cmd = 0
     # creates help text message window
     msgwindow = pbCreateMessageWindow(nil, "choice 1")
-    msgwindow.text = _INTL("Select the Nuzlocke Rules you wish to apply.")
+    msgwindow.text = _INTL("Wähle die Nuzlocke-Regeln aus, die du anwenden möchtest.")
     # main loop
     loop do
       # generates all commands
@@ -105,12 +105,12 @@ module EliteBattle
       for i in 0...modifiers.length
         commands.push(_INTL("{1} {2}",(added.include?(modifiers[i])) ? "[X]" : "[  ]",desc[i]))
       end
-      commands.push(_INTL("Done"))
+      commands.push(_INTL("Fertig"))
       # goes to command window
       cmd = self.commandWindow(commands, cmd, msgwindow)
       # processes return
       if cmd < 0
-        clear = pbConfirmMessage("Do you wish to cancel the Nuzlocke selection?")
+        clear = pbConfirmMessage("Möchtest du die Auswahl der Nuzlocke rückgängig machen?")
         added.clear if clear
         next unless clear
       end
@@ -129,9 +129,9 @@ module EliteBattle
     $PokemonGlobal.nuzlockeRules = added
     EliteBattle.add_data(:NUZLOCKE, :RULES, added)
     # shows message
-    msg = _INTL("Your selected Nuzlocke rules have been applied.")
-    msg = _INTL("No Nuzlocke rules have been applied.") if added.length < 1
-    msg = _INTL("Your selection has been cancelled.") if cmd < 0
+    msg = _INTL("Die von dir gewählten Nuzlocke-Regeln wurden angewendet.")
+    msg = _INTL("Es wurden keine Nuzlocke-Regeln angewendet.") if added.length < 1
+    msg = _INTL("Deine Auswahl wurde annulliert.") if cmd < 0
     pbMessage(msg)
     Input.update
     return added.length > 0
@@ -257,7 +257,7 @@ class PokeBattle_Battle
       static = data.include?(:STATIC) && !$nonStaticEncounter
       shiny = data.include?(:SHINY) && @battlers[args[0]].shiny?
       map = $PokemonGlobal.nuzlockeData[$game_map.map_id]
-      return pbDisplay(_INTL("Nuzlocke rules prevent you from catching a wild Pokémon on a map you already had an encounter on!")) if !map.nil? && !static && !shiny
+      return pbDisplay(_INTL("Die Nuzlocke-Regeln verhindern, dass du ein wildes Pokémon auf einer Karte fangen kannst, auf der du bereits eine Begegnung hattest!")) if !map.nil? && !static && !shiny
     end
     pbThrowPokeBall_ebdx_nuzlocke(*args)
     # part that registers caught Pokemon for map
@@ -299,7 +299,7 @@ end
 alias pbStartOver_ebdx_nuzlocke pbStartOver unless defined?(pbStartOver_ebdx_nuzlocke)
 def pbStartOver(*args)
   if EliteBattle.get(:nuzlocke)
-    pbMessage(_INTL("\\w[]\\wm\\c[8]\\l[3]All your Pokémon have fainted. You have lost the Nuzlocke challenge! The challenge will now be turned off."))
+    pbMessage(_INTL("\\w[]\\wm\\c[8]\\\l[3]Alle deine Pokémon sind besiegt. Du hast die Nuzlocke-Herausforderung verloren! Die Herausforderung wird jetzt abgeschaltet."))
     EliteBattle.set(:nuzlocke, false)
     $PokemonGlobal.isNuzlocke = false
     pbStartOver_ebdx_nuzlocke(*args)

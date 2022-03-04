@@ -30,14 +30,14 @@ class PokeBattle_Battle
     # get array of opponents
     foes = wildBattle? ? pbParty(1) : @opponent
     # Wild battlers
-    memb = []; text = wildBattle? ? "Oh! A wild " : "You are challenged by "
+    memb = []; text = wildBattle? ? "Oh! Ein wildes " : "Du wurdest herausgefordert von "
     foes.each_with_index do |foe, i|
       memb.push(wildBattle? ? foe.name : foe.full_name)
       text += ", " if i > 0 && i < foes.length - 1
       text += " and " if i == foes.length - 1 && foes.length > 1
       text += "{#{i+1}}"
     end
-    text += wildBattle? ? " appeared!" : "!"
+    text += wildBattle? ? " erscheint!" : "!"
     pbDisplayPaused(EliteBattle.battle_text(text, *memb))
     if wildBattle? && foes.length < 2
       # set boss immunities
@@ -62,14 +62,14 @@ class PokeBattle_Battle
         next if side == 0 && i == 0   # The player's message is shown last
         msg += "\r\n" if msg.length > 0
         sent = sendOuts[side][i]
-        memb = []; text = "{1} sent out "
+        memb = []; text = "{1} schickt "
         sent.each_with_index do |foe, j|
           memb.push(@battlers[foe].name)
           text += ", " if j > 0 && j < sent.length - 1
           text += " and " if j == sent.length - 1 && sent.length > 1
           text += "{#{j+2}}"
         end
-        text += "!"
+        text += "in den Kampf!"
         msg += _INTL(text, t.full_name, *memb)
         toSendOut.concat(sent)
       end
@@ -77,7 +77,7 @@ class PokeBattle_Battle
       if side == 0
         msg += "\r\n" if msg.length > 0
         sent = sendOuts[side][0]
-        memb = []; text = "Go! "
+        memb = []; text = "Los! "
         sent.each_with_index do |foe, j|
           memb.push(@battlers[foe].name)
           text += ", " if j > 0 && j < sent.length - 1

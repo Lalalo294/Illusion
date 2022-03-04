@@ -92,8 +92,8 @@ class EliteBattle_Pokedex
     end
     # push text into array
     textpos.push([_INTL("{1}   {2}", indexText, species_data.real_name), 262, 30, 0, base, shadow])
-    textpos.push([_INTL("Height"), 274, 158, 0, base, shadow])
-    textpos.push([_INTL("Weight"), 274, 190, 0, base, shadow])
+    textpos.push([_INTL("Größe"), 274, 158, 0, base, shadow])
+    textpos.push([_INTL("Gewicht"), 274, 190, 0, base, shadow])
     # Pokemon kind
     textpos.push([_INTL("{1} Pokémon", species_data.category), 262, 66, 0, base, shadow])
     # height and weight

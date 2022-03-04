@@ -189,10 +189,10 @@ class PokemonPokedexInfo_Scene
     ret.each do |entry|
       if !entry[0] || entry[0].empty?   # Necessarily applies only to form 0
         case entry[1]
-        when 0 then entry[0] = _INTL("Male")
-        when 1 then entry[0] = _INTL("Female")
+        when 0 then entry[0] = _INTL("Männlich")
+        when 1 then entry[0] = _INTL("Weiblich")
         else
-          entry[0] = (multiple_forms) ? _INTL("One Form") : _INTL("Genderless")
+          entry[0] = (multiple_forms) ? _INTL("Eine Form") : _INTL("Geschlechtslos")
         end
       end
       entry[1] = 0 if entry[1] == 2   # Genderless entries are treated as male
@@ -254,18 +254,18 @@ class PokemonPokedexInfo_Scene
 # or if the player is seeing the "normal" Dex Entry page on the Pokédex.
   if @brief
     textpos = [
-       [_INTL("Pokémon Registration Complete"), 82, -2, 0, Color.new(255, 255, 255), Color.new(165, 165, 173)],
+       [_INTL("Pokémon-Registrierung abgeschlossen"), 82, -2, 0, Color.new(255, 255, 255), Color.new(165, 165, 173)],
        [_INTL("{1}{2} {3}", indexText, " ", species_data.name),
           272, 54, 0, Color.new(82, 82, 90), Color.new(165, 165, 173)],
-       [_INTL("Height"), 288, 170, 0, base, shadow],
-       [_INTL("Weight"), 288, 200, 0, base, shadow]
+       [_INTL("Gewicht"), 288, 170, 0, base, shadow],
+       [_INTL("Größe"), 288, 200, 0, base, shadow]
     ]
   else
     textpos = [
        [_INTL("{1}{2} {3}", indexText, " ", species_data.name),
           272, 16, 0, Color.new(82, 82, 90), Color.new(165, 165, 173)],
-       [_INTL("Height"), 288, 132, 0, base, shadow],
-       [_INTL("Weight"), 288, 162, 0, base, shadow]
+       [_INTL("Gewicht"), 288, 132, 0, base, shadow],
+       [_INTL("Größe"), 288, 162, 0, base, shadow]
     ]
   end
     if $Trainer.owned?(@species)
@@ -455,11 +455,11 @@ class PokemonPokedexInfo_Scene
       pbDrawImagePositions(overlay,[
          [sprintf("Graphics/Pictures/Pokedex/overlay_areanone"),108,148]
       ])
-      textpos.push([_INTL("Area unknown"),Graphics.width/2,146,2,base,shadow])
+      textpos.push([_INTL("Fundort unbekannt"),Graphics.width/2,146,2,base,shadow])
     end
 	# Minor changes to the color of the text, to mimic the one used in BW
     textpos.push([pbGetMessage(MessageTypes::RegionNames,@region),58,0,0,Color.new(255,255,255),Color.new(115,115,115)])
-    textpos.push([_INTL("{1}'s area",GameData::Species.get(@species).name),
+    textpos.push([_INTL("{1}'s Fundort",GameData::Species.get(@species).name),
        Graphics.width/1.4,0,2,Color.new(255,255,255),Color.new(115,115,115)])
     pbDrawTextPositions(overlay,textpos)
   end
@@ -480,7 +480,7 @@ class PokemonPokedexInfo_Scene
       end
     end
     textpos = [
-	   [_INTL("Forms"),58,0,0,Color.new(255,255,255),Color.new(115,115,115)],
+	   [_INTL("Formen"),58,0,0,Color.new(255,255,255),Color.new(115,115,115)],
        [GameData::Species.get(@species).name,Graphics.width/2,Graphics.height-316,2,base,shadow],
        [formname,Graphics.width/2,Graphics.height-280,2,base,shadow],
     ]

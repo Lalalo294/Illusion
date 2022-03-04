@@ -156,13 +156,13 @@ class PokeBattle_Battle
     battler = nil
     battler = opposes?(idxPokemon) ? self.battlers[idxPokemon] : self.battlers[idxPokemon].pbOppositeOpposing
     battler = battler.pbPartner if battler.fainted?
-    pbDisplayBrief(_INTL("{1} threw one {2}!", self.pbPlayer.name, GameData::Item.get(ball).real_name))
+    pbDisplayBrief(_INTL("{1} wirft einen {2}!", self.pbPlayer.name, GameData::Item.get(ball).real_name))
     if battler.fainted?
-      pbDisplay(_INTL("But there was no target..."))
+      pbDisplay(_INTL("Aber es gibt kein Ziel..."))
       return
     end
     @scene.pbThrow(ball, 0, false, battler.index, showplayer)
-    pbDisplay(_INTL("{1} doesn't appear to be catchable!", battler.name))
+    pbDisplay(_INTL("{1} scheint nicht fangbar zu sein!", battler.name))
     BallHandlers.onFailCatch(ball, self, battler)
   end
   #-----------------------------------------------------------------------------
