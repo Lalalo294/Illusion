@@ -422,14 +422,14 @@ class PokemonPokedex_Scene
     if @searchResults
   # Changes the position of some texts regardin the Search Results of the Search 
   # mode, as well as the color of the text, to mimic the one used in BW
-      textpos.push([_INTL("Search results"),126,48,2,base,shadow])
+      textpos.push([_INTL("Such Ergebnisse"),126,48,2,base,shadow])
       textpos.push([@dexlist.length.to_s,242,48,2,base,shadow])
     else
   # Changes the position of the Seen/Owned parameters, as well as the color of the 
   # text, to mimic the one used in BW
-      textpos.push([_INTL("SEEN"),126,48,0,base,shadow])
+      textpos.push([_INTL("Gesehen"),126,48,0,base,shadow])
       textpos.push([$Trainer.pokedex.seen_count(pbGetPokedexRegion).to_s,242,48,1,base,shadow])
-      textpos.push([_INTL("OWNED"),334,48,0,base,shadow])
+      textpos.push([_INTL("Gefangen"),334,48,0,base,shadow])
       textpos.push([$Trainer.pokedex.owned_count(pbGetPokedexRegion).to_s,494,48,1,base,shadow])
     end
     # Draw all text
@@ -547,12 +547,12 @@ class PokemonPokedex_Scene
       shadow = Color.new(165,165,173)
     # Write various bits of text
     textpos = [
-       [_INTL("Search Mode"),Graphics.width/5,4,2,base,shadow],
+       [_INTL("Suche"),Graphics.width/5,4,2,base,shadow],
        [_INTL("OK"),80,338,2,base,shadow,1],
-       [_INTL("Cancel"),Graphics.width-80,338,2,base,shadow,1]
+       [_INTL("Zurück"),Graphics.width-80,338,2,base,shadow,1]
     ]
-    title = [_INTL("Order"),_INTL("Name"),_INTL("Type"),_INTL("Height"),
-             _INTL("Weight"),_INTL("Color"),_INTL("Shape")][mode]
+    title = [_INTL("Order"),_INTL("Name"),_INTL("Typ"),_INTL("Größe"),
+             _INTL("Gewicht"),_INTL("Farbe"),_INTL("Shape")][mode]
     textpos.push([title,102,(mode==6) ? 58 : 52,0,base,shadow])
     case mode
     when 0   # Order
@@ -1028,12 +1028,12 @@ class PokemonPokedex_Scene
     oldsprites = pbFadeOutAndHide(@sprites)
     params = @searchParams.clone
     @orderCommands = []
-    @orderCommands[MODENUMERICAL] = _INTL("Numerical")
-    @orderCommands[MODEATOZ]      = _INTL("A to Z")
-    @orderCommands[MODEHEAVIEST]  = _INTL("Heaviest")
-    @orderCommands[MODELIGHTEST]  = _INTL("Lightest")
-    @orderCommands[MODETALLEST]   = _INTL("Tallest")
-    @orderCommands[MODESMALLEST]  = _INTL("Smallest")
+    @orderCommands[MODENUMERICAL] = _INTL("Nummer")
+    @orderCommands[MODEATOZ]      = _INTL("A bis Z")
+    @orderCommands[MODEHEAVIEST]  = _INTL("Schwerste")
+    @orderCommands[MODELIGHTEST]  = _INTL("Leichteste")
+    @orderCommands[MODETALLEST]   = _INTL("Größte")
+    @orderCommands[MODESMALLEST]  = _INTL("Kleinste")
     @nameCommands = [_INTL("A"),_INTL("B"),_INTL("C"),_INTL("D"),_INTL("E"),
                     _INTL("F"),_INTL("G"),_INTL("H"),_INTL("I"),_INTL("J"),
                     _INTL("K"),_INTL("L"),_INTL("M"),_INTL("N"),_INTL("O"),

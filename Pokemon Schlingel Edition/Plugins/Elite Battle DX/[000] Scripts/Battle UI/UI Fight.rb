@@ -147,7 +147,7 @@ class FightWindowEBDX
     @moved = false
     @showMega = false
 
-    eff = [_INTL("Normal damage"),_INTL("Not very effective"),_INTL("Super effective"),_INTL("No effect")]
+    eff = [_INTL("Normaler Schaden"),_INTL("Reduzierter Schaden"),_INTL("Sehr effektiv"),_INTL("Keine Wirkung")]
     @typeInd = Sprite.new(@viewport)
     @typeInd.bitmap = Bitmap.new(192,24*4)
     pbSetSmallFont(@typeInd.bitmap)

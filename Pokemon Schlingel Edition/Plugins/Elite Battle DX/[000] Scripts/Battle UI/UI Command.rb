@@ -193,7 +193,7 @@ class CommandWindowEBDX
     # returns indexes and commands for Safari Battles
     if @safaribattle
       @indexes = [0,1,2,3]
-      return [_INTL("BALL"), _INTL("BAIT"), _INTL("ROCK"), _INTL("RUN")]
+      return [_INTL("BALL"), _INTL("KÖDER"), _INTL("STEIN"), _INTL("FLUCHT")]
     end
     # looks up cached metrics
     d1 = EliteBattle.get(:nextUI)
@@ -201,10 +201,10 @@ class CommandWindowEBDX
     # looks up globally defined settings
     d1 = EliteBattle.get_data(:BATTLE_COMMANDS, :Metrics, :METRICS) if d1.nil?
     # array containing the default commands
-    default = [_INTL("FIGHT"), _INTL("BAG"), _INTL("PARTY"), _INTL("RUN")]
+    default = [_INTL("KAMPF"), _INTL("BEUTEL"), _INTL("TEAM"), _INTL("FLUCHT")]
     default.push(_INTL("DEBUG")) if $DEBUG && default.length == 4 && EliteBattle::SHOW_DEBUG_FEATURES
     for i in 0...default.length
-      val = default[i]; val = _INTL("CALL") if default[i] == _INTL("RUN") && (poke.shadowPokemon? && poke.inHyperMode?)
+      val = default[i]; val = _INTL("CALL") if default[i] == _INTL("FLUCHT") && (poke.shadowPokemon? && poke.inHyperMode?)
       if !d1.nil?
         if d1.include?(default[i])
           @indexes.push(i); cmd.push(val)

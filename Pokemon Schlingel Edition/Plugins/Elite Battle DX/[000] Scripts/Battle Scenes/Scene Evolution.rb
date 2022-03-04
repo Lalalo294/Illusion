@@ -313,7 +313,7 @@ class PokemonEvolutionScene
     end
     pbMEPlay("EBDX/Evolution Start")
     @sprites["msgwindow"].visible = true
-    pbMessageDisplay(@sprites["msgwindow"],_INTL("\\se[]What?\r\n{1} is evolving!\\^",@pokemon.name)) { self.update }
+    pbMessageDisplay(@sprites["msgwindow"],_INTL("\\se[]WhHey?\r\n{1} entwickelt sich!\\^",@pokemon.name)) { self.update }
     pbMessageWaitForInput(@sprites["msgwindow"],100,true) { self.update }
     @sprites["msgwindow"].visible = false
     # plays Pokemon's cry
@@ -373,7 +373,7 @@ class PokemonEvolutionScene
     if canceled
       # prints message when evolution is cancelled
       @sprites["msgwindow"].visible = true
-      pbMessageDisplay(@sprites["msgwindow"],_INTL("Huh?\r\n{1} stopped evolving!", @pokemon.name)) { self.update }
+      pbMessageDisplay(@sprites["msgwindow"],_INTL("Huh?\r\n{1} Entwicklung wurde abgebrochen!", @pokemon.name)) { self.update }
     else
       # creates the actual evolved Pokemon
       self.createEvolved
@@ -397,7 +397,7 @@ class PokemonEvolutionScene
     newspeciesname = GameData::Species.get(@newspecies).real_name
     oldspeciesname = GameData::Species.get(@pokemon.species).real_name
     @sprites["msgwindow"].visible = true
-    pbMessageDisplay(@sprites["msgwindow"], _INTL("\\se[]Congratulations! Your {1} evolved into {2}!\\wt[80]", @pokemon.name, newspeciesname)) { self.update }
+    pbMessageDisplay(@sprites["msgwindow"], _INTL("\\se[]Glückwunsch! Dein {1} hat sich zu {2} entwickelt!\\wt[80]", @pokemon.name, newspeciesname)) { self.update }
     @sprites["msgwindow"].text = ""
     # Check for consumed item and check if Pokémon should be duplicated
     pbEvolutionMethodAfterEvolution

@@ -167,7 +167,7 @@ class PokeBattle_Scene
     @targetWindow.refresh(texts)
     @targetWindow.index = pbFirstTarget(idxBattler, target_data)
     if @targetWindow.index == -1
-      raise RuntimeError.new(_INTL("No targets somehow..."))
+      raise RuntimeError.new(_INTL("NIrgendwie gibt es keine Ziele..."))
     end
     # set up variables
     ret = -1

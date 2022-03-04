@@ -215,7 +215,7 @@ class BagWindowEBDX
     end
     # show message if pocket is empty
     if @pocket.length < 1
-      pbDisplayMessage(_INTL("You have no usable items in this pocket."))
+      pbDisplayMessage(_INTL("Du hast keine brauchbaren Gegenstände in dieser Tasche."))
       return
     end
     # configure variables
@@ -717,12 +717,12 @@ class PokeBattle_Scene
           @bagWindow.clearSel
           pkmnScene = PokemonParty_Scene.new
           pkmnScreen = PokemonPartyScreen.new(pkmnScene,modParty)
-          pkmnScreen.pbStartScene(_INTL("Use on which Pokémon?"), @battle.pbNumPositions(0, 0))
+          pkmnScreen.pbStartScene(_INTL("Für welches Pokémon?"), @battle.pbNumPositions(0, 0))
           idxParty = -1
           # Loop while in party screen
           loop do
             # Select a Pokémon
-            pkmnScene.pbSetHelpText(_INTL("Use on which Pokémon?"))
+            pkmnScene.pbSetHelpText(_INTL("Für welches Pokémon?"))
             idxParty = pkmnScreen.pbChoosePokemon
             break if idxParty < 0
             idxPartyRet = -1
@@ -736,7 +736,7 @@ class PokeBattle_Scene
             next if !pkmn || pkmn.egg?
             idxMove = -1
             if useType == 2 || useType == 7   # Use on Pokémon's move
-              idxMove = pkmnScreen.pbChooseMove(pkmn, _INTL("Restore which move?"))
+              idxMove = pkmnScreen.pbChooseMove(pkmn, _INTL("Welchen Attacke soll wiederhergestellt werden?"))
               next if idxMove < 0
             end
             break if yield item.id, useType, idxPartyRet, idxMove, pkmnScene

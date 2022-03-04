@@ -33,7 +33,7 @@ end
 class PokemonPartyCancelSprite < PokemonPartyConfirmCancelSprite
   def initialize(viewport=nil)
 # Changed Cancel button position
-    super(_INTL("CANCEL"),378,328,false,viewport)
+    super(_INTL("Zurück"),378,328,false,viewport)
   end
 end
 
@@ -43,7 +43,7 @@ end
 class PokemonPartyConfirmSprite < PokemonPartyConfirmCancelSprite
   def initialize(viewport=nil)
     # Changed Confirm  button position
-    super(_INTL("CONFIRM"),378,308,true,viewport)
+    super(_INTL("Bestätigen"),378,308,true,viewport)
   end
 end
 
@@ -53,7 +53,7 @@ end
 class PokemonPartyCancelSprite2 < PokemonPartyConfirmCancelSprite
   def initialize(viewport=nil)
     # Changed Cancel button position
-    super(_INTL("CANCEL"),378,346,true,viewport)
+    super(_INTL("Zurück"),378,346,true,viewport)
   end
 end
 

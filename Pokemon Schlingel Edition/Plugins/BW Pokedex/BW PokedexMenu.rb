@@ -55,7 +55,7 @@ class PokemonPokedexMenu_Scene
     @sprites["menuoverlay"] = IconSprite.new(0,0,@viewport) 
     @sprites["menuoverlay"].setBitmap(_INTL("Graphics/Pictures/Pokedex/menu_overlay"))
     @sprites["headings"]=Window_AdvancedTextPokemon.newWithSize(
-       _INTL("<c3=FFFFFF,A5A5AD>SEEN<r>OBTAINED</c3>"),286,136,208,64,@viewport)
+       _INTL("<c3=FFFFFF,A5A5AD>Gesehen <r>Gefangen</c3>"),270,136,235,64,@viewport)
     @sprites["headings"].windowskin  = nil
     @sprites["commands"] = Window_DexesList.new(commands,commands2,Graphics.width-84)
     @sprites["commands"].x      = 40
@@ -113,7 +113,7 @@ class PokemonPokedexMenuScreen
                       $Trainer.pokedex.owned_count(dex),
                       pbGetRegionalDexLength(dex)])
     end
-    commands.push(_INTL("Exit"))
+    commands.push(_INTL("Zurück"))
     @scene.pbStartScene(commands,commands2)
     loop do
       cmd = @scene.pbScene
