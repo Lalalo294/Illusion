@@ -1,0 +1,4 @@
+Name = Modular Selection Screen
+Version = 1.0.0
+Credits = CourteousGrizzly, Limnodromus, Shiney570
+Link = https://reliccastle.com/resources/908/

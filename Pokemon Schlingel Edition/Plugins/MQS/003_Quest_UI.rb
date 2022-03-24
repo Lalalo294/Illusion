@@ -88,10 +88,10 @@ class QuestList_Scene
       $PokemonGlobal.quests.active_quests,
       $PokemonGlobal.quests.completed_quests
     ]
-    @quests_text = ["Active", "Completed"]
+    @quests_text = ["Aktive", "Abgeschlossen"]
     if SHOW_FAILED_QUESTS
       @quests.push($PokemonGlobal.quests.failed_quests)
-      @quests_text.push("Failed")
+      @quests_text.push("Fehlgeschlagen")
     end
     @current_quest = 0
     @sprites["itemlist"] = Window_Quest.new(22,28,Graphics.width-22,Graphics.height-80,@viewport)
@@ -264,11 +264,11 @@ class QuestList_Scene
     # Format time
     time = quest.time.strftime("%B %d %Y %H:%M")
     if getActiveQuests.include?(quest.id)
-      time_text = "start"
+      time_text = "Start"
     elsif getCompletedQuests.include?(quest.id)
-      time_text = "completion"
+      time_text = "abgeschlossen"
     else
-      time_text = "failure"
+      time_text = "fehlgeschlagen"
     end
     # Quest reward
     questReward = $quest_data.getQuestReward(quest.id)

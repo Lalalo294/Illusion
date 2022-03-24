@@ -34,7 +34,7 @@ class PokeBattle_Battle
     foes.each_with_index do |foe, i|
       memb.push(wildBattle? ? foe.name : foe.full_name)
       text += ", " if i > 0 && i < foes.length - 1
-      text += " and " if i == foes.length - 1 && foes.length > 1
+      text += " und " if i == foes.length - 1 && foes.length > 1
       text += "{#{i+1}}"
     end
     text += wildBattle? ? " erscheint!" : "!"
@@ -66,10 +66,10 @@ class PokeBattle_Battle
         sent.each_with_index do |foe, j|
           memb.push(@battlers[foe].name)
           text += ", " if j > 0 && j < sent.length - 1
-          text += " and " if j == sent.length - 1 && sent.length > 1
+          text += " und " if j == sent.length - 1 && sent.length > 1
           text += "{#{j+2}}"
         end
-        text += "in den Kampf!"
+        text += " in den Kampf!"
         msg += _INTL(text, t.full_name, *memb)
         toSendOut.concat(sent)
       end
@@ -81,7 +81,7 @@ class PokeBattle_Battle
         sent.each_with_index do |foe, j|
           memb.push(@battlers[foe].name)
           text += ", " if j > 0 && j < sent.length - 1
-          text += " and " if j == sent.length - 1 && sent.length > 1
+          text += " und " if j == sent.length - 1 && sent.length > 1
           text += "{#{j+1}}"
         end
         text += "!"
