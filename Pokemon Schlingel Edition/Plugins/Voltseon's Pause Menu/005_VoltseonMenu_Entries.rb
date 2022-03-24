@@ -4,7 +4,7 @@
 class MenuEntryPokemon < MenuEntry
   def initialize
     @icon = "menuPokemon"
-    @name = "Pokemon"
+    @name = "Team"
   end
 
   def selected(menu)
@@ -60,7 +60,7 @@ end
 class MenuEntryBag < MenuEntry
   def initialize
     @icon = "menuBag"
-    @name = "Bag"
+    @name = "Beutel"
   end
 
   def selected(menu)
@@ -124,7 +124,7 @@ end
 class MenuEntrySave < MenuEntry
   def initialize
     @icon = "menuSave"
-    @name = "Save"
+    @name = "Speichern"
   end
 
   def selected(menu)
@@ -145,7 +145,7 @@ end
 class MenuEntryMap < MenuEntry # Play Pokémon Splice
   def initialize
     @icon = "menuMap"
-    @name = "Map"
+    @name = "Karte"
   end
 
   def selected(menu)
@@ -160,7 +160,7 @@ end
 class MenuEntryOptions < MenuEntry
   def initialize
     @icon = "menuOptions"
-    @name = "Options"
+    @name = "Optionen"
   end
 
   def selected(menu)
@@ -197,7 +197,7 @@ end
 class MenuEntryExitSafari < MenuEntry
   def initialize
     @icon = "menuBack"
-    @name = "Quit Safari"
+    @name = "Safari verlassen"
   end
 
   def selected(menu)
@@ -219,12 +219,12 @@ end
 class MenuEntryExitBugContest < MenuEntry
   def initialize
     @icon = "menuBack"
-    @name = "Quit Contest"
+    @name = "Turnier verlassen"
   end
 
   def selected(menu)
     menu.pbHideMenu
-    if pbConfirmMessage(_INTL("Would you like to end the Contest now?"))
+    if pbConfirmMessage(_INTL("WMöchtest du das Turnier verlassen?"))
       $game_temp.in_menu = false
       pbBugContestState.pbStartJudging
       return true
@@ -240,12 +240,12 @@ end
 class MenuEntryQuit < MenuEntry
   def initialize
     @icon = "menuQuit"
-    @name = "Quit"
+    @name = "Spiel beenden"
   end
 
   def selected(menu)
     menu.pbHideMenu
-    if pbConfirmMessage(_INTL("Are you sure you want to quit the game?"))
+    if pbConfirmMessage(_INTL("Bist du dir sicher das du das Spiel beenden möchtest?"))
       scene = PokemonSave_Scene.new
       screen = PokemonSaveScreen.new(scene)
       screen.pbSaveScreen
@@ -264,7 +264,7 @@ end
 class MenuEntryEncounterList < MenuEntry
   def initialize
     @icon = "menuDebug"
-    @name = "Encounters"
+    @name = "Encounter"
   end
 
   def selected(menu)

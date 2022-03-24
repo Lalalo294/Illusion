@@ -818,3 +818,61 @@
 797,TR98,TR98,TR98s,4,6000,"The user slams into the target using a full-force blast of water. May also lower the target's Defense stat.",6,0,0,LIQUIDATION
 798,TR99,TR99,TR99s,4,6000,"The user attacks by slamming its body into the target. Damages more the higher the user's Defense.",6,0,0,BODYPRESS
 799,MAXREVIVE2,Max Revive,Max Revives,2,4000,"Eine Nachricht ist dabei - Viel Spaß damit du keck ;D.",1,1,0
+#-------------------------------
+# Z-Rings/Dynamax Band
+#-------------------------------
+1000,ZRING,Z-Ring,Z-Rings,8,0,"A mysterious ring that enables Pokémon to use Z-Power if they are holding a compatible Z-Crystal. ",0,0,6,
+1001,ZPOWERRING,Z-Power Ring,Z-Power Rings,8,0,"A mysterious ring that enables Pokémon to use Z-Power if they are holding a compatible Z-Crystal.",0,0,6,
+1002,DYNAMAXBAND,Dynamax Band,Dynamax Bands,8,0,"A Wishing Star has been affixed to it. It lets out light that allows Pokémon to Dynamax when at a Power Spot.",0,0,6,
+#-------------------------------
+# Z-Crystals
+#-------------------------------
+1003,NORMALIUMZ,Normalium Z,,8,0,"It converts Z-Power into crystals that upgrade Normal-type moves to Normal-type Z-Moves.",5,0,14,
+1004,FIGHTINIUMZ,Fightinium Z,,8,0,"It converts Z-Power into crystals that upgrade Fighting-type moves to Fighting-type Z-Moves.",5,0,14,
+1005,FLYINIUMZ,Flyinium Z,,8,0,"It converts Z-Power into crystals that upgrade Flying-type moves to Flying-type Z-Moves.",5,0,14,
+1006,POISONIUMZ,Poisonium Z,,8,0,"It converts Z-Power into crystals that upgrade Poison-type moves to Poison-type Z-Moves.",5,0,14,
+1007,GROUNDIUMZ,Groundium Z,,8,0,"It converts Z-Power into crystals that upgrade Ground-type moves to Ground-type Z-Moves.",5,0,14,
+1008,ROCKIUMZ,Rockium Z,,8,0,"It converts Z-Power into crystals that upgrade Rock-type moves to Rock-type Z-Moves.",5,0,14,
+1009,BUGINIUMZ,Buginium Z,,8,0,"It converts Z-Power into crystals that upgrade Bug-type moves to Bug-type Z-Moves.",5,0,14,
+1010,GHOSTIUMZ,Ghostium Z,,8,0,"It converts Z-Power into crystals that upgrade Ghost-type moves to Ghost-type Z-Moves.",5,0,14,
+1011,STEELIUMZ,Steelium Z,,8,0,"It converts Z-Power into crystals that upgrade Steel-type moves to Steel-type Z-Moves.",5,0,14,
+1012,FIRIUMZ,Firium Z,,8,0,"It converts Z-Power into crystals that upgrade Fire-type moves to Fire-type Z-Moves.",5,0,14,
+1013,WATERIUMZ,Waterium Z,,8,0,"It converts Z-Power into crystals that upgrade Water-type moves to Water-type Z-Moves.",5,0,14,
+1014,GRASSIUMZ,Grassium Z,,8,0,"It converts Z-Power into crystals that upgrade Grass-type moves to Grass-type Z-Moves.",5,0,14,
+1015,ELECTRIUMZ,Electrium Z,,8,0,"It converts Z-Power into crystals that upgrade Electric-type moves to Electric-type Z-Moves.",5,0,14,
+1016,PSYCHIUMZ,Psychium Z,,8,0,"It converts Z-Power into crystals that upgrade Psychic-type moves to Psychic-type Z-Moves.",5,0,14,
+1017,ICIUMZ,Icium Z,,8,0,"It converts Z-Power into crystals that upgrade Ice-type moves to Ice-type Z-Moves.",5,0,14,
+1018,DRAGONIUMZ,Dragonium Z,,8,0,"It converts Z-Power into crystals that upgrade Dragon-type moves to Dragon-type Z-Moves.",5,0,14,
+1019,DARKINIUMZ,Darkinium Z,,8,0,"It converts Z-Power into crystals that upgrade Dark-type moves to Dark-type Z-Moves.",5,0,14,
+1020,FAIRIUMZ,Fairium Z,,8,0,"It converts Z-Power into crystals that upgrade Fairy-type moves to Fairy-type Z-Moves.",5,0,14,
+1021,PIKANIUMZ,Pikanium Z,,8,0,"It converts Z-Power into crystals that upgrade Pikachu's Volt Tackle to an exclusive Z-Move.",5,0,14,
+1022,PIKASHUNIUMZ,Pikashunium Z,,8,0,"It converts Z-Power into crystals that upgrades a capped Pikachu's Thunderbolt to an exclusive Z-Move.",5,0,14,
+1023,ALORAICHIUMZ,Aloraichium Z,,8,0,"It converts Z-Power into crystals that upgrade Alternate Raichu's Thunderbolt to an exclusive Z-Move.",5,0,14,
+1024,EEVIUMZ,Eevium Z,,8,0,"It converts Z-Power into crystals that upgrade Eevee's Last Resort to an exclusive Z-Move.",5,0,14,
+1025,SNORLIUMZ,Snorlium Z,,8,0,"It converts Z-Power into crystals that upgrade Snorlax's Giga Impact to an exclusive Z-Move.",5,0,14,
+1026,MEWNIUMZ,Mewnium Z,,8,0,"It converts Z-Power into crystals that upgrade Mew's Psychic to an exclusive Z-Move.",5,0,14,
+1027,DECIDIUMZ,Decidium Z,,8,0,"It converts Z-Power into crystals that upgrade Decidueye's Spirit Shackle to an exclusive Z-Move.",5,0,14,
+1028,INCINIUMZ,Incinium Z,,8,0,"It converts Z-Power into crystals that upgrade Incineroar's Darkest Lariat to an exclusive Z-Move.",5,0,14,
+1029,PRIMARIUMZ,Primarium Z,,8,0,"It converts Z-Power into crystals that upgrade Primarina's Sparkling Aria to an exclusive Z-Move.",5,0,14,
+1030,LYCANIUMZ,Lycanrium Z,,8,0,"It converts Z-Power into crystals that upgrades Lycanroc's Stone Edge to an exclusive Z-Move.",5,0,14,
+1031,MIMIKIUMZ,Mimikium Z,,8,0,"It converts Z-Power into crystals that upgrades Mimikyu's Play Rough to an exclusive Z-Move.",5,0,14,
+1032,KOMMONIUMZ,Kommonium Z,,8,0,"It converts Z-Power into crystals that upgrades Kommo-o's Clanging Scales to an exclusive Z-Move.",5,0,14,
+1033,TAPUNIUMZ,Tapunium Z,,8,0,"It converts Z-Power into crystals that upgrade the tapus' Nature's Madness to an exclusive Z-Move.",5,0,14,
+1034,SOLGANIUMZ,Solganium Z,,8,0,"It converts Z-Power into crystals that upgrades Solgaleo's Sunsteel Strike to an exclusive Z-Move.",5,0,14,
+1035,LUNALIUMZ,Lunalium Z,,8,0,"It converts Z-Power into crystals that upgrades Lunala's Moongeist Beam to an exclusive Z-Move.",5,0,14,
+1036,MARSHADIUMZ,Marshadium Z,,8,0,"It converts Z-Power into crystals that upgrade Marshadow's Spectral Thief to an exclusive Z-Move.",5,0,14,
+1037,ULTRANECROZIUMZ,Ultranecrozium Z,,8,0,"It converts Z-Power into crystals that upgrades Necrozma's Photon Geyser to an exclusive Z-Move.",5,0,14,
+#-------------------------------
+# Dynamax Items
+#-------------------------------
+1038,WISHINGPIECE,Wishing Piece,Wishing Pieces,1,10,"Throw one into a Pokémon Den to attract a wild Dynamax Pokémon.",0,0,0
+1039,DYNAMAXCANDY,Dynamax Candy,Dynamax Candies,2,0,"Raises the Dynamax Level of a single Pokémon by one. A higher level means higher HP when Dynamaxed.",1,0,0,
+#-------------------------------
+# Custom Max Items
+#-------------------------------
+1040,DYNAMAXCANDYXL,Dynamax Candy XL,Dynamax Candies XL,2,0,"Maxes out the Dynamax Level of a single Pokémon. A higher level means higher HP when Dynamaxed.",1,0,0,
+1041,MAXSOUP,Max Soup,Max Soups,2,10000,"A soup that packs a huge kick. Certain Pokémon that consume it may be given the ability to Gigantamax.",1,0,0,
+1042,MAXEGGS,Max Eggs,,2,20000,"A bundle of highly nutritious, jumbo-sized eggs. Grants the entire party a large amount of Exp. Points.",2,0,0,
+1043,MAXSCALES,Max Scales,,2,4000,"Reflective scales that act like a mirror. Pokémon are able to recall a past move when gazing into them.",1,0,0,
+1044,MAXPLUMAGE,Max Plumage,Max Plumages,2,4000,"A bundle of six distinctly colored feathers. Increases each base stat of a Pokémon by 1 point.",1,0,0,
+1045,MAXCRYSTAL,Max Crystal,Max Crystals,7,4000,"A crystal brimming with Dynamax energy. It can fully recharge your Dynamax Band in battle.",0,5,0,

@@ -39,12 +39,12 @@ class BugContestHud < Component
 
   def refresh
     if pbBugContestState.lastPokemon
-      text =  _INTL("Caught: {1}", pbBugContestState.lastPokemon.speciesName)
+      text =  _INTL("Gefangen: {1}", pbBugContestState.lastPokemon.speciesName)
       text2 =  _INTL("Level: {1}", pbBugContestState.lastPokemon.level)
-      text3 =  _INTL("Balls: {1}", pbBugContestState.ballcount)
+      text3 =  _INTL("Bälle: {1}", pbBugContestState.ballcount)
     else
-      text = _INTL("Caught: None")
-      text2 = _INTL("Balls: {1}", pbBugContestState.ballcount)
+      text = _INTL("Gefangen: Nichts")
+      text2 = _INTL("Bälle: {1}", pbBugContestState.ballcount)
       text3 = ""
     end
     @sprites["overlay"].bitmap.clear

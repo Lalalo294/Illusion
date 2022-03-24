@@ -8,7 +8,7 @@ class MenuEntry
   def icon; return MENU_FILE_PATH + @icon; end
   def selectable?; return false; end
   def selected
-    pbMessage(_INTL("This is a working Menu Entry for Voltseon's Pause Menu."))
+    pbMessage(_INTL("Dies ist ein funktionierender Menüeintrag für das Pause-Menü von Voltseon."))
   end
 end
 

@@ -19,6 +19,10 @@ STATUS
   XYZ              = -26,16,1
 MEGA
   XYZ              = -10,-18,1
+ULTRA
+  XYZ              = -10,-18,1
+DYNAMAX
+  XYZ              = -10,-18,1
 #-------------------------------
 [ENEMYDATABOX]
 ShowHP             = false
@@ -38,7 +42,35 @@ HP
 STATUS
   XYZ              = 202,16,1
 MEGA
-  XYZ              = 206,18,1
+  XYZ              = 206,-18,1
+ULTRA
+  XYZ              = 206,-18,1
+DYNAMAX
+  XYZ              = 206,-18,1
+#-------------------------------
+[RAIDDATABOX]
+ShowHP             = false
+HPBarWidth         = 168
+HPBarXY            = 4,32
+ExpBarWidth        = 100
+EXPBarXY           = 4,16
+Bitmap             = dataBoxRaid
+Container          = containersBoss
+HPColors           = barColors
+CONTAINER
+  XYZ              = 24,36,1
+NAME
+  XYZ              = 26,6,9
+HP
+  XYZ              = 20,39,9
+STATUS
+  XYZ              = 222,52,1
+MEGA
+  XYZ              = 224,18,1
+ULTRA
+  XYZ              = 224,18,1
+DYNAMAX
+  XYZ              = 224,18,1
 #-------------------------------
 [COMMANDMENU]
 ButtonGraphic      = btnCmd
@@ -48,6 +80,9 @@ PartyLineGraphic   = partyLine
 [FIGHTMENU]
 ButtonGraphic      = moveSelButtons
 MegaButtonGraphic  = megaButton
+ZMoveButtonGraphic = zMoveButton
+UltraButtonGraphic = ultraButton
+DynaButtonGraphic  = dynaButton
 SelectorGraphic    = cmdSel
 CategoryGraphic    = category
 TypeGraphic        = types
