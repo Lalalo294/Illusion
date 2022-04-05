@@ -42,6 +42,14 @@ Events.OnTalkToFollower += proc { |pkmn, _random_val|
     FollowingPkmn.animation(FollowingPkmn::ANIMATION_EMOTE_ELIPSES)
     pbMoveRoute($game_player, [PBMoveRoute::Wait, 20])
     pbMessage(_INTL("{1} is standing still and twitching.", pkmn.name))
+ when :FROSTBITE
+    FollowingPkmn.animation(FollowingPkmn::ANIMATION_EMOTE_ELIPSES)
+    pbMoveRoute($game_player,[PBMoveRoute::Wait,20])
+    pbMessage(_INTL("{1}'s frostbite looks painful.",pkmn.name))
+  when :DROWSY
+    FollowingPkmn.animation(FollowingPkmn::ANIMATION_EMOTE_ELIPSES)
+    pbMoveRoute($game_player,[PBMoveRoute::Wait,20])
+    pbMessage(_INTL("{1} is drowsy...",pkmn.name))
   end
   next true if pkmn.status != :NONE
 }
