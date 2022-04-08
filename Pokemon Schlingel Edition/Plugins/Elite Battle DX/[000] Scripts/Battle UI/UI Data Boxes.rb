@@ -60,11 +60,11 @@ class DataBoxEBDX  <  SpriteWrapper
     # compiles default positioning data for databox
     @data = {
       "status" => {:x => @playerpoke ? -26 : 202, :y => 16, :z => 1},
+      "types" => {:x => @playerpoke ? -26 : 202, :y => 16, :z => 1},
       "mega" => {:x => @playerpoke ? -10 : 206, :y => -18, :z => 1},
       "container" => {:x => @playerpoke ? 20 : 24, :y => 6, :z => 1},
       "name" => {:x => @playerpoke ? 22 : 26, :y => -24, :z => 9},
-      "hp" => {:x => @playerpoke ? 22 : 20, :y => 9, :z => 9},
-      "typesfight" => {:x => @playerpoke ? -26 : 202, :y => 16, :z => 1}
+      "hp" => {:x => @playerpoke ? 22 : 20, :y => 9, :z => 9}
     }
     # determines which constant to search for
     const = @playerpoke ? :PLAYERDATABOX : :ENEMYDATABOX
@@ -311,13 +311,13 @@ class DataBoxEBDX  <  SpriteWrapper
     @sprites["textHP"].ey = self.getMetric("hp", :y)
     pbSetSmallFont(@sprites["textHP"].bitmap)
 
-    @sprites["typesfight"] = Sprite.new(@viewport)
-    @sprites["typesfight"].bitmap = pbBitmap(@path + "typesfight")
-    @sprites["typesfight"].z = self.getMetric("typesfight", :z)
-    @sprites["typesfight"].src_rect.height /= 5
-    @sprites["typesfight"].src_rect.width = 0
-    @sprites["typesfight"].ex = self.getMetric("typesfight", :x)
-    @sprites["typesfight"].ey = self.getMetric("typesfight", :y)
+    @sprites["types"] = Sprite.new(@viewport)
+    @sprites["types"].bitmap = pbBitmap(@path + "types")
+    @sprites["types"].z = self.getMetric("types", :z)
+    @sprites["types"].src_rect.height /= 19
+    @sprites["types"].src_rect.width = 0
+    @sprites["types"].ex = self.getMetric("types", :x)
+    @sprites["types"].ey = self.getMetric("types", :y)
 
     @megaBmp = pbBitmap(@path + "symMega")
     @prKyogre = pbBitmap("Graphics/Pictures/Battle/icon_primal_Kyogre")
@@ -454,6 +454,17 @@ class DataBoxEBDX  <  SpriteWrapper
       @sprites["mega"].bitmap.clear
       @sprites["mega"].bitmap = nil
     end
+	# Draw Pokémon's type icon(s)
+    type1_number = GameData::Type.get(@pokemon.type1).id_number
+    type2_number = GameData::Type.get(@pokemon.type2).id_number
+    type1rect = Rect.new(0, type1_number * 28, 64, 28)
+    type2rect = Rect.new(0, type2_number * 28, 64, 28)
+    if @pokemon.type1==@pokemon.type2
+      overlay.blt(130,78,@typebitmap.bitmap,type1rect)
+    else
+      overlay.blt(96,78,@typebitmap.bitmap,type1rect)
+      overlay.blt(166,78,@typebitmap.bitmap,type2rect)
+  end
     self.updateHpBar
     self.updateExpBar
   end
@@ -527,7 +538,7 @@ class DataBoxEBDX  <  SpriteWrapper
       self.y = self.defY
     end
   end
-#-------------------------------------------------------------------------------
+  #-----------------------------------------------------------------------------
 end
 #===============================================================================
 #  Player Side Safari Zone data box
