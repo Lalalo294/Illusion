@@ -855,7 +855,7 @@
 1085,GMAXONEBLOW,G-Max One Blow,D000,1,DARK,Physical,0,1,0,NearFoe,0,fx,"A G-Max Move used by G-Max Urshifu. This single-strike move can ignore Max Guard."
 1086,GMAXRAPIDFLOW,G-Max Rapid Flow,D000,1,WATER,Physical,0,1,0,NearFoe,0,fx,"A G-Max Move used by G-Max Urshifu. This rapid-strike move can ignore Max Guard."
 #-------------------------------
-# Pokémon Legends: Arceus (add to your current moves.txt)
+# Pokémon Legends: Arceus 
 #-------------------------------
 1087,DIRECLAW,Dire Claw,200,75,POISON,Physical,100,15,20,NearOther,0,abefh,"The user lashes out at the target with ruinous claws, aiming to land a critical hit. This may also leave the target poisoned, paralyzed, or drowsy."
 1088,PSYSHIELDBASH,Psyshield Bash,01D,85,PSYCHIC,Physical,100,10,10,NearOther,0,abef,"Cloaking itself in psychic energy, the user slams into the target. This may also raise the user’s defensive stats."

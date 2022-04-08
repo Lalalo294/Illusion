@@ -1,3 +1,0 @@
-Name      = Footprints
-Version   = 1.0
-Credits   = KleinStudio, WolfPP, bo4p5687
