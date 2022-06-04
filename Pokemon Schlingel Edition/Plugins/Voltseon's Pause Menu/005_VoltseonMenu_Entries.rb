@@ -4,7 +4,7 @@
 class MenuEntryPokemon < MenuEntry
   def initialize
     @icon = "menuPokemon"
-    @name = "Team"
+    @name = "Pokemon"
   end
 
   def selected(menu)
@@ -60,14 +60,14 @@ end
 class MenuEntryBag < MenuEntry
   def initialize
     @icon = "menuBag"
-    @name = "Beutel"
+    @name = "Bag"
   end
 
   def selected(menu)
     item = nil
     pbFadeOutIn(99999) {
       scene = PokemonBag_Scene.new
-      screen = PokemonBagScreen.new(scene,$PokemonBag)
+      screen = PokemonBagScreen.new(scene,$bag)
       item = screen.pbStartScreen
     }
     if item
@@ -124,7 +124,7 @@ end
 class MenuEntrySave < MenuEntry
   def initialize
     @icon = "menuSave"
-    @name = "Speichern"
+    @name = "Save"
   end
 
   def selected(menu)
@@ -145,14 +145,14 @@ end
 class MenuEntryMap < MenuEntry # Play Pokémon Splice
   def initialize
     @icon = "menuMap"
-    @name = "Karte"
+    @name = "Map"
   end
 
   def selected(menu)
     pbShowMap(-1,false)
   end
 
-  def selectable?; return $PokemonBag.pbHasItem?(:TOWNMAP); end
+  def selectable?; return $bag.has?(:TOWNMAP); end
 end
 #-------------------------------------------------------------------------------
 # Entry for Options Screen
@@ -160,7 +160,7 @@ end
 class MenuEntryOptions < MenuEntry
   def initialize
     @icon = "menuOptions"
-    @name = "Optionen"
+    @name = "Options"
   end
 
   def selected(menu)
@@ -170,7 +170,7 @@ class MenuEntryOptions < MenuEntry
       screen.pbStartScreen
       pbUpdateSceneMap
     }
-    return $PokemonTemp.menu_theme_changed
+    return $game_temp.menu_theme_changed
   end
 
   def selectable?; return true; end
@@ -186,7 +186,7 @@ class MenuEntryDebug < MenuEntry
 
   def selected(menu)
     pbFadeOutIn(99999) { pbDebugMenu }
-    return $PokemonTemp.menu_theme_changed
+    return $game_temp.menu_theme_changed
   end
 
   def selectable?; return $DEBUG; end
@@ -197,7 +197,7 @@ end
 class MenuEntryExitSafari < MenuEntry
   def initialize
     @icon = "menuBack"
-    @name = "Safari verlassen"
+    @name = "Quit Safari"
   end
 
   def selected(menu)
@@ -219,12 +219,12 @@ end
 class MenuEntryExitBugContest < MenuEntry
   def initialize
     @icon = "menuBack"
-    @name = "Turnier verlassen"
+    @name = "Quit Contest"
   end
 
   def selected(menu)
     menu.pbHideMenu
-    if pbConfirmMessage(_INTL("WMöchtest du das Turnier verlassen?"))
+    if pbConfirmMessage(_INTL("Would you like to end the Contest now?"))
       $game_temp.in_menu = false
       pbBugContestState.pbStartJudging
       return true
@@ -240,12 +240,12 @@ end
 class MenuEntryQuit < MenuEntry
   def initialize
     @icon = "menuQuit"
-    @name = "Spiel beenden"
+    @name = "Quit"
   end
 
   def selected(menu)
     menu.pbHideMenu
-    if pbConfirmMessage(_INTL("Bist du dir sicher das du das Spiel beenden möchtest?"))
+    if pbConfirmMessage(_INTL("Are you sure you want to quit the game?"))
       scene = PokemonSave_Scene.new
       screen = PokemonSaveScreen.new(scene)
       screen.pbSaveScreen
@@ -264,7 +264,7 @@ end
 class MenuEntryEncounterList < MenuEntry
   def initialize
     @icon = "menuDebug"
-    @name = "Encounter"
+    @name = "Encounters"
   end
 
   def selected(menu)

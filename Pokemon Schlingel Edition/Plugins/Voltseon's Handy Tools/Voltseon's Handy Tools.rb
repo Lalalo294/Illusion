@@ -9,7 +9,7 @@
 # Made for people who dont want
 # to copy paste long scripts from
 # the Pokémon Essentials Wiki
-# Version: 1.3
+# Version: 1.4
 #
 ################################################################################
 #
@@ -17,42 +17,37 @@
 #
 ################################################################################
 
-# Zorua Transform
-def vTransform
-  $scene.spriteset.addUserAnimation(92,$game_player.x,$game_player.y,false,8)
-end
-
 # Receive Item | Variables: itm = The Item, qty = Quantity of the item.
 def vRI(itm, qty=1)
-  Kernel.pbReceiveItem(itm.upcase,qty)
+  pbReceiveItem(itm.upcase,qty)
   #Example: vRI("Potion",5) - The player receives 5 potions.
   #Alternates: vReceiveItem(), vItemReceive(), vGI(), vGetItem(), vItemGet()
 end
 
 # Find Item | Variables: itm = The Item, qty = Quantity of the item.
 def vFI(itm, qty=1)
-  Kernel.pbItemBall(itm.upcase,qty)
+  pbItemBall(itm.upcase,qty)
   #Example: vFI("Pokeball",5) - The player finds 5 pokéballs.
   #Alternates: vFindItem(), vItemFind(), vItemBall()
 end
 
 # Delete Item | Variables: itm = The Item, qty = Quantity of the item.
 def vDI(itm, qty=1)
-  $PokemonBag.pbDeleteItem(itm.upcase,qty)
+  $bag.remove(itm.upcase,qty)
   #Example: vDI("Keycard",2) - Deletes 2 keycards from the player.
   #Alternates: vDeleteItem(), vItemDelete(), vRemoveItem(), vItemRemove()
 end
 
 # Add Item (Silently) | Variables: itm = The Item, qty = Quantity of the item.
 def vAI(itm, qty=1)
-  $PokemonBag.pbStoreItem(itm.upcase,qty)
+  $bag.add(itm.upcase,qty)
   #Example: vAI("Revive",5) - The player receives 5 revives, without a messagebox.
   #Alternates: vAddItem(), vAddItemSilent(), vItemAdd(), vItemSilent()
 end
 
 # Item Quantity | Variables: itm = The Item
 def vIQ(itm)
-  $PokemonBag.pbQuantity(itm.upcase)
+  $bag.quantity(itm.upcase)
   #Example: if vIQ("OranBerry") < 1 - Checks if the player has <1 Oran Berries.
   #Example 2: "Player has: #{vIQ("AirMail")} Air mails in their bag.
   #Alternates: vItemQuantity(), vQuantityItem()
@@ -60,7 +55,7 @@ end
 
 # Has Item | Variables: itm = The Item
 def vHI(itm)
-  $PokemonBag.pbHasItem?(itm.upcase)
+  $bag.has?(itm.upcase)
   #Example: if vHI("Protector") - Checks if the player has a Protector.
   #Alternatives: vHasItem()
 end
@@ -97,7 +92,7 @@ end
 
 # Delete Pokémon | Variables: i = index.
 def vDP(i=0)
-  Player.remove_pokemon_at_index(i)
+  $player.remove_pokemon_at_index(i)
   #Example: vDP(1) - Removes the 2nd Pokémon in the party.
   #Alternatives: vDeletePokemon(), vRemovePokemon()
 end
@@ -118,7 +113,7 @@ end
 
 # Has Pokemon | Variables: pok = The Pokemon
 def vHP(pok)
-  Player.has_species(pok.upcase)
+  $player.has_species?(pok.upcase)
   #Example: if vHP("Jirachi") - Returns true if the player has a Jirachi
   #Alternatives: vHasPokemon(), vHS(), vHasSpecies()
 end
@@ -134,7 +129,10 @@ end
 # escp = if you can run away from the battle.
 # lose = if you can lose the battle or black out.
 def vWB(pok,lvl,rslt=0,escp=true,lose=false)
-  pbWildBattle(pok.upcase,lvl,rslt,escp,lose)
+  setBattleRule("outcomeVar", rslt) if rslt != 1
+  setBattleRule("cannotRun") if !escp
+  setBattleRule("canLose") if lose
+  WildBattle.start(pok.upcase,lvl)
   #Example: vWB("Nosepass",10,5,true,false) - Battles a level 10 Nosepass that you cannot lose but can escape and result is stored in variable 5.
   #Alternatives: vWildBattle()
 end
@@ -144,7 +142,10 @@ end
 # trn = Trainer Number, cnt = Can you continue?
 # out = Game Variable in which the outcome will be stored.
 def vTB(cls,nam,mes="...",dbl=false,trn=0,cnt=false,out=0)
-  pbTrainerBattle(cls.upcase,nam,mes,dbl,trn,cnt,out)
+  setBattleRule("outcomeVar", out) if out != 1
+  setBattleRule("canLose") if cnt
+  setBattleRule("double") if dbl
+  TrainerBattle.start(cls.upcase,nam,trn)
   #Example: vTB("Camper","Liam","Darn!",false,1,true,2) - Battles Camper Liam #1 who says "Darn!" after he loses, that you can lose and result is stored in variable 2.
   #Alternatives: vTrainerBattle()
 end
@@ -157,21 +158,22 @@ end
 
 # Set outfit | Variables: i = Index, outfit number
 def vO(i=0)
-  $Trainer.outfit=i
+  $player.outfit=i
   #Example: vO(5) - Sets the outfit to outfit 5 (trchar000_5)
   #Alternatives: vOutfit(), vSO(), vSetOutfit()
 end
 
-# Set gender | Variables: i = Index, gender number (0=Male, 1=Female)
-def vG(i=0)
+# Set character | Variables: i = Index, character number (0=RED, 1=LEAF)
+def vC(i=0)
   pbChangePlayer(i)
-  #Example: vG(1) - Sets the player gender to 1 (Female)
+  #Example: vC(1) - Sets the player character to 1 (LEAF)
   #Alternatives: vGender(), vSG(), vSetGender()
 end
 
 # Toggle gender | Variables: none
 def vTG()
-  i=($Trainer.character_ID-1).abs
+  i = $player.character_ID
+  (i == 1) ? i = 2 : i = 1
   pbChangePlayer(i)
   #Example: vTG() - Toggles the player gender
   #Alternatives: vToggleGender()
@@ -180,10 +182,10 @@ end
 
 # Toggle Region Dex | Variables: i = Index, dex number
 def vTRD(i=0)
-  if $PokemonGlobal.pokedexUnlocked == true
-    $Trainer.pokedex.lock(i)
+  if $player.pokedex.unlocked?(i)
+    $player.pokedex.lock(i)
   else
-    $Trainer.pokedex.unlock(i)
+    $player.pokedex.unlock(i)
   end
   #Example: vTRD(0) - Toggles the region dex #0
   #Alternatives: vToggleRegionDex()
@@ -191,21 +193,21 @@ end
 
 # Toggle Pokedex | Variables: none
 def vTPD()
-  $Trainer.has_pokedex = !$Trainer.has_pokedex
+  $player.has_pokedex = !$player.has_pokedex
   #Example: vTPD() - Toggles the pokegear
   #Alternatives: vTogglePokedex(), vTogglePokeDex()
 end
 
 # Toggle Running Shoes | Variables: none
 def vTRS()
-  $Trainer.has_running_shoes = !$Trainer.has_running_shoes
+  $player.has_running_shoes = !$player.has_running_shoes
   #Example: vTRS() - Toggles the runningshoes
   #Alternatives: vToggleRunningShoes(), vRS(), vRunningShoes()
 end
 
 # Toggle Pokegear | Variables: none
 def vTPG()
-  $Trainer.has_pokegear = !$Trainer.has_pokegear
+  $player.has_pokegear = !$player.has_pokegear
   #Example: vTPG() - Toggles the pokegear
   #Alternatives: vTogglePokegear(), vTogglePokeGear()
 end
@@ -219,7 +221,7 @@ end
 # vol = Volume, pch = Pitch
 def vCry(i,vol=80,pch=100,form=0)
   cry=GameData::Species.cry_filename(i,form)
-  pbSEPlay(cry,80,100)
+  pbSEPlay(cry,vol,pch)
   #Example: vCry(25,120,50) - Plays Pikachu's Cry at 120% volume and 50% pitch.
   #Alternatives: vPlayCry(), vPC()
 end
@@ -248,7 +250,7 @@ end
 
 # Toggle Global Switch | Variables: i = Index
 def vTGS(i)
-  $game_switches=!$game_switches
+  $game_switches[i]=!$game_switches[i]
   $game_map.need_refresh = true
   #Example: vTGS(50) - Toggles Global Switch #50
   #Alternatives: vtGS(), vTS(), vToggleGlobalSwitch(), vToggleGameSwitch(), vToggleSwitch()

@@ -302,7 +302,3 @@ Land,21
     10,PIKACHU,11,14
     10,SANDSHREW_1,11,14
     10,VULPIX_1,11,14
-#-------------------------------
-[077] # Route 1
-Land,21
-    20,BULBASAUR,5

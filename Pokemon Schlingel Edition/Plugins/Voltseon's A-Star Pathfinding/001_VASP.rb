@@ -3,48 +3,11 @@
 #                  Voltseon's A-Star Pathfinding
 #                 Made for Pokémon Essentials v19
 #
-#                 Credit: Voltseon & Golisopod User
+#               Credit: Voltseon and Golisopod User
 #
 #####################################################################
 #
-#                           Version 1.0
-#
-#####################################################################
-#
-#                       How to use the script
-#
-#####################################################################
-#
-# When you want your event to move / look at a location / event
-# Call a script command within that event with the following.
-#
-#
-# To move an event to a location / event use:
-#
-# move_to_location(EventID, X, Y, WaitForComplete)
-# move_to_event(EventID1, EventID2, WaitForComplete)
-#
-# Example: move_to_location(11, 9, 12, false)
-#
-#
-#
-# To make an event turn towards a location / event use:
-#
-# look_at_location(EventID, X, Y)
-# look_at_event(EventID1, EventID2)
-#
-# Example: look_at_event(11, 12)
-#
-#
-#
-# NOTE: If you want to use the player,
-#       instead of EventID use $game_player
-#
-#####################################################################
-#
-#                     How A-Star (A*) works
-#
-#####################################################################
+# How A-Star (A*) works:
 #
 # There's 3 values given to every tile that is being calculated.
 # G-Cost = Distance between this tile & starting point.
@@ -72,22 +35,12 @@
 # When the tile has reached the goal it stops the loop
 # And starts the moveroute for the event.
 #
-# For more info check out:
-# https://brilliant.org/wiki/a-star-search/
-#
 #####################################################################
-#
-#                         Main script stuff
-#
-#####################################################################
-#
-# Touching this stuff may be dangerous! It's very radioactive!!!
 
 # Banned Terrain Tags
 TERRAIN_BLOCKS = [GameData::TerrainTag.get(:Ice), GameData::TerrainTag.get(:Ledge)]
 
 # Used for storing all the map's impassable tiles
-# DO NOT EDIT THIS!!!
 $impassable_tiles = []
 
 # A tile contains the following data:
@@ -128,25 +81,27 @@ end
 
 # Calls whenever you change maps
 # Updates the array with all the tiles that are passable
-Events.onMapChanging += proc { |_sender, e|
-  update_passable_tiles(true)
-}
+EventHandlers.add(:on_enter_map, :update_passable_tiles,
+  proc { |_sender, e|
+    update_passable_tiles(true)
+  }
+)
 
 # Moves the designated event to the defined coordinates
 # Usage: move_to_location(EventID,X,Y,WaitForComplete)
 # Example: move_to_location(20,77,52,true)
 def move_to_location(event = nil, desired_x = 0, desired_y = 0, wait_for_completion = false)
   # Get the event from the specified event ID if specified
-  event = get_event_from_id(event) if event && event != $game_player
+  event = get_event_from_id(event) if event.is_a?(Integer)
   # Make event the current one if none is specified
-  event = get_character(0) if !event
+  event = pbMapInterpreter.get_character(0) if event.nil? && pbMapInterpreter
   # Return if the event is already at the desired location
-  return if event.x == desired_x && event.y == desired_y
+  return if !event || (event.x == desired_x && event.y == desired_y)
   # Calculates the pathfinding
   if event.through
-    moveroute = calc_path_through(event,[desired_x,desired_y])
+    moveroute = calc_path_through(event,[desired_x, desired_y])
   else
-    moveroute = calc_path(event,[desired_x,desired_y])
+    moveroute = calc_path(event,[desired_x, desired_y])
   end
   # Performs the moveroute
   pbAStarMoveRoute(event,moveroute,wait_for_completion)
@@ -157,13 +112,13 @@ end
 # Example: move_to_event(20,34,true)
 def move_to_event(event_a = nil, event_b = nil, wait_for_completion = false)
   # Get the event from the specified event ID if specified
-  event_a = get_event_from_id(event_a) if event_a && event_a != $game_player
-  event_b = get_event_from_id(event_b) if event_b && event_b != $game_player
+  event_a = get_event_from_id(event_a) if event_a.is_a?(Integer)
+  event_b = get_event_from_id(event_b) if event_b.is_a?(Integer)
   # Sets a default event if none is specified
-  event_a = get_character(0) if !event_a
-  event_b = get_character(1) if !event_b
+  event_a = pbMapInterpreter.get_character(0) if event_a.nil? && pbMapInterpreter
+  event_b = pbMapInterpreter.get_character(-1) if event_b.nil? && pbMapInterpreter
   # Return if the event is already at the desired location
-  return if event_a.x == event_b.x && event_a.y == event_b.y
+  return if (!event_a || !event_b) || (event_a.x == event_b.x && event_a.y == event_b.y)
   # Calculates the pathfinding based on whether through is on
   if event_a.through
     moveroute = calc_path_through(event_a, [event_b.x, event_b.y])
@@ -207,6 +162,8 @@ def calc_path_through(event, destination)
   end
   return move_route
 end
+
+
 
 # Calculates the pathfinding (A*)
 # initial = start location
@@ -372,38 +329,31 @@ def get_neighbours(tile, closed_tiles, open_tiles)
   return neighbours
 end
 
+
+
 # Updates the array with all the tiles that are passable
 def update_passable_tiles(full_reset = true)
-  # Cloning the old impassable tiles array
-  old_impassable = Marshal.load(Marshal.dump($impassable_tiles))
+  # Initialize the impassable tiles array
+  $impassable_tiles = [] if !$impassable_tiles
   # Reset the impassable tiles array
-  $impassable_tiles = []
-  if full_reset
-    # Go through all the possible tiles in the map
-    for i in 0...$game_map.width
-      for j in 0...$game_map.height
-        # Checks whether the current tile is impassable or is a blocked terrain tag
-        next if $game_map.passable?(i, j, 0)
-        next if TERRAIN_BLOCKS.include?($game_map.terrain_tag(i, j))
-        # Add current tile to the array
-        $impassable_tiles.push([i, j, -1])
-      end
+  $impassable_tiles.clear
+  # Go through all the possible tiles in the map
+  for i in 0...$game_map.width
+    for j in 0...$game_map.height
+      # Checks whether the current tile is impassable or is a blocked terrain tag
+      next if $game_map.passable?(i, j, 0)
+      next if TERRAIN_BLOCKS.include?($game_map.terrain_tag(i, j))
+      # Add current tile to the array
+      $impassable_tiles.push([i, j])
     end
-  else
-    # Clear old impassable tile that was stored based on the event's passability
-    $impassable_tiles = Marshal.load(Marshal.dump(old_impassable))
-    impassable_tiles.delete_if { |item| item[2] > 0 }
   end
   # Add the player's location to the array
   $impassable_tiles.push([$game_player.x, $game_player.y])
-  # Go through all the events in the map
-  $game_map.events.values.each do |event|
-    # Skip if the event is a passable tile or has through enabled
-    next if event.tile_id <= 0 || event.through
-    # Skip if the event has a terrain tag that allows passage
-    next if GameData::TerrainTag.try_get($game_map.terrain_tags[event.tile_id]).ignore_passability
-    # Add the current event's location to the array. Event ID  is stored
-    $impassable_tiles.push([event.x, event.y, event.id])
+  # Add dependent events to impassable tiles
+  if $PokemonGlobal && $PokemonGlobal.dependentEvents
+    $PokemonGlobal.dependentEvents.each_with_index do |e, i|
+      $impassable_tiles.push([e[3], e[4]])
+    end
   end
 end
 
@@ -477,5 +427,3 @@ def pbAStarMoveRoute(event, commands, waitComplete = false)
   end
   return route
 end
-
-# Check out Pokémon Ethos and be happy! :)
