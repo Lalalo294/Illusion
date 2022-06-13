@@ -1,4 +1,5 @@
 Name         = Marin's Scripting Utilities
-Version      = 1.7
+Version      = 2.0
+Essentials   = 20
 Credits      = Marin
 Link         = https://reliccastle.com/resources/165/

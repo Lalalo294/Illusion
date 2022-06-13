@@ -162,16 +162,36 @@
     vO(vA)
     end
     
-    def vGender(vA)
-    vG(vA)
+    def vCharacter(vA)
+    vC(vA)
     end
     
+    def vSC(vA)
+    vC(vA)
+    end
+
+    def vG(vA)
+    echoln "vG and its alternate methods will be removed in future updates of Voltseon's Handy Tools. Use vC(index) instead."
+    vC(vA)
+    end
+
+    def vGender(vA)
+    echoln "vGender and its alternate methods will be removed in future updates of Voltseon's Handy Tools. Use vCharacter(index) instead."
+    vC(vA)
+    end
+      
     def vSG(vA)
-    vG(vA)
+    echoln "vSG and its alternate methods will be removed in future updates of Voltseon's Handy Tools. Use vSC(index) instead."
+    vC(vA)
     end
     
     def vSetGender(vA)
-    vG(vA)
+    echoln "vSetGender and its alternate methods will be removed in future updates of Voltseon's Handy Tools. Use vSetCharacter(index) instead."
+    vC(vA)
+    end
+
+    def vSetCharacter(vA)
+    vC(vA)
     end
     
     def vToggleGender()

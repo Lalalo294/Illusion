@@ -1,4 +1,0 @@
-Name      = Mystery Gifs (BW mode)
-Version   = 1.0
-Website   = https://github.com/Jack1324567/PE-Custom-Script
-Credits   = KleinStudio, bo4p5687

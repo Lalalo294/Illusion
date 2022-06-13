@@ -1,4 +1,0 @@
-Name = BW Gender Selector
-Version = 2.2.0
-Credits = KleinStudio, DeepBlue PacificWaves, TechSkylander1518
-Website = https://reliccastle.com/resources/491/
