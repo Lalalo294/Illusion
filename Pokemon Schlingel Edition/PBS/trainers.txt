@@ -1,4 +1,4 @@
-# See the documentation on the wiki to learn how to edit this file.
+﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [CAMPER,Liam]
 LoseText = A very good battle, indeed!
@@ -116,3 +116,19 @@ Pokemon = CHARIZARD,63
     Item = SITRUSBERRY
 Pokemon = BLASTOISE,63
     Item = SITRUSBERRY
+#-------------------------------
+[RIVALE_David,David]
+LoseText = ...
+Pokemon = WURMPLE,5
+#-------------------------------
+[RIVALE_David,David,2]
+LoseText = "Zu rild"
+Pokemon = MIENFOO,5
+#-------------------------------
+[RIVALE_David,David,3]
+LoseText = "Zu rild"
+Pokemon = ESPURR,5
+#-------------------------------
+[RIVALE_David,David,4]
+LoseText = "Zu rild"
+Pokemon = VULLABY,5
