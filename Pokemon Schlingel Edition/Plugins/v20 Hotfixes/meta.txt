@@ -1,5 +1,5 @@
 ﻿Name       = v20 Hotfixes
-Version    = 1.0.2
+Version    = 1.0.5
 Essentials = 20
 Conflicts  = v19 Hotfixes
 Conflicts  = v19.1 Updates
@@ -42,5 +42,47 @@ Credits    = Maruno
 # - Fixed some Battle Challenge code not recognising a valid team if a
 #   team size limit is imposed.
 # - Fixed incorrect damage multiplier for Grav Apple in gravity.
+#
+# 1.0.3:
+#
+# - Fixed error when applying Sea of Fire's damage.
+# - Fixed Gorilla Tactics also boosting Special Attack.
+# - Fixed incorrect capitalisation in message when Aurora Veil wears
+#   off.
+# - Fixed memory leak caused by lots of map transfers.
+# - Fixed def pbChooseItemFromList not storing the correct result in a
+#   Game Variable.
+# - Fixed trainer intro BGM persisting after battles against multiple
+#   trainers.
+# - Fixed SystemStackError when loading a connected map with an event
+#   at its edge facing away from that edge.
+#
+# 1.0.4:
+#
+# - Fix for tiles being invisible after battle until they leave the
+#   edge of the screen.
+#
+# 1.0.5:
+#
+# - Fix for tiles being invisible after a map transfer if they were on
+#   screen before it.
+#
+#=====================================================================
+#
+# A "moves.txt" PBS file is also included with this plugin. It is the
+# Gen 8 version of this file, with a few fixes compared to the one
+# that came with Essentials v20:
+#
+# * Burning Jealousy now has the line:		EffectChance = 100
+# * Jaw Lock now has the line:			EffectChance = 100
+# * Beak Blast now has the line:		Priority = -3
+#
+# You should put this file in your PBS folder, or manually make the
+# listed changes to your own copy of "moves.txt".
+#
+# Note that Beak Blast also appears in the Gen 7 version of this file,
+# and will need to be amended manually if you use it. An updated
+# version of it is NOT included with this plugin. There is only the
+# one change to make.
 #
 #=====================================================================

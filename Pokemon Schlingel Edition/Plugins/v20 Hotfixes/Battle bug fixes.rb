@@ -144,3 +144,48 @@ class Battle::AI
     return score
   end
 end
+
+#===============================================================================
+# Fixed error when applying Sea of Fire's damage.
+#===============================================================================
+class Battle
+  def pbEORSeaOfFireDamage(priority = nil)
+    priority = pbPriority(true) if !priority
+    2.times do |side|
+      next if sides[side].effects[PBEffects::SeaOfFire] == 0
+      pbCommonAnimation("SeaOfFire") if side == 0
+      pbCommonAnimation("SeaOfFireOpp") if side == 1
+      priority.each do |battler|
+        next if battler.opposes?(side)
+        next if !battler.takesIndirectDamage? || battler.pbHasType?(:FIRE)
+        @scene.pbDamageAnimation(battler)
+        battler.pbTakeEffectDamage(battler.totalhp / 8, false) { |hp_lost|
+          pbDisplay(_INTL("{1} is hurt by the sea of fire!", battler.pbThis))
+        }
+      end
+    end
+  end
+end
+
+#===============================================================================
+# Fixed Gorilla Tactics also boosting Special Attack.
+#===============================================================================
+Battle::AbilityEffects::DamageCalcFromUser.add(:GORILLATACTICS,
+  proc { |ability, user, target, move, mults, baseDmg, type|
+    mults[:attack_multiplier] *= 1.5 if move.physicalMove?
+  }
+)
+
+#===============================================================================
+# Fixed incorrect capitalisation in message when Aurora Veil wears off.
+#===============================================================================
+class Battle
+  alias __hotfixes__pbEORCountDownSideEffect pbEORCountDownSideEffect
+
+  def pbEORCountDownSideEffect(side, effect, msg)
+    if effect == PBEffects::AuroraVeil
+      msg = _INTL("{1}'s Aurora Veil wore off!", @battlers[side].pbTeam)
+    end
+    __hotfixes__pbEORCountDownSideEffect(side, effect, msg)
+  end
+end
