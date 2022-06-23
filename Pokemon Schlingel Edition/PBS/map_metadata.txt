@@ -140,19 +140,22 @@ Bicycle = true
 MapPosition = 0,16,8
 #-------------------------------
 [030]   # Route 5
-Name = Natural Park
+Name = Hornbach
+Outdoor = true
+ShowArea = true
+Bicycle = true
 MapPosition = 0,16,8
 #-------------------------------
 [031]   # Heggate Town
-Name = Route 3
+Name = Schmiedrütli
 Outdoor = true
 ShowArea = true
 MapPosition = 0,14,6
 BattleBack = field
 MapSize = 2,1101
 #-------------------------------
-[032]   # Steigehtunter
-Name = Steigehtunter
+[032]   # Siedlingen
+Name = Siedlingen
 Outdoor = true
 ShowArea = true
 #-------------------------------
@@ -208,6 +211,10 @@ ShowArea = true
 BicycleAlways = true
 MapPosition = 0,11,7
 MapSize = 1,111
+#-------------------------------
+[042]   # \PN's Home
+Name = \PN's Home
+HealingSpot = 42,6,7
 #-------------------------------
 [044]   # Royal River
 Name = Route 6
@@ -400,3 +407,46 @@ Name = Tiall Region
 Outdoor = true
 MapPosition = 1,13,16
 BattleBack = city
+#-------------------------------
+[077]   # Route 1
+Name = Wiesenflur
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[078]   # Academia City
+Name = Academia City
+Name = 
+ShowArea = true
+#-------------------------------
+[082]   # Brinkstone Cave
+Name = Dunkelpfad
+Outdoor = false
+ShowArea = true
+Bicycle = false
+#-------------------------------
+[086]   # Route 2
+Name = Schwalbenweg
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[133]   # MAP133
+Name = Waldlichtung
+Outdoor = true
+ShowArea = true
+Bicycle = true
+WildBattleBGM = Battle wild.ogg
+WildVictoryBGM = Battle victory wild.ogg
+#-------------------------------
+[134]   # MAP134
+Name = Wanderweg
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[135]
+Name = Waldlichtung
+Outdoor = true
+ShowArea = true
+Bicycle = true
+WildBattleBGM = Battle wild.ogg
