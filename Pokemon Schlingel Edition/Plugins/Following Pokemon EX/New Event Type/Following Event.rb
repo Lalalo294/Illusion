@@ -1,4 +1,23 @@
 #-------------------------------------------------------------------------------
+# Defining a new method for base Essentials followers to show dust animation
+#-------------------------------------------------------------------------------
+class Game_Follower
+  def update_move
+    was_jumping = jumping?
+    super
+    show_dust_animation if was_jumping && !jumping?
+  end
+
+  if !method_defined?(:show_dust_animation)
+    def show_dust_animation
+      spriteset = $scene.spriteset(map_id)
+      spriteset&.addUserAnimation(Settings::DUST_ANIMATION_ID, self.x, self.y, true, 1)
+    end
+  end
+end
+
+
+#-------------------------------------------------------------------------------
 # Defining a new class for Following Pokemon event which has several additions
 # to make it more robust as a Following Pokemon
 #-------------------------------------------------------------------------------
@@ -41,6 +60,13 @@ class Game_FollowingPkmn < Game_Follower
   def straighten
     return if $PokemonGlobal.sliding && (!FollowingPkmn.active? || FollowingPkmn.airborne_follower?)
     __followingpkmn__straighten
+  end
+  #-----------------------------------------------------------------------------
+  # Don't show dust animation if Following Pokemon isn't active or is airborne
+  #-----------------------------------------------------------------------------
+  def show_dust_animation
+    return if !FollowingPkmn.active? || FollowingPkmn.airborne_follower?
+    super
   end
   #-----------------------------------------------------------------------------
   # Allow following pokemon to freely walk on water
@@ -122,6 +148,32 @@ class Game_FollowingPkmn < Game_Follower
           target[2] += (target[1] < $game_player.x ? -1 : 1)
         end
       end
+      # Added
+      if defined?(on_stair?) && on_stair?
+        if leader.on_stair?
+          if leader.stair_start_x != self.stair_start_x
+            # Leader stepped on other side so start/end swapped, but not for follower yet
+            target[2] = self.y
+          elsif leader.stair_start_x < leader.stair_end_x
+            # Left to Right
+            if leader.x < leader.stair_start_x && self.x != self.stair_start_x
+              # Leader stepped off
+              target[2] = self.y
+            end
+          elsif leader.stair_end_x < leader.stair_start_x
+            # Right to Left
+            if leader.x > leader.stair_start_x && self.x != self.stair_start_x
+              # Leader stepped off
+              target[2] = self.y
+            end
+          end
+        elsif self.on_middle_of_stair?
+          # Leader is no longer on stair but follower is, so player moved up or down at the start or end of the stair
+          if leader.y < self.stair_end_y - self.stair_y_height + 1 || leader.y > self.stair_end_y
+            target[2] = self.y
+          end
+        end
+      end
     else
       # Map transfer to an unconnected map
       target = [leader.map.map_id, leader.x, leader.y]
@@ -140,18 +192,6 @@ class Game_FollowingPkmn < Game_Follower
     if instant || !maps_connected
       moveto(target[1], target[2])
     else
-      if leader.respond_to?(:on_stair?) && leader.on_stair?
-        new_x = leader.x + (leader.direction == 4 ? 1 : leader.direction == 6 ? -1 : 0)
-        if leader.on_middle_of_stair?
-          new_y = leader.y + (leader.direction == 8 ? 1 : leader.direction == 2 ? -1 : 0)
-        else
-          if on_middle_of_stair?
-            new_y = stair_start_y - stair_y_position
-          else
-            new_y = leader.y + (leader.direction == 8 ? 1 : leader.direction == 2 ? -1 : 0)
-          end
-        end
-      end
       fancy_moveto(target[1], target[2], leader)
     end
   end
