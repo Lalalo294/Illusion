@@ -62,7 +62,7 @@ MapPosition = 0,14,10
 Name = Cedolan City
 MapPosition = 0,14,10
 #-------------------------------
-[013]   # Gate
+[013]   # Gate Frostfeld
 Name = Cedolan City
 MapPosition = 0,14,10
 #-------------------------------
@@ -139,14 +139,14 @@ Name = Natural Park
 Bicycle = true
 MapPosition = 0,16,8
 #-------------------------------
-[030]   # Route 5
+[030]   # Hornbach
 Name = Hornbach
 Outdoor = true
 ShowArea = true
 Bicycle = true
 MapPosition = 0,16,8
 #-------------------------------
-[031]   # Heggate Town
+[031]   # Schmidrütli
 Name = Schmiedrütli
 Outdoor = true
 ShowArea = true
@@ -408,29 +408,48 @@ Outdoor = true
 MapPosition = 1,13,16
 BattleBack = city
 #-------------------------------
-[077]   # Route 1
+[077]   # Wiesenflur
 Name = Wiesenflur
 Outdoor = true
 ShowArea = true
 #-------------------------------
-[078]   # Academia City
-Name = Academia City
-Name = 
+[078]   # Gallenstedt
+Name = Gallenstedt
 ShowArea = true
 #-------------------------------
-[082]   # Brinkstone Cave
+[082]   # Dunkelpfad
 Name = Dunkelpfad
 Outdoor = false
 ShowArea = true
 Bicycle = false
 #-------------------------------
-[086]   # Route 2
+[085]   # Frostfeld
+Name = Frostfeld
+Outdoor = true
+ShowArea = true
+Bicycle = false
+Weather = Snow,100
+BattleBack = 
+#-------------------------------
+[086]   # Schwalbenweg
 Name = Schwalbenweg
 Outdoor = true
 ShowArea = true
 Bicycle = true
 #-------------------------------
-[133]   # MAP133
+[087]   # Gronhafen
+Name = Gronhafen
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[089]   # Liliko'i
+Name = Liliko'i
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[133]   # Waldlichtung
 Name = Waldlichtung
 Outdoor = true
 ShowArea = true
@@ -438,15 +457,28 @@ Bicycle = true
 WildBattleBGM = Battle wild.ogg
 WildVictoryBGM = Battle victory wild.ogg
 #-------------------------------
-[134]   # MAP134
+[134]   # Wanderweg
 Name = Wanderweg
 Outdoor = true
 ShowArea = true
 Bicycle = true
 #-------------------------------
-[135]
-Name = Waldlichtung
+[135]   # Gate Wanderweg
+Name = Gate Wanderweg
+Name = 
+Outdoor = false
+ShowArea = false
+Bicycle = true
+WildBattleBGM = Battle wild.ogg
+#-------------------------------
+[200]   # Siedlerforst
+Name = Siedlerforst
 Outdoor = true
 ShowArea = true
 Bicycle = true
-WildBattleBGM = Battle wild.ogg
+#-------------------------------
+[203]   # Hagerode
+Name = Hagerode
+Outdoor = true
+ShowArea = true
+Bicycle = true

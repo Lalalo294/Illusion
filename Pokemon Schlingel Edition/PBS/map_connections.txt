@@ -4,64 +4,44 @@
 10,North,0,11,South,0
 # Safari Zone: Marsh (12) - Safari Zone: Desert (11)
 12,South,2,11,North,0
-# Trees (18) - New Harbour Town (87)
+# Trees (18) - Gronhafen (87)
 18,East,26,87,West,0
 # Trees (20) - Trees (18)
 20,West,0,18,East,6
 # Schwalbenweg (86) - Trees (18)
 86,North,30,18,South,0
-# Trees (19) - New Harbour Town (87)
+# Trees (19) - Gronhafen (87)
 19,East,0,87,West,24
 # Trees (19) - Trees (20)
 19,East,0,20,West,44
 # Schwalbenweg (86) - Trees (19)
 86,South,30,19,North,0
-# Trees (20) - New Harbour Town (87)
+# Trees (20) - Gronhafen (87)
 20,South,0,87,North,0
 # Schwalbenweg (86) - Trees (20)
 86,East,0,20,West,24
-# Siedlingen (32) - Waldlichtung (133)
-32,East,0,133,West,21
-# Siedlingen (32) - Wiesenflur (77)
-32,East,11,77,West,0
-# Deserted Path (81) - Siedlingen (32)
-81,South,14,32,North,0
-# Wishing Well (64) - Norpeak Island (89)
-64,East,0,89,West,16
-# Route 13 (75) - Route 12 (74)
-75,West,0,74,East,42
-# Wiesenflur (77) - Waldlichtung (133)
-77,North,0,133,South,0
-# Academia City (78) - Wiesenflur (77)
-78,West,3,77,East,0
-# Schwalbenweg (86) - New Harbour Town (87)
-86,East,0,87,West,4
-# Eterna City (125) - Route 211 (127)
-125,East,1,127,West,0
-# Wishing Well (50) - Hornbach (30)
-50,South,50,30,North,0
-# Heggate Town (31) - Hornbach (30)
-31,East,0,30,West,0
-# Heggate Town (31) - Wishing Well (50)
-31,North,0,50,South,0
-# Route 9 (49) - Wishing Well (50)
-49,South,102,50,North,0
-# Wanderweg (134) - Wishing Well (50)
-134,East,0,50,West,20
-# Wanderweg (134) - Heggate Town (31)
-134,East,19,31,West,0
+# Hornbach (30) - Schmidrütli (31)
+30,West,0,31,East,0
+# Hornbach (30) - Wishing Well (50)
+30,North,0,50,South,50
+# Schmidrütli (31) - Wanderweg (134)
+31,West,0,134,East,18
+# Wishing Well (50) - Schmidrütli (31)
+50,South,0,31,North,0
+# Siedlingen (32) - Siedlerforst (200)
+32,North,0,200,South,13
+# Wiesenflur (77) - Siedlingen (32)
+77,West,0,32,East,19
+# Waldlichtung (133) - Siedlingen (32)
+133,West,13,32,East,0
 # Enursia City (37) - Route 7 (41)
 37,South,35,41,North,0
+# Route 9 (49) - Enursia City (37)
+49,South,0,37,North,38
 # Royal River (44) - Route 7 (41)
 44,North,0,41,South,0
 # water1 (46) - Route 7 (41)
 46,West,0,41,East,55
-# Wanderweg (134) - Route 7 (41)
-134,South,0,41,North,45
-# Route 9 (49) - Enursia City (37)
-49,South,0,37,North,38
-# Wanderweg (134) - Enursia City (37)
-134,West,0,37,East,20
 # Route 8 (45) - Royal River (44)
 45,North,0,44,South,7
 # water2 (47) - Royal River (44)
@@ -72,13 +52,33 @@
 52,North,30,45,South,0
 # water2 (47) - Route 8 (45)
 47,West,0,45,East,0
+# Wishing Well (50) - Wanderweg (134)
+50,West,21,134,East,0
 # Route 10 (55) - Downpour City (52)
 55,East,0,52,West,44
 # Keishan City (59) - Downpour City (52)
 59,East,140,52,West,0
 # Padded Forest (54) - Route 10 (55)
 54,East,24,55,West,0
-# Route 11 (56) - Keishan City (59)
-56,North,0,59,South,38
 # Padded Forest (54) - Route 11 (56)
 54,North,18,56,South,0
+# Route 11 (56) - Keishan City (59)
+56,North,0,59,South,38
+# Wishing Well (64) - Liliko'i (89)
+64,East,0,89,West,16
+# Route 13 (75) - Route 12 (74)
+75,West,0,74,East,42
+# Waldlichtung (133) - Wiesenflur (77)
+133,South,0,77,North,0
+# Gallenstedt (78) - Wiesenflur (77)
+78,West,3,77,East,0
+# Frostfeld (85) - Hagerode (203)
+85,South,0,203,North,9
+# Schwalbenweg (86) - Gronhafen (87)
+86,East,0,87,West,4
+# Eterna City (125) - Route 211 (127)
+125,East,1,127,West,0
+# Wanderweg (134) - Hagerode (203)
+134,West,0,203,East,4
+# Siedlerforst (200) - Hagerode (203)
+200,North,0,203,South,13
