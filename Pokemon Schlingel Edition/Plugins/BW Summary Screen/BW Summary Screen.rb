@@ -707,7 +707,7 @@
       @pokemon.types.each_with_index do |type, i|
         type_number = GameData::Type.get(type).icon_position
         type_rect = Rect.new(0, type_number * 28, 64, 28)
-        type_x = (@pokemon.types.length == 1) ? 402 : 162 + (66 * i)
+        type_x = (@pokemon.types.length == 1) ? 162 : 162 + (66 * i)
         if SUMMARY_B2W2_STYLE
                 overlay.blt(type_x, 132, @typebitmap.bitmap, type_rect)
               else
