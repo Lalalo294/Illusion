@@ -21,7 +21,7 @@ SUMMARY_B2W2_STYLE = true
 
 # If TRUE, it changes the Summary Screen BW to B2W2 style.
 
-INVERTED_SHADOW_STATS = true
+INVERTED_SHADOW_STATS = false
 
 # If TRUE, it inverts the Increasing EV from Nature Shadow Text. Usually, the
 # Increased Stat Text Shadow is Red and the Deacresed Stat Text Shadow is Blue.
