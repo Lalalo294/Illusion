@@ -1,4 +1,6 @@
-﻿# See the documentation on the wiki to learn how to edit this file.
+﻿#Drawing Angel
+
+# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [0]
 Name = Normal
@@ -7,52 +9,52 @@ Weaknesses = FIGHTING
 Immunities = GHOST
 #-------------------------------
 [1]
-Name = Fighting
+Name = Kampf
 InternalName = FIGHTING
 Weaknesses = FLYING,PSYCHIC,FAIRY
 Resistances = ROCK,BUG,DARK
 #-------------------------------
 [2]
-Name = Flying
+Name = Flug
 InternalName = FLYING
 Weaknesses = ROCK,ELECTRIC,ICE
 Resistances = FIGHTING,BUG,GRASS
 Immunities = GROUND
 #-------------------------------
 [3]
-Name = Poison
+Name = Gift
 InternalName = POISON
 Weaknesses = GROUND,PSYCHIC
 Resistances = FIGHTING,POISON,BUG,GRASS,FAIRY
 #-------------------------------
 [4]
-Name = Ground
+Name = Boden
 InternalName = GROUND
 Weaknesses = WATER,GRASS,ICE
 Resistances = POISON,ROCK
 Immunities = ELECTRIC
 #-------------------------------
 [5]
-Name = Rock
+Name = Gestein
 InternalName = ROCK
 Weaknesses = FIGHTING,GROUND,STEEL,WATER,GRASS
 Resistances = NORMAL,FLYING,POISON,FIRE
 #-------------------------------
 [6]
-Name = Bug
+Name = Käfer
 InternalName = BUG
 Weaknesses = FLYING,ROCK,FIRE
 Resistances = FIGHTING,GROUND,GRASS
 #-------------------------------
 [7]
-Name = Ghost
+Name = Geist
 InternalName = GHOST
 Weaknesses = GHOST,DARK
 Resistances = POISON,BUG
 Immunities = NORMAL,FIGHTING
 #-------------------------------
 [8]
-Name = Steel
+Name = Stahl
 InternalName = STEEL
 Weaknesses = FIGHTING,GROUND,FIRE
 Resistances = NORMAL,FLYING,ROCK,BUG,STEEL,GRASS,PSYCHIC,ICE,DRAGON,FAIRY
@@ -64,56 +66,56 @@ InternalName = QMARKS
 IsPseudoType = true
 #-------------------------------
 [10]
-Name = Fire
+Name = Feuer
 InternalName = FIRE
 IsSpecialType = true
 Weaknesses = GROUND,ROCK,WATER
 Resistances = BUG,STEEL,FIRE,GRASS,ICE,FAIRY
 #-------------------------------
 [11]
-Name = Water
+Name = Wasser
 InternalName = WATER
 IsSpecialType = true
 Weaknesses = GRASS,ELECTRIC
 Resistances = STEEL,FIRE,WATER,ICE
 #-------------------------------
 [12]
-Name = Grass
+Name = Pflanze
 InternalName = GRASS
 IsSpecialType = true
 Weaknesses = FLYING,POISON,BUG,FIRE,ICE
 Resistances = GROUND,WATER,GRASS,ELECTRIC
 #-------------------------------
 [13]
-Name = Electric
+Name = Elektro
 InternalName = ELECTRIC
 IsSpecialType = true
 Weaknesses = GROUND
 Resistances = FLYING,STEEL,ELECTRIC
 #-------------------------------
 [14]
-Name = Psychic
+Name = Psycho
 InternalName = PSYCHIC
 IsSpecialType = true
 Weaknesses = BUG,GHOST,DARK
 Resistances = FIGHTING,PSYCHIC
 #-------------------------------
 [15]
-Name = Ice
+Name = Eis
 InternalName = ICE
 IsSpecialType = true
 Weaknesses = FIGHTING,ROCK,STEEL,FIRE
 Resistances = ICE
 #-------------------------------
 [16]
-Name = Dragon
+Name = Drache
 InternalName = DRAGON
 IsSpecialType = true
 Weaknesses = ICE,DRAGON,FAIRY
 Resistances = FIRE,WATER,GRASS,ELECTRIC
 #-------------------------------
 [17]
-Name = Dark
+Name = Unlicht
 InternalName = DARK
 IsSpecialType = true
 Weaknesses = FIGHTING,BUG,FAIRY
@@ -121,7 +123,7 @@ Resistances = GHOST,DARK
 Immunities = PSYCHIC
 #-------------------------------
 [18]
-Name = Fairy
+Name = Fee
 InternalName = FAIRY
 IsSpecialType = true
 Weaknesses = POISON,STEEL
