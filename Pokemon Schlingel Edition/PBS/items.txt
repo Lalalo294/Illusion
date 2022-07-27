@@ -1,6 +1,7 @@
 ﻿#Drawing Angel
 
-# See the documentation on the wiki to learn how to edit this file.
+
+﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [REPEL]
 Name =  Schutz
@@ -2308,7 +2309,7 @@ Description = Zuckerwerk in Form einer Schleife. Gibt man es Hokumil zum Tragen,
 Name = Bisaflornit
 NamePlural = Bisaflornit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Bisaflor getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2316,7 +2317,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Bisaflor get
 Name = Gluraknit X
 NamePlural = Gluraknit X
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Ermöglicht es einem Glurak, im Kampf die Mega-Entwicklung durchzuführen.
 #-------------------------------
@@ -2324,7 +2325,7 @@ Description = Einer der mysteriösen Mega-Steine. Ermöglicht es einem Glurak, i
 Name = Gluraknit Y
 NamePlural = Gluraknit Y
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Ermöglicht es einem Glurak, im Kampf die Mega-Entwicklung durchzuführen.
 #-------------------------------
@@ -2332,7 +2333,7 @@ Description = Einer der mysteriösen Mega-Steine. Ermöglicht es einem Glurak, i
 Name = Turtoknit
 NamePlural = Turtoknit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Turtok getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2340,7 +2341,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Turtok getra
 Name = Bibornit
 NamePlural = Bibornit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Bibor getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2348,7 +2349,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Bibor getrag
 Name = Taubossnit
 NamePlural = Taubossnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Tauboss getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2356,7 +2357,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Tauboss getr
 Name = Simsalanit
 NamePlural = Simsalanit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Simsala getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2364,7 +2365,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Simsala getr
 Name = Lahmusnit
 NamePlural = Lahmusnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Lahmus getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2372,7 +2373,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Lahmus getra
 Name = Gengarnit
 NamePlural = Gengarnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Gengar getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2380,7 +2381,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Gengar getra
 Name = Kangamanit
 NamePlural = Kangamanit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Kangama getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2388,7 +2389,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Kangama getr
 Name = Pinsirnit
 NamePlural = Pinsirnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Pinsir getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2396,7 +2397,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Pinsir getra
 Name = Garadosnit
 NamePlural = Garadosnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Garados getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2404,7 +2405,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Garados getr
 Name = Aerodactylonit
 NamePlural = Aerodactylonit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Aerodactyl getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2412,7 +2413,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Aerodactyl g
 Name = Mewtunit X
 NamePlural = Mewtunit X
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Mewtu getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2420,7 +2421,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Mewtu getrag
 Name = Mewtunit Y
 NamePlural = Mewtunit Y
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Mewtu getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2428,7 +2429,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Mewtu getrag
 Name = Ampharosnit
 NamePlural = Ampharosnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Ampharos getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2436,7 +2437,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Ampharos get
 Name = Stahlosnit
 NamePlural = Stahlosnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Stahlos getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2444,7 +2445,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Stahlos getr
 Name = Scheroxnit
 NamePlural = Scheroxnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Scherox getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2452,7 +2453,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Scherox getr
 Name = Skarabornit
 NamePlural = Skarabornit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Skaraborn getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2460,7 +2461,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Skaraborn ge
 Name = Hundemonit
 NamePlural = Hundemonit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Hundemon getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2468,7 +2469,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Hundemon get
 Name = Despotarnit
 NamePlural = Despotarnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Despotar getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2476,7 +2477,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Despotar get
 Name = Gewaldronit
 NamePlural = Gewaldronit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Gewaldro getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2484,7 +2485,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Gewaldro get
 Name = Logocknit
 NamePlural = Logocknit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Lohgock getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2492,7 +2493,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Lohgock getr
 Name = Sumpexnit
 NamePlural = Sumpexnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Sumpex getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2500,7 +2501,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Sumpex getra
 Name = Guardevoirnit
 NamePlural = Guardevoirnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Guardevoir getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2508,7 +2509,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Guardevoir g
 Name = Zobirisnit
 NamePlural = Zobirisnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Zobiris getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2516,7 +2517,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Zobiris getr
 Name = Flunkifernit
 NamePlural = Flunkifernit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Flunkifer getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2524,7 +2525,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Flunkifer ge
 Name = Stollossnit
 NamePlural = Stollossnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Stolloss getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2532,7 +2533,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Stolloss get
 Name = Meditalisnit
 NamePlural = Meditalisnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Meditalis getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2540,7 +2541,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Meditalis ge
 Name = Voltensonit
 NamePlural = Voltensonit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Voltenso getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2548,7 +2549,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Voltenso get
 Name = Tohaidonit
 NamePlural = Tohaidonit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Tohaido getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2556,7 +2557,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Tohaido getr
 Name = Cameruptnit
 NamePlural = Cameruptnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Camerupt getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2564,7 +2565,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Camerupt get
 Name = Altarianit
 NamePlural = Altarianit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Altaria getragen, kann es im Kampf eine Mega-Entwicklung durchführen
 #-------------------------------
@@ -2572,7 +2573,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Altaria getr
 Name = Banetteonit
 NamePlural = Banetteonit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Banette getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2580,7 +2581,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Banette getr
 Name = Absolnit
 NamePlural = Absolnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Absol getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2588,7 +2589,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Absol getrag
 Name = Firnontornit
 NamePlural = Firnontornit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Firnontor getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2596,7 +2597,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Firnontor ge
 Name = Brutalandanit
 NamePlural = Brutalandanit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Brutalanda getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2604,7 +2605,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Brutalanda g
 Name = Metagrossnit
 NamePlural = Metagrossnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Metagross getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2612,7 +2613,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Metagross ge
 Name = Latiasnit
 NamePlural = Latiasnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Latias getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2620,7 +2621,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Latias getra
 Name = Latiosnit
 NamePlural = Latiosnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Latios getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2628,7 +2629,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Latios getra
 Name = Schlapornit
 NamePlural = Schlapornit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Schlapor getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2636,7 +2637,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Schlapor get
 Name = Knackracknit
 NamePlural = Knackracknit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Knakrack getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2644,7 +2645,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Knakrack get
 Name = Lucarionit
 NamePlural = Lucarionit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description =Einer der mysteriösen Mega-Steine. Wird er von einem Lucario getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2652,7 +2653,7 @@ Description =Einer der mysteriösen Mega-Steine. Wird er von einem Lucario getra
 Name =Rexblisarnit
 NamePlural = Rexblisarnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Rexblisar getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2660,7 +2661,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Rexblisar ge
 Name = Galagladinit
 NamePlural = Galagladinit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Galagladi getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2668,7 +2669,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Galagladi ge
 Name = Ohrdochnit
 NamePlural = Ohrdochnit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Ohrdoch getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
@@ -2676,7 +2677,7 @@ Description = Einer der mysteriösen Mega-Steine. Wird er von einem Ohrdoch getr
 Name = Diancienit
 NamePlural = Diancienit
 Pocket = 1
-Price = 30000
+Price = 30.000
 Flags = MegaStone,Fling_80
 Description = Einer der mysteriösen Mega-Steine. Wird er von einem Diancie getragen, kann es im Kampf eine Mega-Entwicklung durchführen.
 #-------------------------------
