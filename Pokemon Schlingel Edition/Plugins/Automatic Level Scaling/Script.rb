@@ -1,6 +1,6 @@
 #===============================================================================
 # Automatic Level Scaling
-# By Benitex
+# By Dumbie
 #===============================================================================
 
 EventHandlers.add(:on_wild_pokemon_created, :automatic_level_scaling,
