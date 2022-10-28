@@ -132,3 +132,7 @@ Pokemon = ESPURR,5
 [RIVALE_David,David,4]
 LoseText = "Zu rild"
 Pokemon = VULLABY,5
+#-------------------------------
+[KID_M,Unfall]
+LoseText = ...
+Pokemon = BULBASAUR,5
