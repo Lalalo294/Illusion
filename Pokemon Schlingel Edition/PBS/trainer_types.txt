@@ -406,3 +406,8 @@ Gender = Male
 BaseMoney = 100
 BattleBGM = Battle Gym Leader
 VictoryBGM = Battle victory leader
+#-------------------------------
+[KID_M]
+Name = Schulkind
+Gender = Male
+BaseMoney = 16
