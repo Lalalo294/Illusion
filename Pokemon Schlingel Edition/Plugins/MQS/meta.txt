@@ -1,4 +1,5 @@
 Name         = Modern Quest System + UI
+Essentials   = 20.1
 Version      = 1.0.1
 Link         = https://reliccastle.com/resources/709/
 Credits      = ThatWelshOne_,mej71,derFischae,Marin

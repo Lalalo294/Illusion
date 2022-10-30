@@ -1,4 +1,5 @@
 Name         = Boon's Phenomena
+Essentials   = 20.1
 Version      = 3.1
 Website      = https://reliccastle.com/resources/371/
 Credits      = Boonzeet
