@@ -278,7 +278,6 @@ Pokemon = BAYLEEF,16
     Item = BIGROOT
     IV = 20,20,20,20,20,20
     Ball = GREATBALL
-
 #-------------------------------
 [BLACKBELT,BartdDragon,1]
 LoseText = ...
@@ -294,3 +293,11 @@ Pokemon = CLOBBOPUS,13
     Item = LEFTOVERS
     IV = 20,20,20,20,20,20
     Ball = REPEATBALL
+#-------------------------------
+[RIVALE_DAVID,David,1]
+LoseText = ...
+Pokemon = WURMPLE,5
+#-------------------------------
+[RIVALE_David,David,1]
+LoseText = ...
+Pokemon = WURMPLE,5
