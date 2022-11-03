@@ -174,7 +174,7 @@ Gender = Male
 BaseMoney = 16
 #-------------------------------
 [PICNICKER]
-Name = Picnicker
+Name = Picknicker
 Gender = Female
 BaseMoney = 16
 #-------------------------------
@@ -404,15 +404,16 @@ VictoryBGM = Battle victory leader
 Name = Rivale
 Gender = Male
 BaseMoney = 100
-BattleBGM = Battle Gym Leader
-VictoryBGM = Battle victory leader
+BattleBGM = Battle David
 #-------------------------------
 [KID_M]
 Name = Schulkind
 Gender = Male
 BaseMoney = 16
 #-------------------------------
-[RIVALE_DAVID]
-Name = Rivale
+[ARENALEITER_Krabu]
+Name = Arenalieter
 Gender = Male
-BaseMoney = 16
+BaseMoney = 100
+BattleBGM = Krabu_Theme
+VictoryBGM = Battle victory leader
