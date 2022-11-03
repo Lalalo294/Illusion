@@ -167,7 +167,7 @@ class DiegoWTsStarterSelection
       @sprites["textwnd"].opacity += 255/20
       pbWait(1)
     end
-    @sprites["textbox"].text = _INTL("<ac>Wähle Pokémon.</ac>")
+    @sprites["textbox"].text = _INTL("<ac>Wähle ein Pokémon.</ac>")
     pbStartChoosing
   end
   
