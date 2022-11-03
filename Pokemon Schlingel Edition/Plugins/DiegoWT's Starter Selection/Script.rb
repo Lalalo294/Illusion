@@ -167,7 +167,7 @@ class DiegoWTsStarterSelection
       @sprites["textwnd"].opacity += 255/20
       pbWait(1)
     end
-    @sprites["textbox"].text = _INTL("<ac>Choose a Pokémon.</ac>")
+    @sprites["textbox"].text = _INTL("<ac>Wähle Pokémon.</ac>")
     pbStartChoosing
   end
   
@@ -338,58 +338,58 @@ class DiegoWTsStarterSelection
       @type = "Normal"
       typeColor = Tone.new(95.25,88.5,63.0)
     when :FIGHTING
-      @type = "Fighting"
+      @type = "Kampf"
       typeColor = Tone.new(126.75,37.5,31.5)
     when :FLYING
-      @type = "Flying"
+      @type = "Flug"
       typeColor = Tone.new(109.0,90.0,121.0)
     when :POISON
-      @type = "Poison"
+      @type = "Gift"
       typeColor = Tone.new(87.25,31.0,82.75)
     when :GROUND
-      @type = "Ground"
+      @type = "Boden"
       typeColor = Tone.new(108.0,91.0,43.0)
     when :ROCK
-      @type = "Rock"
+      @type = "Gestein"
       typeColor = Tone.new(83.0,74.0,28.0)
     when :BUG
-      @type = "Bug"
+      @type = "Käfer"
       typeColor = Tone.new(90.0,108.0,2.0)
     when :GHOST
-      @type = "Ghost"
+      @type = "Geist"
       typeColor = Tone.new(58.55,43.0,95.25)
     when :STEEL
-      @type = "Steel"
+      @type = "Stahl"
       typeColor = Tone.new(79.5,79.5,79.5)
     when :QMARKS
       @type = "???"
       typeColor = Tone.new(63.0,95.25,79.5)
     when :FIRE
-      @type = "Fire"
+      @type = "Feuer"
       typeColor = Tone.new(169.0,93.0,42.0)
     when :WATER
-      @type = "Water"
+      @type = "Wasser"
       typeColor = Tone.new(42.0,96.0,169.0)
     when :GRASS
-      @type = "Grass"
+      @type = "Pflanze"
       typeColor = Tone.new(65.25,118.5,39.0)
     when :ELECTRIC
-      @type = "Electric"
+      @type = "Elektro"
       typeColor = Tone.new(135.0,126.0,23.25)
     when :PSYCHIC
-      @type = "Psychic"
+      @type = "Psycho"
       typeColor = Tone.new(128.25,51.75,96.0)
     when :ICE
-      @type = "Ice"
+      @type = "Eis"
       typeColor = Tone.new(55.5,102.75,102.75)
     when :DRAGON
-      @type = "Dragon"
+      @type = "Drache"
       typeColor = Tone.new(54.75,43.5,114.75)
     when :DARK
-      @type = "Dark"
+      @type = "Unlicht"
       typeColor = Tone.new(-23.0,-40.0,-56.0)
     when :FAIRY
-      @type = "Fairy"
+      @type = "Fee"
       typeColor = Tone.new(136.75,41.5,73.0)
     end
     return typeColor              if type = @pokemon.types[0]
@@ -415,11 +415,11 @@ class DiegoWTsStarterSelection
     @pkmnname = @pokemon.name
     @sprites["textbox"].y = @sprites["textbox"].y - 16
     if @pokemon.types[1] != @pokemon.types[0] && StarterSelSettings::TYPE2COLOR && @pokemon.types[1]
-      @sprites["textbox"].text = _INTL("<ac>Will you choose #{@pkmnname}, <br>the dual-type #{type1}/#{type2} Pokémon?</ac>")
+      @sprites["textbox"].text = _INTL("<ac>Möchtest du #{@pkmnname}, <br>das #{type1}/#{type2} Pokémon?</ac>")
     elsif StarterSelSettings::TYPE2COLOR
-      @sprites["textbox"].text = _INTL("<ac>Will you choose #{@pkmnname}, <br>the #{type1}-type Pokémon?</ac>")
+      @sprites["textbox"].text = _INTL("<ac>Möchtest du #{@pkmnname}, <br>das #{type1}-type Pokémon?</ac>")
     else
-      @sprites["textbox"].text = _INTL("<ac>Will you choose #{@pkmnname}, <br>the #{type1}-type Pokémon?</ac>")
+      @sprites["textbox"].text = _INTL("<ac>Möchtest du #{@pkmnname}, <br>das #{type1}-type Pokémon?</ac>")
     end
       
     @sprites["ballbase"].x = @x[@select]
@@ -480,7 +480,7 @@ class DiegoWTsStarterSelection
       pbAddPokemon(@data["pkmn_#{@select}"],StarterSelSettings::STARTERL)
     else
       @sprites["textbox"].y = @oldMsgY
-      @sprites["textbox"].text = _INTL("<ac>Choose a Pokémon.</ac>")
+      @sprites["textbox"].text = _INTL("<ac>Wähle ein Pokémon.</ac>")
       10.times do
         pbUpdateSpriteHash(@sprites)
         @sprites["pkmn_#{@select}"].opacity -= 255/10

@@ -411,3 +411,8 @@ VictoryBGM = Battle victory leader
 Name = Schulkind
 Gender = Male
 BaseMoney = 16
+#-------------------------------
+[RIVALE_DAVID]
+Name = Rivale
+Gender = Male
+BaseMoney = 16
