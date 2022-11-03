@@ -297,3 +297,7 @@ Pokemon = CLOBBOPUS,13
 [RIVALE_David,David,1]
 LoseText = ...
 Pokemon = WURMPLE,5
+#-------------------------------
+[CAMPER,Wootze,1]
+LoseText = ...
+Pokemon = BULBASAUR,10
