@@ -130,21 +130,20 @@ class PokemonPartyHud < Component
         @sprites["overlay"].bitmap.blt(spacing + (Graphics.width/8) + 22, Graphics.height/2 - 94, @expbar.bitmap, exprect)
       end
       # Status
-      status = 0
-      if pokemon.fainted?
-        status = GameData::Status::DATA.keys.length / 2
-      elsif pokemon.status != :NONE
-        status = GameData::Status.get(pokemon.status).id_number
-      elsif pokemon.pokerusStage == 1
-        status = GameData::Status::DATA.keys.length / 2 + 1
-      end
-      status -= 1
-      if status >= 0
+        status = -1
+        if pokemon.fainted?
+        status = GameData::Status.count - 1
+        elsif pokemon.status != :NONE
+        elsif pokemon.pokerusStage == 1
+        status = GameData::Status.count
+        end
+        status -= 0
+        if status >= 0
         statusrect = Rect.new(0,8*status,8,8)
         @sprites["overlay"].bitmap.blt(spacing + (Graphics.width/8) + 48, Graphics.height/2 - 106, @status.bitmap, statusrect)
-      end
-    end
-  end
+        end
+        end
+        end
 
   def dispose
     super
