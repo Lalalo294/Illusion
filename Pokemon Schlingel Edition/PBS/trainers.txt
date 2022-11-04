@@ -297,3 +297,95 @@ Pokemon = CLOBBOPUS,13
 [RIVALE_David,David,1]
 LoseText = ...
 Pokemon = WURMPLE,5
+#-------------------------------
+[ARENALEITER_Krabu,Krabu,1]
+Items = SUPERPOTION
+LoseText = ...
+Pokemon = TIMBURR,12
+    Moves = MACHPUNCH,FOCUSENERGY,ROCKTHROW,LOWKICK
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = FASTBALL
+Pokemon = CRABRAWLER,14
+    Moves = AQUAJET,ROCKSMASH,BUBBLE,PURSUIT
+    AbilityIndex = 2
+    Item = MUSCLEBAND
+    IV = 20,20,20,20,20,20
+    Ball = FASTBALL
+Pokemon = SQUIRTLE,15
+    Form = 1
+    Moves = FEINTATTACK,MIRRORCOAT,CLAMP,DOUBLEKICK
+    Item = BLACKGLASSES
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = FASTBALL
+#-------------------------------
+[AROMALADY,Jessifun,1]
+LoseText = ...
+Pokemon = ROSELIA,18
+    Moves = MEGADRAIN,SLEEPPOWDER,LEECHSEED,POISONSTING
+    AbilityIndex = 1
+    Item = POISONBARB
+    IV = 20,20,20,20,20,20
+    Ball = HEALBALL
+Pokemon = SKIPLOOM,18
+    Moves = AERIALACE,SYNTHESIS,MEGADRAIN,FAIRYWIND
+    AbilityIndex = 1
+    Item = FOCUSSASH
+    IV = 20,20,20,20,20,20
+    Ball = HEALBALL
+#-------------------------------
+[CAMPER,Triklin,1]
+LoseText = ...
+Pokemon = WHIMSICOTT,19
+    Moves = MEGADRAIN,AURASPHERE,CONFUSION,FAIRYWIND
+    AbilityIndex = 1
+    Item = WISEGLASSES
+    IV = 20,20,20,20,20,20
+    Ball = LUXURYBALL
+Pokemon = CORSOLA,20
+    Moves = ANCIENTPOWER,BUBBLEBEAM,AQUARING,MUDSLAP
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = LUXURYBALL
+#-------------------------------
+[CAMPER,Necitero,1]
+LoseText = ...
+Pokemon = IVYSAUR,20
+    Moves = MAGICALLEAF,LEECHSEED,ANCIENTPOWER,SLUDGE
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = HEALBALL
+Pokemon = LILEEP,20
+    Moves = ANCIENTPOWER,BRINE,MEGADRAIN,CONFUSERAY
+    AbilityIndex = 2
+    Item = EVIOLITE
+    IV = 20,20,20,20,20,20
+    Ball = HEALBALL
+#-------------------------------
+[ARENALEITER_Wootze,Wootze,1]
+Items = SUPERPOTION
+LoseText = ...
+Pokemon = SUDOWOODO,19
+    Moves = STEALTHROCK,ROCKTOMB,GRAVAPPLE,SUNNYDAY
+    AbilityIndex = 2
+    Item = HEATROCK
+    IV = 20,20,20,20,20,20
+    Ball = HEALBALL
+Pokemon = CHERRIM,21
+    Moves = WEATHERBALL,DRAININGKISS,LEAFAGE,MORNINGSUN
+    AbilityIndex = 0
+    Item = MIRACLESEED
+    IV = 20,20,20,20,20,20
+    Ball = HEALBALL
+Pokemon = SOLROCK,22
+    Moves = ROCKTOMB,HYPNOSIS,ZENHEADBUTT,MORNINGSUN
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = HEALBALL
+Pokemon = LEAVANNY,23
+    Moves = LEAFBLADE,GRASSWHISTLE,FELLSTINGER,AERIALACE
+    AbilityIndex = 1
+    Item = COBABERRY
+    IV = 20,20,20,20,20,20
+    Ball = HEALBALL

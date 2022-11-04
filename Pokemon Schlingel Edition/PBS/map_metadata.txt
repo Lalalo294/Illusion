@@ -66,11 +66,11 @@ MapPosition = 0,14,10
 Name = Cedolan City
 MapPosition = 0,14,10
 #-------------------------------
-[014]   # Newfolk City
+[014]   # Haus
 Name = Cedolan City
 MapPosition = 0,13,10
 #-------------------------------
-[015]   # Rightful Base #4
+[015]   # Berheide
 Name = Cedolan City
 MapPosition = 0,13,10
 #-------------------------------
@@ -78,7 +78,7 @@ MapPosition = 0,13,10
 Name = Cedolan City
 MapPosition = 0,13,10
 #-------------------------------
-[017]   # Newfolk City Gym
+[017]
 Name = Cedolan City
 MapPosition = 0,13,10
 #-------------------------------
@@ -139,14 +139,14 @@ Name = Natural Park
 Bicycle = true
 MapPosition = 0,16,8
 #-------------------------------
-[030]   # Route 5
+[030]   # Hornbach
 Name = Hornbach
 Outdoor = true
 ShowArea = true
 Bicycle = true
 MapPosition = 0,16,8
 #-------------------------------
-[031]   # Heggate Town
+[031]   # Schmidrütli
 Name = Schmiedrütli
 Outdoor = true
 ShowArea = true
@@ -173,7 +173,7 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,13,6
 #-------------------------------
-[036]
+[036]   # Städte
 Name = Ingido Plateau
 HealingSpot = 35,17,7
 MapPosition = 0,13,6
@@ -283,7 +283,7 @@ Name = Battle Frontier
 HealingSpot = 52,17,14
 MapPosition = 0,17,10
 #-------------------------------
-[054]   # Padded Forest
+[054]
 Name = Battle Frontier
 MapPosition = 0,17,10
 #-------------------------------
@@ -316,7 +316,7 @@ Flags = DisableBoxLink
 Name = Battle Frontier
 MapPosition = 0,17,10
 #-------------------------------
-[061]   # Rightful Base #2
+[061]   # Pizzeria
 Name = Battle Frontier
 MapPosition = 0,17,10
 BattleBack = indoor1
@@ -342,18 +342,18 @@ Name = Battle Frontier
 MapPosition = 0,17,10
 Flags = DisableBoxLink
 #-------------------------------
-[066]   # Bell Tower
+[066]
 Name = Safari Zone
 Outdoor = true
 ShowArea = true
 MapPosition = 0,12,12
 BattleBack = field
 #-------------------------------
-[067]   # Bellchime Trail
+[067]
 Name = Safari Zone
 MapPosition = 0,12,12
 #-------------------------------
-[068]   # Bell Tower
+[068]
 Name = Safari Zone
 Outdoor = true
 ShowArea = true
@@ -362,7 +362,7 @@ SafariMap = true
 BattleBack = forest
 Environment = Forest
 #-------------------------------
-[069]   # Whirl Islands
+[069]
 Name = Route 8
 Outdoor = true
 ShowArea = true
@@ -370,7 +370,7 @@ MapPosition = 0,13,13
 DiveMap = 70
 BattleBack = field
 #-------------------------------
-[070]   # Whirl Islands (Outside)
+[070]
 Name = Route 8
 MapPosition = 0,13,13
 BattleBack = underwater
@@ -380,7 +380,7 @@ Environment = Underwater
 Name = Route 8
 MapPosition = 0,13,13
 #-------------------------------
-[072]   # Sky Pillar
+[072]
 Name = Berth Island
 Outdoor = true
 ShowArea = true
@@ -389,7 +389,7 @@ MapPosition = 0,18,17
 BattleBack = field
 Flags = DistortionWorld
 #-------------------------------
-[073]   # Route 17 (Unova)
+[073]   # Map for free
 Name = Faraday Island
 Outdoor = true
 ShowArea = true
@@ -408,23 +408,23 @@ Outdoor = true
 MapPosition = 1,13,16
 BattleBack = city
 #-------------------------------
-[077]   # Route 1
+[077]   # Wiesenflur
 Name = Wiesenflur
 Outdoor = true
 ShowArea = true
 #-------------------------------
-[078]   # Academia City
+[078]   # Gallenstedt
 Name = Gallenstedt
 Outdoor = true
 ShowArea = true
 #-------------------------------
-[082]   # Brinkstone Cave
+[082]   # Dunkelpfad
 Name = Dunkelpfad
 Outdoor = false
 ShowArea = true
 Bicycle = false
 #-------------------------------
-[085]   # Route 3
+[085]   # Frostfeld
 Name = Frostfeld
 Outdoor = true
 ShowArea = true
@@ -432,25 +432,30 @@ Bicycle = false
 Weather = Snow,100
 BattleBack = 
 #-------------------------------
-[086]   # Route 2
+[086]   # Schwalbenweg
 Name = Schwalbenweg
 Outdoor = true
 ShowArea = true
 Bicycle = true
 #-------------------------------
-[087]   # New Harbour Town
+[087]   # Gronhafen
 Name = Gronhafen
 Outdoor = true
 ShowArea = true
 Bicycle = true
 #-------------------------------
-[089]   # Norpeak Island
+[089]   # Liliko'i
 Name = Liliko'i
 Outdoor = true
 ShowArea = true
 Bicycle = true
 #-------------------------------
-[133]   # MAP133
+[095]   # Wanderweg
+Name = Wanderweg
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[133]   # Normallichtung
 Name = Waldlichtung
 Outdoor = true
 ShowArea = true
@@ -458,27 +463,27 @@ Bicycle = true
 WildBattleBGM = Battle wild.ogg
 WildVictoryBGM = Battle victory wild.ogg
 #-------------------------------
-[134]   # Route 6 Neu
+[134]
 Name = Wanderweg
 Outdoor = true
 ShowArea = true
 Bicycle = true
 #-------------------------------
-[135]   # MAP135
-Name = MAP135
+[135]   # Gate
+Name = Gate
 Name = 
 Outdoor = false
 ShowArea = false
 Bicycle = true
 WildBattleBGM = Battle wild.ogg
 #-------------------------------
-[200]   # MAP200
+[200]   # Siedlerforst
 Name = Siedlerforst
 Outdoor = true
 ShowArea = true
 Bicycle = true
 #-------------------------------
-[203]   # MAP203
+[203]   # Hagerode
 Name = Hagerode
 Outdoor = true
 ShowArea = true

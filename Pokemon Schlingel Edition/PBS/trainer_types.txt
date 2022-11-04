@@ -404,7 +404,7 @@ VictoryBGM = Battle victory leader
 Name = Rivale
 Gender = Male
 BaseMoney = 100
-BattleBGM = Battle David
+BattleBGM = Daevid_Theme
 #-------------------------------
 [KID_M]
 Name = Schulkind
@@ -412,8 +412,16 @@ Gender = Male
 BaseMoney = 16
 #-------------------------------
 [ARENALEITER_Krabu]
-Name = Arenalieter
+Name = Arenaleiter
 Gender = Male
 BaseMoney = 100
 BattleBGM = Krabu_Theme
 VictoryBGM = Battle victory leader
+#-------------------------------
+[ARENALEITER_Wootze]
+Name = Arenaleiter
+Gender = Male
+BaseMoney = 100
+BattleBGM = Wootze_Theme
+VictoryBGM = Battle victory leader
+
