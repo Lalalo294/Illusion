@@ -424,14 +424,4 @@ Gender = Male
 BaseMoney = 100
 BattleBGM = Wootze_Theme
 VictoryBGM = Battle victory leader
-#-------------------------------
-[PROTAGONIST_M]
-Name = Pokémon Trainer
-Gender = Male
-BaseMoney = 60
-#-------------------------------
-[PROTAGONIST_F]
-Name = Pokémon Trainer
-Gender = Female
-BaseMoney = 60
 
