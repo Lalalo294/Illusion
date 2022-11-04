@@ -40,10 +40,10 @@ OldRod
     20,BARBOACH,10,17
     20,GOLDEEN,5
     20,REMORAID,5
-    8,BASCULIN,5
-    7,BASCULIN_1,5
     15,CORPHISH,5
     10,QWILFISH,6,11
+    8,BASCULIN,5
+    7,BASCULIN_1,5
 #-------------------------------
 [032] # Siedlingen
 Land,21
@@ -153,21 +153,7 @@ Water,2
     15,WISHIWASHI,5
     5,POPPLIO,5
 #-------------------------------
-[133] # Waldlichtung
-Land,21
-    12,BIDOOF,2,5
-    12,BUNNELBY,2,5
-    12,PATRAT,2,5
-    12,RATTATA,2,5
-    12,SENTRET,2,5
-    12,SKWOVET,2,5
-    12,YUNGOOS,2,5
-    12,ZIGZAGOON,2,5
-    6,LILLIPUP,2,5
-    6,WOOLOO,2,5
-    4,EEVEE,2,5
-#-------------------------------
-[134] # Wanderweg
+[095] # Wanderweg
 Land,21
     10,BUNNELBY,18,22
     10,EKANS,18,22
@@ -180,6 +166,20 @@ Land,21
     8,RUFFLET,18,22
     8,STANTLER,18,22
     5,ROCKRUFF,18,22
+#-------------------------------
+[133] # Normallichtung
+Land,21
+    12,BIDOOF,2,5
+    12,BUNNELBY,2,5
+    12,PATRAT,2,5
+    12,RATTATA,2,5
+    12,SENTRET,2,5
+    12,SKWOVET,2,5
+    12,YUNGOOS,2,5
+    12,ZIGZAGOON,2,5
+    6,LILLIPUP,2,5
+    6,WOOLOO,2,5
+    4,EEVEE,2,5
 #-------------------------------
 [200] # Siedlerforst
 Land,21
@@ -213,10 +213,10 @@ Land,21
     16,SHELLDER,12,15
     16,TRUBBISH,12,15
     10,GRIMER_1,12,15
+    8,MORPEKO,12,15
+    8,WISHIWASHI,12,15
     4,BASCULIN,12,15
     4,BASCULIN_1,12,15
     4,INDEEDEE,12,15
     4,INDEEDEE_1,12,15
-    8,MORPEKO,12,15
-    8,WISHIWASHI,12,15
     4,LITTEN,12,15
