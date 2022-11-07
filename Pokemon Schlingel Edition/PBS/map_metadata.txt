@@ -412,6 +412,8 @@ BattleBack = city
 Name = Wiesenflur
 Outdoor = true
 ShowArea = true
+BattleBack = newroute_day
+TrainerBattleBGM = Trainer_Battle_Theme_1.ogg
 #-------------------------------
 [078]   # Gallenstedt
 Name = Gallenstedt
