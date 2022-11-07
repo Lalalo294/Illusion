@@ -284,7 +284,7 @@
         ret = -1
         @sprites["messagebox"].text    = text
         @sprites["messagebox"].visible = true
-        using(cmdwindow = Window_CommandPokemon.new([_INTL("Yes"), _INTL("No")])) {
+        using(cmdwindow = Window_CommandPokemon.new([_INTL("Ja"), _INTL("Nein")])) {
           cmdwindow.z       = @viewport.z + 1
           cmdwindow.visible = false
           pbBottomRight(cmdwindow)
@@ -506,9 +506,9 @@
       # Write various bits of text
       pagename = [_INTL("POKéMON INFO"),
                   _INTL("TRAINER MEMO"),
-                  _INTL("SKILLS"),
-                  _INTL("MOVES"),
-                  _INTL("RIBBONS")][page - 1]
+                  _INTL("STATS"),
+                  _INTL("ATTACKEN"),
+                  _INTL("ABZEICHEN")][page - 1]
 
       #============================================================================
       # Changed various positions of the text
@@ -532,7 +532,7 @@
       if @pokemon.hasItem?
         textpos.push([@pokemon.item.name, 290, 356, 0, base, shadow])
       else
-        textpos.push([_INTL("None"), 290, 356, 0, base, shadow])
+        textpos.push([_INTL("Kein Item"), 290, 356, 0, base, shadow])
       end
       # Write the gender symbol
       if @pokemon.male?
@@ -587,17 +587,17 @@
       # Write various bits of text. Changed various positions of the text
       if SUMMARY_B2W2_STYLE
         textpos = [
-          [_INTL("Dex No."), 34, 72, 0, base, shadow],
-          [_INTL("Species"), 34, 104, 0, base, shadow],
+          [_INTL("Dex Nummer."), 34, 72, 0, base, shadow],
+          [_INTL("Name"), 34, 104, 0, base, shadow],
           [@pokemon.speciesName, 162, 106, 0, Color.new(90, 82, 82), Color.new(165, 165, 173)],
-          [_INTL("Type"), 34, 136, 0, base, shadow],
+          [_INTL("Typ"), 34, 136, 0, base, shadow],
           [_INTL("OT"), 34, 168, 0, base, shadow],
           [_INTL("ID No."), 34, 200, 0, base, shadow],
         ]
       else
         textpos = [
           [_INTL("Dex No."), 34, 74, 0, base, shadow],
-          [_INTL("Species"), 34, 106, 0, base, shadow],
+          [_INTL("Name"), 34, 106, 0, base, shadow],
           [@pokemon.speciesName, 164, 106, 0, Color.new(90, 82, 82), Color.new(165, 165, 173)],
           [_INTL("Type"), 34, 139, 0, base, shadow],
           [_INTL("OT"), 34, 170, 0, base, shadow],
@@ -640,11 +640,11 @@
       # Write Original Trainer's name and ID number
       if @pokemon.owner.name.empty?
         if SUMMARY_B2W2_STYLE
-          textpos.push([_INTL("RENTAL"), 164, 156, 0, Color.new(90, 82, 82), Color.new(165, 165, 173)])
-          textpos.push(["?????", 164, 186, 0, Color.new(90, 82, 82), Color.new(165, 165, 173)])
+          textpos.push([_INTL("?????"), 164, 168, 0, Color.new(90, 82, 82), Color.new(165, 165, 173)])
+          textpos.push(["?????", 164, 200, 0, Color.new(90, 82, 82), Color.new(165, 165, 173)])
         else
           textpos.push([_INTL("RENTAL"), 164, 158, 0, Color.new(90, 82, 82), Color.new(165, 165, 173)])
-          textpos.push(["?????", 164, 188, 0, Color.new(90, 82, 82), Color.new(165, 165, 173)])
+          textpos.push(["?????", 180, 210, 0, Color.new(90, 82, 82), Color.new(165, 165, 173)])
         end
       else
         # Changes the color of the text, to the one used in BW
@@ -686,10 +686,10 @@
       else
         endexp = @pokemon.growth_rate.minimum_exp_for_level(@pokemon.level + 1)
         if SUMMARY_B2W2_STYLE
-          textpos.push([_INTL("Exp. Points"), 34, 232, 0, base, shadow])
+          textpos.push([_INTL("Erfahrungspunkte"), 34, 232, 0, base, shadow])
           # Changed the Positon of No. of Exp
           textpos.push([@pokemon.exp.to_s_formatted, 215, 264, 2, Color.new(90, 82, 82), Color.new(165, 165, 173)])
-          textpos.push([_INTL("To Next Lv."), 34, 296, 0, base, shadow])
+          textpos.push([_INTL("Nächstes Level."), 34, 296, 0, base, shadow])
           # Changed the Positon of No. of Exp to Next Level
           textpos.push([(endexp-@pokemon.exp).to_s_formatted, 177, 328, 2, Color.new(90, 82, 82), Color.new(165, 165, 173)])
         else
@@ -764,7 +764,7 @@
       if @pokemon.hasItem?
         textpos.push([@pokemon.item.name, 290, 356, 0, base, shadow])
       else
-        textpos.push([_INTL("None"), 290, 356, 0, base, shadow])
+        textpos.push([_INTL("Kein Item"), 290, 356, 0, base, shadow])
       end
       # Draw all text
       pbDrawTextPositions(overlay,textpos)
@@ -813,7 +813,7 @@
       if showNature
         natureName = @pokemon.nature.name
         # Changed the color of the text, to the one used in BW
-        memo += _INTL("<c3=0000d6,7394ff>{1}<c3=404040,B0B0B0> nature.\n", natureName)
+        memo += _INTL(" Wesen: <c3=0000d6,7394ff>{1}<c3=404040,B0B0B0>.\n", natureName)
       end
       # Write date received
       if @pokemon.timeReceived
@@ -830,9 +830,9 @@
       # Changed the color of the text, to the one used in BW
       memo += sprintf("<c3=0000d6,7394ff>%s\n", mapname)
       # Write how Pokémon was obtained
-      mettext = [_INTL("Met at Lv. {1}.", @pokemon.obtain_level),
-                 _INTL("Egg received."),
-                 _INTL("Traded at Lv. {1}.", @pokemon.obtain_level),
+      mettext = [_INTL("Gefangen mit Level. {1}.", @pokemon.obtain_level),
+                 _INTL("Ei Erhalten."),
+                 _INTL("Getauscht auf Level. {1}.", @pokemon.obtain_level),
                  "",
                  _INTL("Had a fateful encounter at Lv. {1}.", @pokemon.obtain_level)
                 ][@pokemon.obtain_method]
@@ -950,31 +950,31 @@
   # Write various bits of text
       if SHOW_EV_IV
         textpos = [
-          [_INTL("HP"), 64, 82, 0, Color.new(255, 255, 255), statshadows[:HP]],
+          [_INTL("KP"), 64, 82, 0, Color.new(255, 255, 255), statshadows[:HP]],
           [sprintf("%d/%d", @pokemon.hp, @pokemon.totalhp), 182, 82, 2, base, shadow],
           [sprintf("%d", @pokemon.ev[:HP]), 252, 82, 2, base, shadow],
           [sprintf("%d" ,@pokemon.iv[:HP]), 296, 82, 2, base, shadow],
-          [_INTL("Attack"), 16, 132, 0, Color.new(255, 255, 255), statshadows[:ATTACK]],
+          [_INTL("ATK"), 16, 132, 0, Color.new(255, 255, 255), statshadows[:ATTACK]],
           [sprintf("%d", @pokemon.attack), 182, 132, 2, base, shadow],
           [sprintf("%d", @pokemon.ev[:ATTACK]), 252, 132, 2, base, shadow],
           [sprintf("%d", @pokemon.iv[:ATTACK]), 296, 132, 2, base, shadow],
-          [_INTL("Defense"), 16, 164, 0, Color.new(255, 255, 255), statshadows[:DEFENSE]],
+          [_INTL("DEF"), 16, 164, 0, Color.new(255, 255, 255), statshadows[:DEFENSE]],
           [sprintf("%d", @pokemon.defense), 182, 164, 2, base, shadow],
           [sprintf("%d", @pokemon.ev[:DEFENSE]), 252, 164, 2, base, shadow],
           [sprintf("%d", @pokemon.iv[:DEFENSE]), 296, 164, 2, base, shadow],
-          [_INTL("Sp. Atk"), 16, 196, 0, Color.new(255, 255, 255), statshadows[:SPECIAL_ATTACK]],
+          [_INTL("Spz. ATK"), 16, 196, 0, Color.new(255, 255, 255), statshadows[:SPECIAL_ATTACK]],
           [sprintf("%d", @pokemon.spatk), 182, 196, 2, base, shadow],
           [sprintf("%d", @pokemon.ev[:SPECIAL_ATTACK]), 252, 196, 2, base, shadow],
           [sprintf("%d", @pokemon.iv[:SPECIAL_ATTACK]), 296, 196, 2, base, shadow],
-          [_INTL("Sp. Def"), 16, 228, 0, Color.new(255, 255, 255), statshadows[:SPECIAL_DEFENSE]],
+          [_INTL("Spz. DEF"), 16, 228, 0, Color.new(255, 255, 255), statshadows[:SPECIAL_DEFENSE]],
           [sprintf("%d", @pokemon.spdef), 182, 228, 2, base, shadow],
           [sprintf("%d", @pokemon.ev[:SPECIAL_DEFENSE]), 252, 228, 2, base, shadow],
           [sprintf("%d", @pokemon.iv[:SPECIAL_DEFENSE]), 296, 228, 2, base, shadow],
-          [_INTL("Speed"), 16, 260, 0, Color.new(255, 255, 255), statshadows[:SPEED]],
+          [_INTL("Init"), 16, 260, 0, Color.new(255, 255, 255), statshadows[:SPEED]],
           [sprintf("%d", @pokemon.speed), 182, 260, 2, base, shadow],
           [sprintf("%d", @pokemon.ev[:SPEED]), 252, 260, 2, base, shadow],
           [sprintf("%d", @pokemon.iv[:SPEED]), 296, 260, 2, base, shadow],
-          [_INTL("Ability"), 38, 294, 0, Color.new(255, 255, 255), Color.new(165, 165, 173)],
+          [_INTL("Fähigkeit"), 38, 294, 0, Color.new(255, 255, 255), Color.new(165, 165, 173)],
         ]
       else
         textpos = [
@@ -1045,7 +1045,7 @@
           imagepos.push(["Graphics/Pictures/types", 32, yPos + 8, 0, type_number * 28, 64, 28])
           textpos.push([move.name, 100, yPos + 12, 0, moveBase, moveShadow])
           if move.total_pp > 0
-            textpos.push([_INTL("PP"), 126, yPos + 44, 0, moveBase, moveShadow])
+            textpos.push([_INTL("AP"), 126, yPos + 44, 0, moveBase, moveShadow])
             ppfraction = 0
             if move.pp == 0
             ppfraction = 3
@@ -1097,16 +1097,16 @@
       # Write various bits of text
       if move_to_learn || SUMMARY_B2W2_STYLE
         textpos = [
-          [_INTL("CATEGORY"), 20, 128, 0, base, shadow],
-          [_INTL("POWER"), 20, 160, 0, base, shadow],
-          [_INTL("ACCURACY"), 20, 192, 0, base, shadow]
+          [_INTL("KATEGORIE"), 20, 128, 0, base, shadow],
+          [_INTL("STÄRKE"), 20, 160, 0, base, shadow],
+          [_INTL("GENAUIGKEIT"), 20, 192, 0, base, shadow]
         ]
       else
         textpos = [
-          [_INTL("MOVES"), 26, 14, 0, base, shadow],
-          [_INTL("CATEGORY"), 20, 128, 0, base, shadow],
-          [_INTL("POWER"), 20, 160, 0, base, shadow],
-          [_INTL("ACCURACY"), 20, 192, 0, base, shadow]
+          [_INTL("ATTACKE"), 26, 14, 0, base, shadow],
+          [_INTL("KATEGORIE"), 20, 128, 0, base, shadow],
+          [_INTL("STÄRKE"), 20, 160, 0, base, shadow],
+          [_INTL("GENAUIGKEIT"), 20, 192, 0, base, shadow]
         ]
       end
       imagepos = []
@@ -1125,7 +1125,7 @@
           imagepos.push(["Graphics/Pictures/types", 260, yPos + 8, 0, type_number * 28, 64, 28])
           textpos.push([move.name, 328, yPos + 12, 0, moveBase, moveShadow])
           if move.total_pp > 0
-            textpos.push([_INTL("PP"), 354, yPos + 44, 0, moveBase, moveShadow])
+            textpos.push([_INTL("AP"), 354, yPos + 44, 0, moveBase, moveShadow])
             ppfraction = 0
             if move.pp == 0
               ppfraction = 3
@@ -1194,7 +1194,7 @@
       @sprites["downarrow"].visible = false
       # Write various bits of text
       textpos = [
-         [_INTL("No. of Ribbons:"), 38, 308, 0, Color.new(255, 255, 255), Color.new(165, 165, 173)],
+         [_INTL("Keine Abzeichen:"), 38, 308, 0, Color.new(255, 255, 255), Color.new(165, 165, 173)],
          [@pokemon.numRibbons.to_s, 157, 340, 1, Color.new(90, 82, 82), Color.new(165, 165, 173)],
       ]
       # Draw all text
@@ -1443,9 +1443,9 @@
                                                   @markingbitmap.bitmap, markrect)
           end
           textpos = [
-             [_INTL("Mark {1}", pokemon.name), 366, 102, 2, base, shadow],
+             [_INTL("Markiert {1}", pokemon.name), 366, 102, 2, base, shadow],
              [_INTL("OK"), 366, 254, 2, base, shadow],
-             [_INTL("Cancel"), 366, 302, 2, base, shadow]
+             [_INTL("Zurück"), 366, 302, 2, base, shadow]
           ]
           pbDrawTextPositions(@sprites["markingoverlay"].bitmap, textpos)
           redraw = false
@@ -1543,12 +1543,12 @@
       cmdPokedex  = -1
       cmdMark     = -1
       if !@pokemon.egg?
-        commands[cmdGiveItem = commands.length] = _INTL("Give item")
-        commands[cmdTakeItem = commands.length] = _INTL("Take item") if @pokemon.hasItem?
-        commands[cmdPokedex = commands.length]  = _INTL("View Pokédex") if $player.has_pokedex
+        commands[cmdGiveItem = commands.length] = _INTL("Item geben")
+        commands[cmdTakeItem = commands.length] = _INTL("Item nehmen") if @pokemon.hasItem?
+        commands[cmdPokedex = commands.length]  = _INTL("Öffne Pokédex") if $player.has_pokedex
       end
-      commands[cmdMark = commands.length]       = _INTL("Mark")
-      commands[commands.length]                 = _INTL("Cancel")
+      commands[cmdMark = commands.length]       = _INTL("Markieren")
+      commands[commands.length]                 = _INTL("Zurück")
       command = pbShowCommands(commands)
       if cmdGiveItem >= 0 && command == cmdGiveItem
         item = nil
@@ -1708,7 +1708,7 @@
         ret = @scene.pbChooseMoveToForget(move_to_learn)
         break if ret < 0 || !move_to_learn
         break if $DEBUG || !party[partyindex].moves[ret].hidden_move?
-        pbMessage(_INTL("HM moves can't be forgotten now.")) { @scene.pbUpdate }
+        pbMessage(_INTL("VM's können nicht verlernt werden'.")) { @scene.pbUpdate }
       end
       @scene.pbEndScene
       return ret
@@ -1721,7 +1721,7 @@
       loop do
         ret = @scene.pbChooseMoveToForget(nil)
         break if ret >= 0
-        pbMessage(_INTL("You must choose a move!")) { @scene.pbUpdate }
+        pbMessage(_INTL("Du musst eine Attacke auswählen!")) { @scene.pbUpdate }
       end
       @scene.pbEndScene
       return ret
