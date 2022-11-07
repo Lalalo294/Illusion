@@ -604,10 +604,10 @@ class PokemonMartScreen
         next if quantity == 0
         price *= quantity
         if quantity > 1
-          next if !pbConfirm(_INTL("So du möchtest {1} {2}?\nes kostet dich ${3}. Inoordnung?",
+          next if !pbConfirm(_INTL("So du möchtest {1} {2}?\nes kostet dich ${3}. Inordnung?",
                                    quantity, itemnameplural, price.to_s_formatted))
         elsif quantity > 0
-          next if !pbConfirm(_INTL("So du möchtest {1} {2}?\nes kostet dich ${3}. Inoordnung?",
+          next if !pbConfirm(_INTL("So du möchtest {1} {2}?\nes kostet dich ${3}. Inordnung?",
                                    quantity, itemname, price.to_s_formatted))
         end
       end

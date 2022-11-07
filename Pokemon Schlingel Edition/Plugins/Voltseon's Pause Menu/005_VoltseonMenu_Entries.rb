@@ -250,7 +250,7 @@ class MenuEntryQuit < MenuEntry
       screen = PokemonSaveScreen.new(scene)
       screen.pbSaveScreen
       menu.pbEndScene
-      $scene = nil
+      $scene = pbCallTitle
       exit!
     end
     menu.pbShowMenu
