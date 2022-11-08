@@ -425,6 +425,7 @@ Name = Dunkelpfad
 Outdoor = false
 ShowArea = true
 Bicycle = false
+BattleBack = cavenew
 #-------------------------------
 [085]   # Frostfeld
 Name = Frostfeld
