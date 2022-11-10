@@ -35,7 +35,7 @@ MapPosition = 0,13,11
 Name = Cedolan City
 Outdoor = true
 ShowArea = true
-MapPosition = 0,13,10
+MapPosition = 0,6,12
 MapSize = 2,11
 #-------------------------------
 [008]   # Safari Zone
@@ -158,6 +158,7 @@ MapSize = 2,1101
 Name = Siedlingen
 Outdoor = true
 ShowArea = true
+MapPosition = 0,15,12
 #-------------------------------
 [034]   # Heggate Houses
 Name = Route 3
@@ -412,6 +413,7 @@ BattleBack = city
 Name = Wiesenflur
 Outdoor = true
 ShowArea = true
+MapPosition = 0,17,13
 BattleBack = newroute_day
 TrainerBattleBGM = Trainer_Battle_Theme_1.ogg
 #-------------------------------
@@ -419,6 +421,7 @@ TrainerBattleBGM = Trainer_Battle_Theme_1.ogg
 Name = Gallenstedt
 Outdoor = true
 ShowArea = true
+MapPosition = 0,18,13
 #-------------------------------
 [082]   # Dunkelpfad
 Name = Dunkelpfad
@@ -433,6 +436,7 @@ Outdoor = true
 ShowArea = true
 Bicycle = false
 Weather = Snow,100
+MapPosition = 0,6,16
 BattleBack = 
 #-------------------------------
 [086]   # Schwalbenweg
@@ -440,29 +444,42 @@ Name = Schwalbenweg
 Outdoor = true
 ShowArea = true
 Bicycle = true
+MapPosition = 0,18,12
 #-------------------------------
 [087]   # Gronhafen
 Name = Gronhafen
 Outdoor = true
 ShowArea = true
 Bicycle = true
+MapPosition = 0,20,12
 #-------------------------------
 [089]   # Liliko'i
 Name = Liliko'i
 Outdoor = true
 ShowArea = true
 Bicycle = true
+MapPosition = 0,27,17
 #-------------------------------
 [095]   # Wanderweg
 Name = Wanderweg
 Outdoor = true
 ShowArea = true
+MapPosition = 0,2,9
+#-------------------------------
+[097]   # Cyberhole City
+Name = Cyberhole City
+MapPosition = 0,14,5
+#-------------------------------
+[117]   # Hailgem City
+Name = Hailgem City
+MapPosition = 0,20,4
 #-------------------------------
 [133]   # Normallichtung
 Name = Waldlichtung
 Outdoor = true
 ShowArea = true
 Bicycle = true
+MapPosition = 0,17,12
 WildBattleBGM = Battle wild.ogg
 WildVictoryBGM = Battle victory wild.ogg
 #-------------------------------
@@ -491,3 +508,4 @@ Name = Hagerode
 Outdoor = true
 ShowArea = true
 Bicycle = true
+MapPosition = 0,9,14
