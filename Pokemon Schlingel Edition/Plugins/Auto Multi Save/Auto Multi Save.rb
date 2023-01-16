@@ -11,8 +11,6 @@
 # Customization:
 #   I recommend altering your pause menu to quit to the title screen or load screen instead of exiting entirely.
 #     -> For instance, just change the menu text to "Quit to Title" and change `$scene = nil` to `$scene = pbCallTitle`.
-#     -> You may need to also add a `SaveData.mark_values_as_unloaded` right before setting $scene.
-#     -> If you change `screen.pbSaveScreen` to `screen.pbSaveScreen(true)` here, it will also change the UI behavior slightly for clarity.
 #   Call Game.auto_save whenever you want.
 #     -> Autosaving during an event script will correctly resume event execution when you load the game.
 #     -> I haven't investigated if it might be possible to autosave on closing the window with the X or Alt-F4 yet.
@@ -33,11 +31,11 @@
 #   It would be nice if the file select arrows used nicer animated graphics, kind of like the Bag.
 #   Maybe auto-save slots should act like a queue instead of cycling around.
 
-# Autosave every 100 steps
+# Autosave every 30 steps
 EventHandlers.add(:on_player_step_taken, :auto_save, proc {
   $player.autosave_steps = 0 if !$player.autosave_steps
   $player.autosave_steps += 1
-  if $player.autosave_steps >= 100
+  if $player.autosave_steps >= 30
     echo("Autosaving...")
     $player.autosave_steps = 0
     Game.auto_save
@@ -294,9 +292,9 @@ class PokemonLoadScreen
       cmd_right = -2
 
       map_id = show_continue ? @save_data[:map_factory].map.map_id : 0
-      @scene.pbStartScene(commands, show_continue, @save_data[:player],
-                          @save_data[:frame_count] || 0, @save_data[:stats], map_id)
-      @scene.pbSetParty(@save_data[:player]) if show_continue
+    @scene.pbStartScene(commands, show_continue, @save_data[:player],
+                        @save_data[:frame_count] || 0, @save_data[:stats], map_id)
+    @scene.pbSetParty(@save_data[:player]) if show_continue
       if first_time
         @scene.pbStartScene2
         first_time = false
@@ -388,17 +386,17 @@ class PokemonSaveScreen
   end
 
   # Return true if pause menu should close after this is done (if the game was saved successfully)
-  def pbSaveScreen(exiting=false)
+  def pbSaveScreen
     ret = false
     @scene.pbStartScreen
     if !$player.save_slot
       # New Game - must select slot
-      ret = slotSelect(exiting)
+      ret = slotSelect
     else
       choices = [
         _INTL("Save to #{$player.save_slot}"),
         _INTL("Save to another file"),
-        exiting ? _INTL("Quit without saving") : _INTL("Cancel")
+        _INTL("Cancel")
       ]
       opt = pbMessage(_INTL('Would you like to save the game?'),choices,3)
       if opt == 0
@@ -406,7 +404,7 @@ class PokemonSaveScreen
         ret = doSave($player.save_slot)
       elsif opt == 1
         pbPlayDecisionSE
-        ret = slotSelect(exiting)
+        ret = slotSelect
       else
         pbPlayCancelSE
       end
@@ -417,24 +415,19 @@ class PokemonSaveScreen
 
   # Call this to open the slot select screen
   # Returns true if the game was saved, otherwise false
-  def slotSelect(exiting=false)
+  def slotSelect
     ret = false
     choices = SaveData::MANUAL_SLOTS
     choice_info = SaveData::MANUAL_SLOTS.map { |s| getSaveInfoBoxContents(s) }
-    loop do
-      index = slotSelectCommands(choices, choice_info)
-      if index >= 0
-        slot = SaveData::MANUAL_SLOTS[index]
-        # Confirm if slot not empty
-        if !File.file?(SaveData.get_full_path(slot)) ||
-            pbConfirmMessageSerious(_INTL("Are you sure you want to overwrite the save in #{slot}?")) # If the slot names were changed this grammar might need adjustment.
-          pbSEPlay('GUI save choice')
-          ret = doSave(slot)
-        end
-      elsif exiting # Pressed cancel
-        next unless pbConfirmMessageSerious(_INTL("Are you sure you want to quit without saving?"))
+    index = slotSelectCommands(choices, choice_info)
+    if index >= 0
+      slot = SaveData::MANUAL_SLOTS[index]
+      # Confirm if slot not empty
+      if !File.file?(SaveData.get_full_path(slot)) ||
+          pbConfirmMessageSerious(_INTL("Are you sure you want to overwrite the save in #{slot}?")) # If the slot names were changed this grammar might need adjustment.
+        pbSEPlay('GUI save choice')
+        ret = doSave(slot)
       end
-      break
     end
     pbPlayCloseMenuSE if !ret
     return ret
