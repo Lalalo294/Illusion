@@ -31,31 +31,7 @@ class Game_Temp
   end
   
   def dx_clear
-    if dx_rules?
-      @dx_rules.keys.each do |key|
-        case key
-        when :nomega then $game_switches[Settings::NO_MEGA_EVOLUTION] = false
-        when :nozmove, :noultra, :nodynamax
-          next if !PluginManager.installed?("ZUD Mechanics")
-          $game_switches[Settings::NO_Z_MOVE]      = false if key == :nozmove
-          $game_switches[Settings::NO_ULTRA_BURST] = false if key == :noultra
-          $game_switches[Settings::NO_DYNAMAX]     = false if key == :nodynamax
-        when :nozodiac
-          next if !PluginManager.installed?("Pokemon Birthsigns")
-          $game_switches[Settings::NO_ZODIAC_POWER] = false
-        when :nofocus
-          next if !PluginManager.installed?("Focus Meter System")
-          $game_switches[Settings::NO_FOCUS_MECHANIC] = false
-        when :nostyles
-          next if !PluginManager.installed?("PLA Battle Styles")
-          $game_switches[Settings::NO_STYLE_MOVES] = false
-        when :notera
-          next if !PluginManager.installed?("ScarletVioletGimmick_TDW")
-          $game_switches[TDWSettings::TERA_ITEM_ENABLED_SWITCH] = true
-        end
-      end
-      @dx_rules.clear
-    end
+    @dx_rules.clear if dx_rules?
     @dx_midbattle.clear if dx_midbattle?
     @dx_pokemon.clear if dx_pokemon?
     $PokemonGlobal.nextBattleBGM = nil
@@ -123,7 +99,7 @@ def pbApplyBattleRules(foeside, wildbattle = false)
   #-----------------------------------------------------------------------------
   # General rules.
   #-----------------------------------------------------------------------------
-  setBattleRule("setStyle")            if rules[:setmode]
+  setBattleRule("setStyle")            if rules[:setstyle]
   setBattleRule("canLose")             if rules[:canlose]
   setBattleRule("noexp")               if rules[:noexp]
   setBattleRule("nomoney")             if rules[:nomoney]
@@ -148,8 +124,14 @@ def pbApplyBattleRules(foeside, wildbattle = false)
   # Pokemon to meet the set size.
   #-----------------------------------------------------------------------------
   case rules[:size]
-  when String
-    setBattleRule(rules[:size])
+  when "double"
+    if foeside == 2 || !wildbattle && foeside == 1
+      setBattleRule("double")
+    end
+  when "triple"
+    if foeside == 3 || !wildbattle && foeside == 1
+      setBattleRule("triple")
+    end
   when Numeric
     rules[:size] = 1 if rules[:size] < 1
     rules[:size] = 3 if rules[:size] > 3
@@ -216,7 +198,7 @@ def pbApplyBattleRules(foeside, wildbattle = false)
   #-----------------------------------------------------------------------------
   # Sets raid battle rules.
   #-----------------------------------------------------------------------------
-  if PluginManager.installed?("ZUD Mechanics") && rules[:rank]
+  if rules[:rank]
     pokemon = $game_temp.dx_pokemon
     if !rules[:bgm]
       raid_music = (rules[:rank] == 6) ? "Battle! Legendary Raid" : "Battle! Max Raid"
@@ -244,27 +226,6 @@ def pbApplyBattleRules(foeside, wildbattle = false)
   end
   rules[:hard] = nil if rules[:hard] && !rules[:rank]
   $PokemonGlobal.nextBattleBGM = rules[:bgm] if rules[:bgm].is_a?(String)
-  #-----------------------------------------------------------------------------
-  # Sets rules for special battle mechanics.
-  #-----------------------------------------------------------------------------
-  $game_switches[Settings::NO_MEGA_EVOLUTION] = true if rules[:nomega]
-  if PluginManager.installed?("ZUD Mechanics")
-    $game_switches[Settings::NO_Z_MOVE]      = true if rules[:nozmove]
-    $game_switches[Settings::NO_ULTRA_BURST] = true if rules[:noultra]
-    $game_switches[Settings::NO_DYNAMAX]     = true if rules[:nodynamax]
-  end
-  if PluginManager.installed?("Pokemon Birthsigns") && rules[:nozodiac]
-    $game_switches[Settings::NO_ZODIAC_POWER]   = true
-  end
-  if PluginManager.installed?("Focus Meter System") && rules[:nofocus]
-    $game_switches[Settings::NO_FOCUS_MECHANIC] = true
-  end
-  if PluginManager.installed?("PLA Battle Styles") && rules[:nostyles]
-    $game_switches[Settings::NO_STYLE_MOVES]    = true
-  end
-  if PluginManager.installed?("ScarletVioletGimmick_TDW") && rules[:notera]
-    $game_switches[TDWSettings::TERA_ITEM_ENABLED_SWITCH] = false
-  end
 end
 
 
