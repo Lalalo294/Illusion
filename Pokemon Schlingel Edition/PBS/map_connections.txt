@@ -24,10 +24,10 @@
 20,West,24,86,East,0
 # Trees (20) - Gronhafen (87)
 20,South,0,87,North,0
+# Siedlingen (32) - Wiesenflur (77)
+32,East,19,77,West,0
 # Siedlerforst (200) - Siedlingen (32)
 200,South,13,32,North,0
-# Wiesenflur (77) - Siedlingen (32)
-77,West,0,32,East,19
 # Normallichtung (133) - Siedlingen (32)
 133,West,13,32,East,0
 # Enursia City (37) - Route 7 (41)
