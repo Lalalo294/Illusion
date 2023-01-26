@@ -95,14 +95,14 @@ end
 # Adds Shiny Leaf debug tools to the "cosmetic" section in a Pokemon's debug options.
 #-------------------------------------------------------------------------------
 MenuHandlers.add(:pokemon_debug_menu, :set_shiny_leaf, {
-  "name"   => _INTL("Set shiny leaf"),
-  "parent" => :cosmetic,
+  "name"   => _INTL("Shiny Leaf"),
+  "parent" => :dx_pokemon_menu,
   "effect" => proc { |pkmn, pkmnid, heldpoke, settingUpBattle, screen|
     cmd = 0
     loop do
       msg = [_INTL("Has shiny crown."), _INTL("Has shiny leaf x#{pkmn.shiny_leaf}.")][pkmn.shiny_crown? ? 0 : 1]
       cmd = screen.pbShowCommands(msg, [
-           _INTL("Set leaf"),
+           _INTL("Set leaf count"),
            _INTL("Set crown"),
            _INTL("Reset")], cmd)
       break if cmd < 0
@@ -234,7 +234,12 @@ end
 #-------------------------------------------------------------------------------
 def pbDisplayEggGroups(pokemon, overlay, xpos, ypos, showDisplay = nil, vertical = false)
   egg_groups = egg_group_hash
-  compat  = (pokemon.is_a?(Pokemon)) ? pokemon.species_data.egg_groups : GameData::Species.get(pokemon).egg_groups
+  if pokemon.is_a?(Pokemon)
+    noeggs = pokemon.egg? || pokemon.shadowPokemon? || pokemon.celestial? || pokemon.hasAbility?(:BATTLEBOND)
+	compat = (noeggs) ? [:Undiscovered] : pokemon.species_data.egg_groups 
+  else
+    compat = GameData::Species.get(pokemon).egg_groups
+  end
   compat1 = compat[0]
   compat2 = compat[1] || compat[0]
   eggGroupbitmap = AnimatedBitmap.new(_INTL("Graphics/Plugins/Enhanced UI/egg_groups"))

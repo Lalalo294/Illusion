@@ -41,4 +41,11 @@ module Settings
   #-----------------------------------------------------------------------------
   MOVE_INFO_KEY   = :M
   BATTLE_INFO_KEY = :N
+  
+  #-----------------------------------------------------------------------------
+  # Type Displays (Battle UI)
+  #-----------------------------------------------------------------------------
+  # Toggles whether type displays for unregistered species are shown in battle UI's.
+  #-----------------------------------------------------------------------------
+  ALWAYS_DISPLAY_TYPES = false
 end
