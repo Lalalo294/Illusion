@@ -1,7 +1,7 @@
- #===============================================================================
+#===============================================================================
 class PokemonPokedexInfo_Scene
-  def pbStartScene(dexlist,index,region)
-    @viewport = Viewport.new(0,0,Graphics.width,Graphics.height)
+  def pbStartScene(dexlist, index, region)
+    @viewport = Viewport.new(0, 0, Graphics.width, Graphics.height)
     @viewport.z = 99999
     @dexlist = dexlist
     @index   = index
@@ -9,34 +9,34 @@ class PokemonPokedexInfo_Scene
     @page = 1
     @typebitmap = AnimatedBitmap.new(_INTL("Graphics/Pictures/Pokedex/icon_types"))
     @sprites = {}
-# Defines the Scrolling Background, as well as the overlay on top of it    
+	# Defines the Scrolling Background, as well as the overlay on top of it    
     @sprites["background"] = IconSprite.new(0,0,@viewport)
-    @sprites["background"] = ScrollingSprite.new(@viewport)
+	@sprites["background"] = ScrollingSprite.new(@viewport)
     @sprites["background"].speed = 1
     @sprites["infoverlay"] = IconSprite.new(0,0,@viewport)
-    @sprites["infosprite"] = PokemonSprite.new(@viewport)
-    @sprites["infosprite"].setOffset(PictureOrigin::Center)
-# Changes the postion of the Pokémon in the Entry Page    
+	@sprites["infosprite"] = PokemonSprite.new(@viewport)
+    @sprites["infosprite"].setOffset(PictureOrigin::CENTER)
+	# Changes the postion of the Pokémon in the Entry Page
     @sprites["infosprite"].x = 98
     @sprites["infosprite"].y = 112
     @mapdata = pbLoadTownMapData
-    map_metadata = GameData::MapMetadata.try_get($game_map.map_id)
-    mappos = (map_metadata) ? map_metadata.town_map_position : nil
+	map_metadata = GameData::MapMetadata.try_get($game_map.map_id)
+    mappos = $game_map.metadata&.town_map_position
     if @region < 0                                 # Use player's current region
       @region = (mappos) ? mappos[0] : 0                      # Region 0 default
     end
-    @sprites["areamap"] = IconSprite.new(0,0,@viewport)
+    @sprites["areamap"] = IconSprite.new(0, 0, @viewport)
     @sprites["areamap"].setBitmap("Graphics/Pictures/#{@mapdata[@region][1]}")
-    @sprites["areamap"].x += (Graphics.width-@sprites["areamap"].bitmap.width)/2
-    @sprites["areamap"].y += (Graphics.height+16-@sprites["areamap"].bitmap.height)/2
-    for hidden in Settings::REGION_MAP_EXTRAS
-      if hidden[0]==@region && hidden[1]>0 && $game_switches[hidden[1]]
-        pbDrawImagePositions(@sprites["areamap"].bitmap,[
-           ["Graphics/Pictures/#{hidden[4]}",
-              hidden[2]*PokemonRegionMap_Scene::SQUAREWIDTH,
-              hidden[3]*PokemonRegionMap_Scene::SQUAREHEIGHT]
-        ])
-      end
+    @sprites["areamap"].x += (Graphics.width - @sprites["areamap"].bitmap.width) / 2
+    @sprites["areamap"].y += (Graphics.height + 32 - @sprites["areamap"].bitmap.height) / 2
+    Settings::REGION_MAP_EXTRAS.each do |hidden|
+      next if hidden[0] != @region || hidden[1] <= 0 || !$game_switches[hidden[1]]
+      pbDrawImagePositions(
+        @sprites["areamap"].bitmap,
+        [["Graphics/Pictures/#{hidden[4]}",
+          hidden[2] * PokemonRegionMap_Scene::SQUARE_WIDTH,
+          hidden[3] * PokemonRegionMap_Scene::SQUARE_HEIGHT]]
+      )
     end
     @sprites["areahighlight"] = BitmapSprite.new(Graphics.width,Graphics.height,@viewport)
     @sprites["areaoverlay"] = IconSprite.new(0,0,@viewport)
@@ -84,14 +84,14 @@ class PokemonPokedexInfo_Scene
     @viewport.z = 99999
     dexnum = 0
     dexnumshift = false
-    if $Trainer.pokedex.unlocked?(-1)   # National Dex is unlocked
+    if $player.pokedex.unlocked?(-1)   # National Dex is unlocked
       species_data = GameData::Species.try_get(species)
       dexnum = species_data.id_number if species_data
       dexnumshift = true if Settings::DEXES_WITH_OFFSETS.include?(-1)
     else
       dexnum = 0
-      for i in 0...$Trainer.pokedex.dexes_count - 1   # Regional Dexes
-        next if !$Trainer.pokedex.unlocked?(i)
+      for i in 0...$player.pokedex.dexes_count - 1   # Regional Dexes
+        next if !$player.pokedex.unlocked?(i)
         num = pbGetRegionalNumber(i,species)
         next if num <= 0
         dexnum = num
@@ -143,7 +143,7 @@ class PokemonPokedexInfo_Scene
 
   def pbUpdateDummyPokemon
     @species = @dexlist[@index][0]
-    @gender, @form = $Trainer.pokedex.last_form_seen(@species)
+    @gender, @form = $player.pokedex.last_form_seen(@species)
     species_data = GameData::Species.get_species_form(@species, @form)
     @sprites["infosprite"].setSpeciesBitmap(@species,@gender,@form)
     if @sprites["formfront"]
@@ -172,12 +172,12 @@ class PokemonPokedexInfo_Scene
       case sp.gender_ratio
       when :AlwaysMale, :AlwaysFemale, :Genderless
         real_gender = (sp.gender_ratio == :AlwaysFemale) ? 1 : 0
-        next if !$Trainer.pokedex.seen_form?(@species, real_gender, sp.form) && !Settings::DEX_SHOWS_ALL_FORMS
+        next if !$player.pokedex.seen_form?(@species, real_gender, sp.form) && !Settings::DEX_SHOWS_ALL_FORMS
         real_gender = 2 if sp.gender_ratio == :Genderless
         ret.push([sp.form_name, real_gender, sp.form])
       else   # Both male and female
         for real_gender in 0...2
-          next if !$Trainer.pokedex.seen_form?(@species, real_gender, sp.form) && !Settings::DEX_SHOWS_ALL_FORMS
+          next if !$player.pokedex.seen_form?(@species, real_gender, sp.form) && !Settings::DEX_SHOWS_ALL_FORMS
           ret.push([sp.form_name, real_gender, sp.form])
           break if sp.form_name && !sp.form_name.empty?   # Only show 1 entry for each non-0 form
         end
@@ -268,7 +268,7 @@ class PokemonPokedexInfo_Scene
        [_INTL("Weight"), 288, 162, 0, base, shadow]
     ]
   end
-    if $Trainer.owned?(@species)
+    if $player.owned?(@species)
       # Write the category. Changed
 	  if @brief
       textpos.push([_INTL("{1} Pokémon", species_data.category), 376, 90, 2, base, shadow])
@@ -492,7 +492,7 @@ class PokemonPokedexInfo_Scene
     newindex = @index
     while newindex>0
       newindex -= 1
-      if $Trainer.seen?(@dexlist[newindex][0])
+      if $player.seen?(@dexlist[newindex][0])
         @index = newindex
         break
       end
@@ -503,7 +503,7 @@ class PokemonPokedexInfo_Scene
     newindex = @index
     while newindex<@dexlist.length-1
       newindex += 1
-      if $Trainer.seen?(@dexlist[newindex][0])
+      if $player.seen?(@dexlist[newindex][0])
         @index = newindex
         break
       end
@@ -521,7 +521,7 @@ class PokemonPokedexInfo_Scene
     oldindex = -1
     loop do
       if oldindex!=index
-        $Trainer.pokedex.set_last_form_seen(@species, @available[index][1], @available[index][2])
+        $player.pokedex.set_last_form_seen(@species, @available[index][1], @available[index][2])
         pbUpdateDummyPokemon
         drawPage(@page)
         @sprites["uparrow"].visible   = (index>0)
@@ -657,7 +657,7 @@ class PokemonPokedexInfoScreen
     region = -1
     if Settings::USE_CURRENT_REGION_DEX
       region = pbGetCurrentRegion
-      region = -1 if region >= $Trainer.pokedex.dexes_count - 1
+      region = -1 if region >= $player.pokedex.dexes_count - 1
     else
       region = $PokemonGlobal.pokedexDex   # National Dex -1, regional Dexes 0, 1, etc.
     end

@@ -80,7 +80,7 @@ class Battle::Scene
       #-------------------------------------------------------------------------
       # When trigger is set to a String or Array, plays trainer speech if possible.
       when String, Array
-        pbMidbattleSpeech(base_trainer, idxTarget, base_battler, midbattle[trigger], true)
+        pbMidbattleSpeech(base_trainer, idxTarget, base_battler, midbattle[trigger])
         next if trigger.include?("_repeat") || trigger.include?("_every_")
         $game_temp.dx_midbattle.delete(trigger)
       #-------------------------------------------------------------------------
@@ -135,9 +135,9 @@ class Battle::Scene
           when :playsound, :playSE    then pbSEPlay(value)
           #---------------------------------------------------------------------
           # Displays text and speech.
-          when :text, :message        then pbMidbattleSpeech(trainer, idxTarget, battler, value)
-          when :speech, :dialogue     then pbMidbattleSpeech(trainer, idxTarget, battler, value, true)
-          when :blankspeech           then pbMidbattleSpeech(trainer, idxTarget, battler, value, :Blank)
+          when :text, :message        then pbMidbattleSpeech(trainer, idxTarget, battler, value, false)
+          when :speech, :dialogue     then pbMidbattleSpeech(trainer, idxTarget, battler, value)
+          when :blankspeech           then pbMidbattleSpeech(-1, idxTarget, battler, value)
           #---------------------------------------------------------------------
           # Plays an animation.
           when :anim, :animation      then midbattle_PlayAnimation(battler, idxTarget, value)
@@ -154,6 +154,9 @@ class Battle::Scene
           # Handles special battle mechanics (Mega, Z-Move, etc.).
           when :usespecial            then midbattle_TriggerBattleMechanic(battler, value)
           when :lockspecial           then midbattle_ToggleBattleMechanic(battler, value)
+          #---------------------------------------------------------------------
+          # Toggles the charge state of the player's Tera Orb.
+          when :teracharge            then $player.tera_charge = value
           #---------------------------------------------------------------------
           # Renames a battler.	
           when :rename
@@ -194,72 +197,94 @@ class Battle::Scene
 			
   #-----------------------------------------------------------------------------
   # Displays mid-battle text.
-  #-----------------------------------------------------------------------------
-  def pbMidbattleSpeech(idxTrainer, idxTarget, battler, speech = [], speaker = nil)
+  #-----------------------------------------------------------------------------		
+  def pbMidbattleSpeech(idxTrainer, idxTarget, battler, speech, dialogue = true)
     return if speech.empty?
     pbWait(8)
     #---------------------------------------------------------------------------
-    # Determines if inputted text is to be spoken by an opposing trainer.
-    if @battle.opponent.nil?
-      trainer = @battle.player[idxTrainer]
-      foe_trainer = false
-    elsif speaker && speaker != :Blank || @battle.decision == 2 || @battle.pbAllFainted? 
-      trainer = @battle.opponent[idxTrainer]
-      foe_trainer = true
-    else
-      trainer = @battle.player[idxTrainer]
-      foe_trainer = false
+    # Determines the speaker of the inputted speech.
+    speaker = nil
+    opposing = false
+    if idxTrainer >= 0
+      if (@battle.decision == 2 || @battle.pbAllFainted?) ||
+         battler.opposes? && !@battle.opponent.nil? && @battle.opponent[idxTrainer]
+        speaker = @battle.opponent[idxTrainer]
+        opposing = true
+      elsif !battler.opposes? && !@battle.player.nil? && @battle.player[idxTrainer]
+        speaker = @battle.player[idxTrainer]
+      end
     end
-    if speaker
-      pbToggleDataboxes
-      pbToggleBlackBars(true)
-      pbShowOpponent(idxTrainer) if foe_trainer && speaker != :Blank
-    end
-    index = battler.index
-    showName = true
+    showName = (speaker) ? true : false
+    speakerName = (showName) ? speaker.name : $player.name
+    displayName = (showName) ? speakerName.upcase + ": " : ""
     playSE = playCry = playAnim = false
     #---------------------------------------------------------------------------
-    # Displays the inputted text either as a message or dialogue.
+    # Displays the inputted speech.
+    if dialogue
+      pbToggleDataboxes
+      pbToggleBlackBars(true)
+    end
     if speech.is_a?(Array)
-      speech.each do |text|
-        case text
+      speech.each do |sp|
+        case sp
+        when Integer, :Self, :Ally, :Ally2, :Opposing, :OpposingAlly, :OpposingAlly2
+          battlerNew = midbattle_Battler(battler.index, idxTarget, sp)
+          if battler.index != battlerNew.index
+            battler = battlerNew
+            idxTrainer = @battle.pbGetOwnerIndexFromBattlerIndex(battler.index)
+            @battle.opponent.length.times { |idx| pbHideOpponent(idx) }
+            if (@battle.decision == 2 || @battle.pbAllFainted?) || 
+               battler.opposes? && !@battle.opponent.nil? && @battle.opponent[idxTrainer]
+              speaker = @battle.opponent[idxTrainer]
+              opposing = true
+            elsif !battler.opposes? && !@battle.player.nil? && @battle.player[idxTrainer]
+              speaker = @battle.player[idxTrainer]
+              opposing = false
+            end
+            showName = true if !showName
+            speakerName = (showName) ? speaker.name : $player.name
+            displayName = (showName) ? speakerName.upcase + ": " : ""
+          end
         when String
-          next if !battler
-          battler.pokemon.play_cry if playCry
-          midbattle_PlayAnimation(battler, idxTarget, playAnim) if playAnim.is_a?(Symbol)
+          if playCry && !battler.nil?
+            battler.pokemon.play_cry
+          end
+          if playAnim.is_a?(Symbol)
+            midbattle_PlayAnimation(battler, idxTarget, playAnim)
+          end
           if playSE
-            pbSEPlay(text)
+            pbSEPlay(sp)
           elsif playAnim && !playAnim.is_a?(Symbol)
-            midbattle_PlayAnimation(battler, idxTarget, text)
-          elsif speaker
-            name = (showName && speaker != :Blank) ? "#{trainer.name.upcase}: " : ""
-            @battle.pbDisplayPaused(_INTL("#{name}#{text}", battler.name, trainer.name))
+            midbattle_PlayAnimation(battler, idxTarget, sp)
+          elsif dialogue
+            pbShowOpponent(idxTrainer) if speaker && opposing && showName
+            @battle.pbDisplayPaused(_INTL("#{displayName}#{sp}", battler.name, speakerName))
             showName = false
+            displayName = ""
           else
-            lowercase = (text[0] == "{" && text[1] == "1") ? false : true
-            @battle.pbDisplay(_INTL("#{text}", battler.pbThis(lowercase), trainer.name))
+            lowercase = (sp[0] == "{" && sp[1] == "1") ? false : true
+            @battle.pbDisplay(_INTL("#{sp}", battler.pbThis(lowercase), speakerName))
           end
           playSE = playCry = playAnim = false
-        when Integer then battler = midbattle_Battler(battler.index, idxTarget, text)
         when :SE     then playSE   = true
         when :Cry    then playCry  = true
         when :Anim   then playAnim = true
-        when Symbol  then playAnim = text
+        when Symbol  then playAnim = sp
         end
       end
     else
-      if speaker
-        name = (speaker != :Blank) ? "#{trainer.name.upcase}: " : ""
-        @battle.pbDisplayPaused(_INTL("#{name}#{speech}", battler.name, trainer.name))
+      if dialogue
+        pbShowOpponent(idxTrainer) if speaker && opposing
+        @battle.pbDisplayPaused(_INTL("#{displayName}#{speech}", battler.name, speakerName))
       else
         lowercase = (speech[0] == "{" && speech[1] == "1") ? false : true
-        @battle.pbDisplay(_INTL("#{speech}", battler.pbThis(lowercase), trainer.name))
+        @battle.pbDisplay(_INTL("#{speech}", battler.pbThis(lowercase), speakerName))
       end
     end
-    if speaker
+    if dialogue
       pbToggleBlackBars
       pbToggleDataboxes(true)
-      pbHideOpponent(idxTrainer) if foe_trainer && speaker != :Blank
+      pbHideOpponent(idxTrainer) if speaker && opposing
     end
   end
   
@@ -276,7 +301,7 @@ class Battle::Scene
     #---------------------------------------------------------------------------
     # Targets a battler on ally's side.
     when :Self, :Ally, :Ally2
-      battler = (idxBattler) ? @battle.battlers[idxBattler] : @battle.battlers[0]
+      battler = (idxBattler && @battle.battlers[idxBattler]) ? @battle.battlers[idxBattler] : @battle.battlers[0]
       if battler.allAllies.length > 0
         case index
         when :Ally  then return battler.allAllies.first
@@ -287,8 +312,8 @@ class Battle::Scene
     #---------------------------------------------------------------------------
     # Targets a battler on opposing side.
     when :Opposing, :OpposingAlly, :OpposingAlly2
-      default = (idxBattler) ? @battle.battlers[idxBattler] : @battle.battlers[0]
-      battler = (idxTarget) ? @battle.battlers[idxTarget] : default.pbDirectOpposing
+      default = (idxBattler && @battle.battlers[idxBattler]) ? @battle.battlers[idxBattler] : @battle.battlers[0]
+      battler = (idxTarget && @battle.battlers[idxTarget])   ? @battle.battlers[idxTarget]  : default.pbDirectOpposing
       if battler.allAllies.length > 0 
         case index
         when :OpposingAlly  then return battler.allAllies.first
@@ -384,7 +409,7 @@ class Battle::Scene
         end
         if newPkmn >= 0
           lowercase = (msg && msg[0] == "{" && msg[1] == "1") ? false : true
-          trainerName = @battle.pbGetOwnerName(battler.index)
+          trainerName = (battler.wild?) ? "" : @battle.pbGetOwnerName(battler.index)
           @battle.pbDisplay(_INTL("#{msg}", battler.pbThis(lowercase), trainerName)) if msg
           if switch == :Forced
             @battle.pbDisplay(_INTL("{1} went back to {2}!", battler.pbThis, trainerName))
@@ -582,7 +607,7 @@ class Battle::Scene
       special, msg = value, nil
     end
     lowercase = (msg && msg[0] == "{" && msg[1] == "1") ? false : true
-    trainerName = @battle.pbGetOwnerName(battler.index)
+    trainerName = (battler.wild?) ? "" : @battle.pbGetOwnerName(battler.index)
     case special
     #---------------------------------------------------------------------------
     # Mega Evolution
@@ -645,6 +670,14 @@ class Battle::Scene
       battler.toggle_style_moves(battler.style_trigger)
       @battle.pbBattleStyle(battler.index)
     #---------------------------------------------------------------------------
+    # Terastallization
+    when :Terastallize, :Tera
+      return if !PluginManager.installed?("Terastal Phenomenon")
+      $player.tera_charged = true if battler.pbOwnedByPlayer?
+      return if !@battle.pbCanTerastallize?(battler.index)
+      @battle.pbDisplay(_INTL("#{msg}", battler.pbThis(lowercase), trainerName)) if msg
+      @battle.pbTerastallize(battler.index)
+    #---------------------------------------------------------------------------
     # Zodiac Powers
     when :ZodiacPower, :Zodiacpower, :Zodiac
       return if !PluginManager.installed?("Pokémon Birthsigns")
@@ -664,13 +697,6 @@ class Battle::Scene
       return if !@battle.pbCanUseFocus?(battler.index)
       @battle.pbDisplay(_INTL("#{msg}", battler.pbThis(lowercase), trainerName)) if msg
       @battle.pbUseFocus(battler.index)
-    #---------------------------------------------------------------------------
-    # Terastallization
-    when :Terastallize, :Tera
-      return if !PluginManager.installed?("ScarletVioletGimmick_TDW")
-      return if !@battle.pbCanTerastallize?(battler.index)
-      @battle.pbDisplay(_INTL("#{msg}", battler.pbThis(lowercase), trainerName)) if msg
-      @battle.pbTerastallize(battler.index)
     #---------------------------------------------------------------------------
     # Custom Mechanic
     when :Custom
@@ -711,6 +737,11 @@ class Battle::Scene
       return if !PluginManager.installed?("PLA Battle Styles")
       $game_switches[Settings::NO_STYLE_MOVES] = !$game_switches[Settings::NO_STYLE_MOVES]
     #---------------------------------------------------------------------------
+    # Terastallization
+    when :Terastallize, :Tera
+      return if !PluginManager.installed?("Terastal Phenomenon")
+      $game_switches[Settings::NO_TERASTALLIZE] = !$game_switches[Settings::NO_TERASTALLIZE]
+    #---------------------------------------------------------------------------
     # Zodiac Powers
     when :ZodiacPower, :ZodiacPowers, :Zodiacpower, :Zodiacpowers, :Zodiac
       return if !PluginManager.installed?("Pokémon Birthsigns")
@@ -720,11 +751,6 @@ class Battle::Scene
     when :Focus, :FocusFull, :FocusEmpty
       return if !PluginManager.installed?("Focus Meter System")
       $game_switches[Settings::NO_FOCUS_MECHANIC] = !$game_switches[Settings::NO_FOCUS_MECHANIC]
-    #---------------------------------------------------------------------------
-    # Terastallization
-    when :Terastallize, :Tera
-      return if !PluginManager.installed?("ScarletVioletGimmick_TDW")
-      $game_switches[TDWSettings::TERA_ITEM_ENABLED_SWITCH] = !$game_switches[TDWSettings::TERA_ITEM_ENABLED_SWITCH]
     end
   end
   
@@ -740,7 +766,7 @@ class Battle::Scene
       amt, msg = value, nil
     end
     lowercase = (msg && msg[0] == "{" && msg[1] == "1") ? false : true
-    trainerName = @battle.pbGetOwnerName(battler.index)
+    trainerName = (battler.wild?) ? "" : @battle.pbGetOwnerName(battler.index)
     #---------------------------------------------------------------------------
     # Recovers HP
     if amt > 0
@@ -818,7 +844,7 @@ class Battle::Scene
     end
     if msg.is_a?(String)
       lowercase = (msg[0] == "{" && msg[1] == "1") ? false : true
-      trainerName = @battle.pbGetOwnerName(battler.index)
+      trainerName = (battler.wild?) ? "" : @battle.pbGetOwnerName(battler.index)
       msg = _INTL("#{msg}", battler.pbThis(lowercase), trainerName)
     end
     case form
@@ -866,7 +892,7 @@ class Battle::Scene
         @battle.pbReplaceAbilitySplash(battler)
         if msg.is_a?(String)
           lowercase = (msg[0] == "{" && msg[1] == "1") ? false : true
-          trainerName = @battle.pbGetOwnerName(battler.index)
+          trainerName = (battler.wild?) ? "" : @battle.pbGetOwnerName(battler.index)
           @battle.pbDisplay(_INTL("#{msg}", battler.pbThis(lowercase), trainerName))
         else
           @battle.pbDisplay(_INTL("{1} acquired {2}!", battler.pbThis, battler.abilityName))
@@ -901,7 +927,7 @@ class Battle::Scene
       if msg
         if msg.is_a?(String)
           lowercase = (msg[0] == "{" && msg[1] == "1") ? false : true
-          trainerName = @battle.pbGetOwnerName(battler.index)
+          trainerName = (battler.wild?) ? "" : @battle.pbGetOwnerName(battler.index)
           @battle.pbDisplay(_INTL("#{msg}", battler.pbThis(lowercase), trainerName))
         else
           if battler.item

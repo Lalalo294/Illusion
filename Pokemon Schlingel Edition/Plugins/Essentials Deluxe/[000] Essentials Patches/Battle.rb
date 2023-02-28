@@ -68,14 +68,15 @@ class Battle
   #-----------------------------------------------------------------------------
   # Compatibility across multiple plugins.
   #-----------------------------------------------------------------------------
-  def pbAttackPhaseZMoves;      end
-  def pbAttackPhaseUltraBurst;  end
-  def pbAttackPhaseDynamax;     end
-  def pbAttackPhaseRaidBoss;    end
-  def pbAttackPhaseCheer;       end
-  def pbAttackPhaseStyles;      end
-  def pbAttackPhaseZodiacPower; end
-  def pbAttackPhaseFocus;       end
+  def pbAttackPhaseZMoves;       end
+  def pbAttackPhaseUltraBurst;   end
+  def pbAttackPhaseDynamax;      end
+  def pbAttackPhaseRaidBoss;     end
+  def pbAttackPhaseCheer;        end
+  def pbAttackPhaseStyles;       end
+  def pbAttackPhaseTerastallize; end
+  def pbAttackPhaseZodiacPower;  end
+  def pbAttackPhaseFocus;        end
 
   #-----------------------------------------------------------------------------
   # Tool for resetting a variety of specific battle mechanics.
@@ -91,8 +92,9 @@ class Battle
     when 2, "Ultra"   then @ultraBurst[side][owner]    = set
     when 3, "Dynamax" then @dynamax[side][owner]       = set
     when 4, "Style"   then @battleStyle[side][owner]   = set
-    when 5, "Zodiac"  then @zodiac[side][owner]        = set
-    when 6, "Custom"  then @custom[side][owner]        = set
+    when 5, "Tera"    then @terastallize[side][owner]  = set
+    when 6, "Zodiac"  then @zodiac[side][owner]        = set
+    when 7, "Custom"  then @custom[side][owner]        = set
     end
   end
 
@@ -109,6 +111,9 @@ class Battle
     if PluginManager.installed?("PLA Battle Styles")
       return true if pbCanUseStyle?(idxBattler)
     end
+    if PluginManager.installed?("Terastal Phenomenon")
+      return true if pbCanTerastallize?(idxBattler)
+    end
     if PluginManager.installed?("Pokémon Birthsigns")
       return true if pbCanZodiacPower?(idxBattler)
     end
@@ -117,6 +122,15 @@ class Battle
     end
     return true if pbCanCustom?(idxBattler)
     return false
+  end
+  
+  #-----------------------------------------------------------------------------
+  # Aliased for new item flag.
+  #-----------------------------------------------------------------------------
+  alias zud_pbItemUsesAllActions? pbItemUsesAllActions?
+  def pbItemUsesAllActions?(item)
+    return true if GameData::Item.get(item).has_flag?("UsesAllBattleActions")
+    return zud_pbItemUsesAllActions?(item)
   end
   
   #-----------------------------------------------------------------------------
@@ -141,9 +155,10 @@ class Battle
         @battlers[idxBattler].display_base_moves
       end
     end
-    pbUnregisterStyle(idxBattler)       if PluginManager.installed?("PLA Battle Styles")
-    pbUnregisterZodiacPower(idxBattler) if PluginManager.installed?("Pokémon Birthsigns")
-    pbUnregisterFocus(idxBattler)       if PluginManager.installed?("Focus Meter System")
+    pbUnregisterStyle(idxBattler)        if PluginManager.installed?("PLA Battle Styles")
+    pbUnregisterTerastallize(idxBattler) if PluginManager.installed?("Terastal Phenomenon")
+    pbUnregisterZodiacPower(idxBattler)  if PluginManager.installed?("Pokémon Birthsigns")
+    pbUnregisterFocus(idxBattler)        if PluginManager.installed?("Focus Meter System")
     pbUnregisterCustom(idxBattler)
     pbClearChoice(idxBattler)
   end
@@ -193,6 +208,11 @@ class Battle
           @battleStyle[side][i] = -1 if style >= 0
         end
       end
+      if PluginManager.installed?("Terastal Phenomenon")
+        @terastallize[side].each_with_index do |tera, i|
+          @terastallize[side][i] = -1 if tera >= 0
+        end
+      end
       if PluginManager.installed?("Pokémon Birthsigns")
         @zodiacPower[side].each_with_index do |zodiac, i|
           @zodiacPower[side][i] = -1 if zodiac >= 0
@@ -210,6 +230,37 @@ class Battle
     pbCommandPhaseLoop(true)
     return if @decision != 0
     pbCommandPhaseLoop(false)
+  end
+  
+  #-----------------------------------------------------------------------------
+  # Ensures certain battle mechanics trigger prior to using Pursuit.
+  #-----------------------------------------------------------------------------
+  def pbPursuit(idxSwitcher)
+    @switching = true
+    pbPriority.each do |b|
+      next if b.fainted? || !b.opposes?(idxSwitcher)
+      next if b.movedThisRound? || !pbChoseMoveFunctionCode?(b.index, "PursueSwitchingFoe")
+      next unless pbMoveCanTarget?(b.index, idxSwitcher, @choices[b.index][2].pbTarget(b))
+      next unless pbCanChooseMove?(b.index, @choices[b.index][1], false)
+      next if b.status == :SLEEP || b.status == :FROZEN
+      next if b.effects[PBEffects::SkyDrop] >= 0
+      next if b.hasActiveAbility?(:TRUANT) && b.effects[PBEffects::Truant]
+      owner = pbGetOwnerIndexFromBattlerIndex(b.index)
+      pbMegaEvolve(b.index) if @megaEvolution[b.idxOwnSide][owner] == b.index
+      if PluginManager.installed?("ZUD Mechanics")
+        pbUltraBurst(b.index) if @ultraBurst[b.idxOwnSide][owner] == b.index
+      end
+      if PluginManager.installed?("PLA Battle Styles")
+        pbBattleStyle(b.index) if @battleStyle[b.idxOwnSide][owner] == b.index
+      end
+      if PluginManager.installed?("Terastal Phenomenon")
+        pbTerastallize(b.index) if @terastallize[b.idxOwnSide][owner] == b.index
+      end
+      @choices[b.index][3] = idxSwitcher
+      b.pbProcessTurn(@choices[b.index], false)
+      break if @decision > 0 || @battlers[idxSwitcher].fainted?
+    end
+    @switching = false
   end
   
   #-----------------------------------------------------------------------------
@@ -242,6 +293,7 @@ class Battle
     pbAttackPhaseUltraBurst
     pbAttackPhaseZMoves
     pbAttackPhaseDynamax
+    pbAttackPhaseTerastallize
     pbAttackPhaseCustom
     pbAttackPhaseStyles
     pbAttackPhaseRaidBoss
@@ -312,12 +364,13 @@ class Battle::AI
     return if pbEnemyShouldUseItem?(idxBattler)
     return if pbEnemyShouldWithdraw?(idxBattler)
     return if @battle.pbAutoFightMenu(idxBattler)
-    if !@battle.pbScriptedMechanic?(idxBattler, :mega) && pbEnemyShouldMegaEvolve?(idxBattler)
-      @battle.pbRegisterMegaEvolution(idxBattler)
-    end
+    @battle.pbRegisterMegaEvolution(idxBattler) if pbEnemyShouldMegaEvolve?(idxBattler)
     if PluginManager.installed?("ZUD Mechanics")
       @battle.pbRegisterUltraBurst(idxBattler) if pbEnemyShouldUltraBurst?(idxBattler)
       @battle.pbRegisterDynamax(idxBattler) if pbEnemyShouldDynamax?(idxBattler)
+    end
+    if PluginManager.installed?("Terastal Phenomenon")
+      @battle.pbRegisterTerastallize(idxBattler) if pbEnemyShouldTerastallize?(idxBattler)
     end
     if PluginManager.installed?("Pokémon Birthsigns")
       @battle.pbRegisterZodiacPower(idxBattler) if pbEnemyShouldZodiacPower?(idxBattler)
