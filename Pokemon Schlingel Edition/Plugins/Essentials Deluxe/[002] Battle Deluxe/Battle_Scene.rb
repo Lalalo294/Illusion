@@ -44,7 +44,7 @@ class Battle::Scene::Animation::ToggleBlackBars < Battle::Scene::Animation
   end
 
   def createProcesses
-    delay = 10
+    delay = 5
     topBar = addSprite(@sprites["topBar"], PictureOrigin::TOP_LEFT)
     topBar.setZ(0, 200)
     bottomBar = addSprite(@sprites["bottomBar"], PictureOrigin::BOTTOM_RIGHT)
@@ -56,11 +56,11 @@ class Battle::Scene::Animation::ToggleBlackBars < Battle::Scene::Animation
       bottomBar.setOpacity(0, 255)
       topBar.setXY(0, Graphics.width, 0)
       bottomBar.setXY(0, 0, Graphics.height)
-      topBar.moveXY(delay, 10, (Graphics.width-toMoveTop), 0)
-      bottomBar.moveXY(delay, 10, toMoveBottom, Graphics.height)
+      topBar.moveXY(delay, 5, (Graphics.width-toMoveTop), 0)
+      bottomBar.moveXY(delay, 5, toMoveBottom, Graphics.height)
     else
-      topBar.moveOpacity(delay, 8, 0)
-      bottomBar.moveOpacity(delay, 8, 0)
+      topBar.moveOpacity(delay, 4, 0)
+      bottomBar.moveOpacity(delay, 4, 0)
       topBar.setXY(delay + 5, Graphics.width, 0)
       bottomBar.setXY(delay + 5, 0, Graphics.height)
     end
@@ -111,8 +111,8 @@ class Battle::Scene
   end
   
   def pbToggleBlackBars(toggle = false)
-    pbAddSprite("topBar", Graphics.width, 0, "Graphics/Plugins/Essentials Deluxe/blackbar_top", @viewport) if !@sprites["topBar"]
-    pbAddSprite("bottomBar", 0, Graphics.height, "Graphics/Plugins/Essentials Deluxe/blackbar_bottom", @viewport) if !@sprites["bottomBar"]
+    pbAddSprite("topBar", Graphics.width, 0, "Graphics/Plugins/Essentials Deluxe/Animations/blackbar_top", @viewport) if !@sprites["topBar"]
+    pbAddSprite("bottomBar", 0, Graphics.height, "Graphics/Plugins/Essentials Deluxe/Animations/blackbar_bottom", @viewport) if !@sprites["bottomBar"]
     blackBarAnim = Animation::ToggleBlackBars.new(@sprites, @viewport, toggle)
     loop do
       blackBarAnim.update
