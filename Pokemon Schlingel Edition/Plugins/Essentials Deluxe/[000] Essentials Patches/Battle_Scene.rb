@@ -113,6 +113,7 @@ class Battle::Scene
   alias dx_pbInitSprites pbInitSprites
   def pbInitSprites
     dx_pbInitSprites
+    pbMidbattleInit
     if !pbInSafari?
       @battle.allBattlers.each do |b|
         @sprites["battler_icon#{b.index}"] = PokemonIconSprite.new(b.pokemon, @viewport)
