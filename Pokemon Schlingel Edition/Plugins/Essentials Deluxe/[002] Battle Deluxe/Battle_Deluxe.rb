@@ -443,6 +443,7 @@ def pbApplyWildAttributes(pkmn)
       when :happiness  then pokemon.happiness    = pkmn_hash[attribute]
       when :obtaintext then pokemon.obtain_text  = pkmn_hash[attribute]
       when :pokerus    then pokemon.givePokerus if pkmn_hash[attribute]
+      when :shadow     then pokemon.makeShadow  if pkmn_hash[attribute]
       #-------------------------------------------------------------------------
       # Sets an Ability or an Ability Index.
       #-------------------------------------------------------------------------
