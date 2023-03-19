@@ -20,7 +20,6 @@ module MessageTypes
   BirthsignLore          = 110
 end
 
-
 #-------------------------------------------------------------------------------
 # Placeholder item data for plugin compatibility.
 #-------------------------------------------------------------------------------
@@ -46,8 +45,42 @@ module GameData
     def portion_name_plural
       return name_plural
     end
+	
+    # New item flags for certain groups of items.
+    def is_repel?;        return has_flag?("Repel");           end
+    def is_medicine?;     return has_flag?("Medicine");        end
+    def is_remedy?;       return has_flag?("Remedy");          end
+    def is_vitamin?;      return has_flag?("Vitamin");         end
+    def is_exp_candy?;    return has_flag?("ExpCandy");        end
+    def is_feather?;      return has_flag?("Feather");         end
+    def is_mint?;         return has_flag?("Mint");            end
+    def is_incense?;      return has_flag?("Incense");         end
+    def is_contest_item?; return has_flag?("Contest");         end
+    def is_ev_booster?;   return has_flag?("EVBooster");       end
+    def is_flute?;        return has_flag?("Flute");           end
+    def is_shard?;        return has_flag?("Shard");           end
+    def is_nectar?;       return has_flag?("Nectar");          end
+    def is_sweet?;        return has_flag?("Sweet");           end
+    def is_plate?;        return has_flag?("Plate");           end
+    def is_memory?;       return has_flag?("Memory");          end
+    def is_drive?;        return has_flag?("Drive");           end
+    def is_fossil_half?;  return has_flag?("FossilHalf");      end
+    def is_enhancer?;     return has_flag?("BattleEnhancer");  end
+    def is_heal_berry?;   return has_flag?("HealBerry");       end
+    def is_status_berry?; return has_flag?("StatusBerry");     end
+    def is_flavor_berry?; return has_flag?("FlavorBerry");     end
+    def is_ev_berry?;     return has_flag?("EVReduceBerry");   end
+    def is_type_berry?;   return has_flag?("TypeReduceBerry"); end
+    def is_pinch_berry?;  return has_flag?("PinchBerry");      end
+    def is_tera_shard?;   return !@flags.none? { |f| f[/^TeraShard_/i] }; end
   end
 end
+
+
+#-------------------------------------------------------------------------------
+# Placeholder for save file compatibility if ZUD Plugin removed.
+#-------------------------------------------------------------------------------
+class DynamaxAdventure; end
 
 
 #-------------------------------------------------------------------------------
@@ -241,9 +274,14 @@ class PokemonPartyScreen
         elsif PluginManager.installed?("Legendary Breeding") && option == :egg_skill
           command_list.push([name, 2])
         elsif PluginManager.installed?("Pokémon Birthsigns") && option.to_s.include?("birthsign_skill")
-          color = BirthsignHandlers::triggerMenuCommandOption(pkmn.birthsign.id, pkmn)
+          if [:birthsign_skill_celestial, :birthsign_skill_creator].include?(option)
+            color = BirthsignHandlers::triggerMenuCommandOption(:VOID, pkmn)
+            option = :celestial_skill
+          else
+            color = BirthsignHandlers::triggerMenuCommandOption(pkmn.birthsign.id, pkmn)
+            option = :birthsign_skill
+          end
           command_list.push([name, color])
-          option = :birthsign_skill
         else
           command_list.push(name)
         end

@@ -59,7 +59,7 @@ end
 module Compiler
   module_function
   
-  PLUGIN_FILES = []
+  PLUGIN_FILES = ["Essentials Deluxe"]
   
   #-----------------------------------------------------------------------------
   # Writing data
@@ -956,16 +956,16 @@ module PluginManager
   end
   
   # Used to ensure all plugins that rely on Essentials Deluxe are up to date.
-  def self.dx_plugin_check(version = "1.2.3")
+  def self.dx_plugin_check(version = "1.2.4")
     if self.installed?("Essentials Deluxe", version, true)
-      {"ZUD Mechanics"         => "1.1.8",
+      {"ZUD Mechanics"         => "1.1.9",
        "Enhanced UI"           => "1.1",
        "Focus Meter System"    => "1.1",
        "PLA Battle Styles"     => "1.0.7",
        "Improved Field Skills" => "1.0.4",
-       "Legendary Breeding"    => "1.0.1",
+       "Legendary Breeding"    => "1.0.2",
+       "Terastal Phenomenon"   => "1.0.2",
        "Improved Item Text"    => "1.0.1",
-       "Terastal Phenomenon"   => "1.0.1",
        "Pokémon Birthsigns"    => "1.0"
       }.each do |p_name, v_num|
         next if !self.installed?(p_name)

@@ -10,6 +10,13 @@ module Settings
   SHOW_PARTY_BALL = true
   
   #-----------------------------------------------------------------------------
+  # Happiness Meter
+  #-----------------------------------------------------------------------------
+  # Enables the display of a happiness meter in the Pokemon's Summary screen.
+  #-----------------------------------------------------------------------------
+  SUMMARY_HAPPINESS_METER = true
+  
+  #-----------------------------------------------------------------------------
   # Shiny Leaf
   #-----------------------------------------------------------------------------
   # Enables the display of a Pokemon's collected Shiny Leaves in the Summary/Storage screens.
@@ -20,7 +27,7 @@ module Settings
   #-----------------------------------------------------------------------------
   # IV Ratings
   #-----------------------------------------------------------------------------
-  # Enables the display of star ratings for a Pokemon's IV's in the Summary/Storage screens.
+  # Enables the display of ratings for a Pokemon's IV's in the Summary/Storage screens.
   #-----------------------------------------------------------------------------
   SUMMARY_IV_RATINGS = true
   STORAGE_IV_RATINGS = true
@@ -33,6 +40,21 @@ module Settings
   #-----------------------------------------------------------------------------
   SUMMARY_EGG_GROUPS = true
   POKEDEX_EGG_GROUPS = true
+  
+  #-----------------------------------------------------------------------------
+  # Body Shapes
+  #-----------------------------------------------------------------------------
+  # Enables the display of icons indicating a Pokemon's Body Shape in the Pokedex screen.
+  #-----------------------------------------------------------------------------
+  POKEDEX_BODY_SHAPES = true
+  SHAPE_DISPLAY_STYLE = 0  # 0 = Modern, 1 = Retro
+  
+  #-----------------------------------------------------------------------------
+  # Habitats
+  #-----------------------------------------------------------------------------
+  # Enables the display of icons indicating a Pokemon's Habitat in the Pokedex menu.
+  #-----------------------------------------------------------------------------
+  POKEDEX_HABITAT_ICONS = true
   
   #-----------------------------------------------------------------------------
   # Battle UI Windows
