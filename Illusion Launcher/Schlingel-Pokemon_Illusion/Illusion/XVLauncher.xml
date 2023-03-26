@@ -1,443 +1,443 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Illusion Launcher</name>
+        <name>XVLauncher</name>
     </assembly>
     <members>
         <member name="T:XVLauncher.Properties.Langs.Lang_your_lang">
             <summary>
-              Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+              Classe di risorse fortemente tipizzata per la ricerca di stringhe localizzate e così via.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.ResourceManager">
             <summary>
-              Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+              Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.Culture">
             <summary>
-              Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
-              Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+              Esegue l'override della proprietà CurrentUICulture del thread corrente per tutte le
+              ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.deleting">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Deleting files... ähnelt.
+              Cerca una stringa localizzata simile a Deleting files....
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.download">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Download ähnelt.
+              Cerca una stringa localizzata simile a Download.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.download_completed">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Download completed. ähnelt.
+              Cerca una stringa localizzata simile a Download completed..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.download_not_possible">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die It is not possible to install the game. Check your internet connection or retry in a few minutes ähnelt.
+              Cerca una stringa localizzata simile a It is not possible to install the game. Check your internet connection or retry in a few minutes.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.download_progress_unknown">
              <summary>
-               Sucht eine lokalisierte Zeichenfolge, die Download in progress... Downloaded: {0:0.##} {1}
-            Note: the download size is approximately {2}. ähnelt.
+               Cerca una stringa localizzata simile a Download in progress... Downloaded: {0:0.##} {1}
+            Note: the download size is approximately {2}..
              </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.exe_not_found">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die The file {0} was not found. ähnelt.
+              Cerca una stringa localizzata simile a The file {0} was not found..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.fonts_exception">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Sorry, the process to intall fonts must be run as Administrator. ähnelt.
+              Cerca una stringa localizzata simile a Sorry, the process to intall fonts must be run as Administrator..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.fonts_installed">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die All fonts are now installed. The game will need to be run as an administrator to apply the changes. ähnelt.
+              Cerca una stringa localizzata simile a All fonts are now installed. The game will need to be run as an administrator to apply the changes..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.fonts_installing">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Installing fonts ähnelt.
+              Cerca una stringa localizzata simile a Installing fonts.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.fonts_next_launch">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die All necessary fonts will be reinstalled the next time the game is started. ähnelt.
+              Cerca una stringa localizzata simile a All necessary fonts will be reinstalled the next time the game is started..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.fonts_will_be_installed">
              <summary>
-               Sucht eine lokalisierte Zeichenfolge, die Some fonts required for the game are not present in your system.
-            They will be intalled now, but you must consent to run the application as an administrator. ähnelt.
+               Cerca una stringa localizzata simile a Some fonts required for the game are not present in your system.
+            They will be intalled now, but you must consent to run the application as an administrator..
              </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.game_version">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Game version {0} ähnelt.
+              Cerca una stringa localizzata simile a Game version {0}.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.installation_error">
              <summary>
-               Sucht eine lokalisierte Zeichenfolge, die There was an error decompressing the game. Please, try to uninstall it from setting menu and then download it again.
-            Error details: {0} ähnelt.
+               Cerca una stringa localizzata simile a There was an error decompressing the game. Please, try to uninstall it from setting menu and then download it again.
+            Error details: {0}.
              </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.installation_ip">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Installation in progress... {0:0.##}% ähnelt.
+              Cerca una stringa localizzata simile a Installation in progress... {0:0.##}%.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.last_version_av">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die This is the last version available. ähnelt.
+              Cerca una stringa localizzata simile a This is the last version available..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.launcher_version">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Launcher version {0} ähnelt.
+              Cerca una stringa localizzata simile a Launcher version {0}.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.opensource">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Powered by open-source software ähnelt.
+              Cerca una stringa localizzata simile a Powered by open-source software.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.other_options">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Other options ähnelt.
+              Cerca una stringa localizzata simile a Other options.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.path_too_long">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die The game is installed in a path too long, this may cause problems playing with the &quot;New Engine&quot; option enabled. Please, move the launcher folder to a shorter path or uncheck the &quot;New Engine&quot; option from the settings. ähnelt.
+              Cerca una stringa localizzata simile a The game is installed in a path too long, this may cause problems playing with the &quot;New Engine&quot; option enabled. Please, move the launcher folder to a shorter path or uncheck the &quot;New Engine&quot; option from the settings..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.play">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Play ähnelt.
+              Cerca una stringa localizzata simile a Play.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.recover">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Recover ähnelt.
+              Cerca una stringa localizzata simile a Recover.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.recovery">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Game recovery ähnelt.
+              Cerca una stringa localizzata simile a Game recovery.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.recovery_text">
              <summary>
-               Sucht eine lokalisierte Zeichenfolge, die All game files will be deleted and the last version available will be downloaded.
+               Cerca una stringa localizzata simile a All game files will be deleted and the last version available will be downloaded.
             You will not loose your save data.
-            Do you want to continue? ähnelt.
+            Do you want to continue?.
              </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.reinstall_fonts">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Reinstall fonts ähnelt.
+              Cerca una stringa localizzata simile a Reinstall fonts.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.save_picker">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Select save ähnelt.
+              Cerca una stringa localizzata simile a Select save.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.save1">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Save 1 ähnelt.
+              Cerca una stringa localizzata simile a Save 1.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.save2">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Save 2 ähnelt.
+              Cerca una stringa localizzata simile a Save 2.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.save3">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Save 3 ähnelt.
+              Cerca una stringa localizzata simile a Save 3.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.save4">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Save 4 ähnelt.
+              Cerca una stringa localizzata simile a Save 4.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.save5">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Save 5 ähnelt.
+              Cerca una stringa localizzata simile a Save 5.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.save6">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Save 6 ähnelt.
+              Cerca una stringa localizzata simile a Save 6.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.settings">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die &lt; Settings ähnelt.
+              Cerca una stringa localizzata simile a &lt; Settings.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.sownload_progress">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Download in progress... {0:0.##}% ähnelt.
+              Cerca una stringa localizzata simile a Download in progress... {0:0.##}%.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.third_party">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Third-party software used in XVLauncher ähnelt.
+              Cerca una stringa localizzata simile a Third-party software used in XVLauncher.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.unable_download">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Unable to download the game: {0} ähnelt.
+              Cerca una stringa localizzata simile a Unable to download the game: {0}.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.uninstall">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Uninstall ähnelt.
+              Cerca una stringa localizzata simile a Uninstall.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.update">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Update ähnelt.
+              Cerca una stringa localizzata simile a Update.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.update_not_possible">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die It is not possible to check for updates now. Check your internet connection or try again in a few minutes. You can still play the game. ähnelt.
+              Cerca una stringa localizzata simile a It is not possible to check for updates now. Check your internet connection or try again in a few minutes. You can still play the game..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.use_engine">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Use new engine ähnelt.
+              Cerca una stringa localizzata simile a Use new engine.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.use_engine_tooltip">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die It is recommended to keep this setting active. However, it can be disabled if your computer is not compatible with the new engine. ähnelt.
+              Cerca una stringa localizzata simile a It is recommended to keep this setting active. However, it can be disabled if your computer is not compatible with the new engine..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.version">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Version {0}.  ähnelt.
+              Cerca una stringa localizzata simile a Version {0}. .
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.version_available">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Version {0} available for the download. ähnelt.
+              Cerca una stringa localizzata simile a Version {0} available for the download..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.warning">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Warning! ähnelt.
+              Cerca una stringa localizzata simile a Warning!.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.xvlauncher">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Based on XVLauncher, the open-source launcher for your app ähnelt.
+              Cerca una stringa localizzata simile a Based on XVLauncher, the open-source launcher for your app.
             </summary>
         </member>
         <member name="T:XVLauncher.Properties.Langs.Lang">
             <summary>
-              Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+              Classe di risorse fortemente tipizzata per la ricerca di stringhe localizzate e così via.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.ResourceManager">
             <summary>
-              Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+              Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.Culture">
             <summary>
-              Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
-              Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+              Esegue l'override della proprietà CurrentUICulture del thread corrente per tutte le
+              ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.deleting">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Löschen von Dateien... ähnelt.
+              Cerca una stringa localizzata simile a Deleting files....
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.download">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Download ähnelt.
+              Cerca una stringa localizzata simile a Download.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.download_completed">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Download abgeschlossen. ähnelt.
+              Cerca una stringa localizzata simile a Download completed..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.download_not_possible">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Es ist nicht möglich, das Spiel zu installieren. Überprüfen Sie Ihre Internetverbindung. ähnelt.
+              Cerca una stringa localizzata simile a It is not possible to install the game. Check your internet connection or retry in a few minutes.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.download_progress">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Download in Arbeit... {0:0.##}% ähnelt.
+              Cerca una stringa localizzata simile a Download in progress... {0:0.##}%.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.download_progress_unknown">
              <summary>
-               Sucht eine lokalisierte Zeichenfolge, die Download in Arbeit... Heruntergeladen: {0:0.##} {1}
-            Hinweis: Die Downloadgröße beträgt ungefähr {2}. ähnelt.
+               Cerca una stringa localizzata simile a Download in progress... Downloaded: {0:0.##} {1}
+            Note: the download size is approximately {2}..
              </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.exe_not_found">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Die Datei {0} wurde nicht gefunden. ähnelt.
+              Cerca una stringa localizzata simile a The file {0} was not found..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.game_version">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Spielversion {0} ähnelt.
+              Cerca una stringa localizzata simile a Game version {0}.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.installation_error">
              <summary>
-               Sucht eine lokalisierte Zeichenfolge, die Es ist ein Fehler beim Dekomprimieren des Spiels aufgetreten. Bitte versuchen Sie, es über das Einstellungsmenü zu deinstallieren und dann erneut herunterzuladen.
-            Fehlerdetails: {0} ähnelt.
+               Cerca una stringa localizzata simile a There was an error decompressing the game. Please, try to uninstall it from setting menu and then download it again.
+            Error details: {0}.
              </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.installation_ip">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Installation in Arbeit... {0:0.##}% ähnelt.
+              Cerca una stringa localizzata simile a Installation in progress... {0:0.##}%.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.last_version_av">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Dies ist die letzte verfügbare Version. ähnelt.
+              Cerca una stringa localizzata simile a This is the last version available..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.launcher_version">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Launcher-Version {0} ähnelt.
+              Cerca una stringa localizzata simile a Launcher version {0}.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.opensource">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Mit Open-Source-Software betrieben ähnelt.
+              Cerca una stringa localizzata simile a Powered by open-source software.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.other_options">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Weitere Optionen ähnelt.
+              Cerca una stringa localizzata simile a Other options.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.play">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Spielen ähnelt.
+              Cerca una stringa localizzata simile a Play.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.recover">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Wiederherstellen ähnelt.
+              Cerca una stringa localizzata simile a Recover.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.recovery">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Spielwiederherstellung ähnelt.
+              Cerca una stringa localizzata simile a Game recovery.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.recovery_text">
              <summary>
-               Sucht eine lokalisierte Zeichenfolge, die Alle Spieldateien werden gelöscht und die letzte verfügbare Version wird heruntergeladen.
-            Ihre Speicherdaten gehen nicht verloren.
-            Möchten Sie fortfahren? ähnelt.
+               Cerca una stringa localizzata simile a All game files will be deleted and the last version available will be downloaded.
+            You will not loose your save data.
+            Do you want to continue?.
              </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.save_picker">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Spielstand auswählen ähnelt.
+              Cerca una stringa localizzata simile a Select save.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.save1">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Spielstand 1 ähnelt.
+              Cerca una stringa localizzata simile a Save 1.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.save2">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Spielstand 2 ähnelt.
+              Cerca una stringa localizzata simile a Save 2.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.save3">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Spielstand 3 ähnelt.
+              Cerca una stringa localizzata simile a Save 3.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.save4">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Spielstand 4 ähnelt.
+              Cerca una stringa localizzata simile a Save 4.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.save5">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Spielstand 5 ähnelt.
+              Cerca una stringa localizzata simile a Save 5.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.save6">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Spielstand 6 ähnelt.
+              Cerca una stringa localizzata simile a Save 6.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.settings">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die &lt; Einstellungen ähnelt.
+              Cerca una stringa localizzata simile a &lt; Settings.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.third_party">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die In XVLauncher verwendete Software von Drittanbietern ähnelt.
+              Cerca una stringa localizzata simile a Third-party software used in XVLauncher.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.unable_download">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Das Spiel kann nicht heruntergeladen werden: {0} ähnelt.
+              Cerca una stringa localizzata simile a Unable to download the game: {0}.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.uninstall">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Deinstallieren ähnelt.
+              Cerca una stringa localizzata simile a Uninstall.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.update">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Update ähnelt.
+              Cerca una stringa localizzata simile a Update.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.update_not_possible">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Es ist jetzt nicht möglich, nach Updates zu suchen. Überprüfen Sie Ihre Internetverbindung oder versuchen Sie es in ein paar Minuten erneut. Sie können das Spiel trotzdem spielen. ähnelt.
+              Cerca una stringa localizzata simile a It is not possible to check for updates now. Check your internet connection or try again in a few minutes. You can still play the game..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.version">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Version {0}.  ähnelt.
+              Cerca una stringa localizzata simile a Version {0}. .
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.version_available">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Version {0} zum Download verfügbar. ähnelt.
+              Cerca una stringa localizzata simile a Version {0} available for the download..
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.warning">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Warnung! ähnelt.
+              Cerca una stringa localizzata simile a Warning!.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Langs.Lang.xvlauncher">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Basierend auf XVLauncher, dem Open-Source-Startprogramm für Ihre Anwendung ähnelt.
+              Cerca una stringa localizzata simile a Based on XVLauncher, the open-source launcher for your app.
             </summary>
         </member>
         <member name="T:XVLauncher.Properties.Resources">
@@ -483,12 +483,12 @@
         </member>
         <member name="P:XVLauncher.Properties.Resources.Executable">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Illusion ähnelt.
+              Sucht eine lokalisierte Zeichenfolge, die Illusion.exe ähnelt.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Resources.InstallDirectory">
             <summary>
-              Sucht eine lokalisierte Zeichenfolge, die Pokemon Illusion ähnelt.
+              Sucht eine lokalisierte Zeichenfolge, die Illusion Launcher ähnelt.
             </summary>
         </member>
         <member name="P:XVLauncher.Properties.Resources.LauncherVersion">
