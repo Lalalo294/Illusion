@@ -1,0 +1,800 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Illusion Launcher</name>
+    </assembly>
+    <members>
+        <member name="T:XVLauncher.Properties.Langs.Lang_your_lang">
+            <summary>
+              Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.ResourceManager">
+            <summary>
+              Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.Culture">
+            <summary>
+              Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+              Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.deleting">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Deleting files... ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.download">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Download ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.download_completed">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Download completed. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.download_not_possible">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die It is not possible to install the game. Check your internet connection or retry in a few minutes ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.download_progress_unknown">
+             <summary>
+               Sucht eine lokalisierte Zeichenfolge, die Download in progress... Downloaded: {0:0.##} {1}
+            Note: the download size is approximately {2}. ähnelt.
+             </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.exe_not_found">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die The file {0} was not found. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.fonts_exception">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Sorry, the process to intall fonts must be run as Administrator. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.fonts_installed">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die All fonts are now installed. The game will need to be run as an administrator to apply the changes. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.fonts_installing">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Installing fonts ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.fonts_next_launch">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die All necessary fonts will be reinstalled the next time the game is started. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.fonts_will_be_installed">
+             <summary>
+               Sucht eine lokalisierte Zeichenfolge, die Some fonts required for the game are not present in your system.
+            They will be intalled now, but you must consent to run the application as an administrator. ähnelt.
+             </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.game_version">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Game version {0} ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.installation_error">
+             <summary>
+               Sucht eine lokalisierte Zeichenfolge, die There was an error decompressing the game. Please, try to uninstall it from setting menu and then download it again.
+            Error details: {0} ähnelt.
+             </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.installation_ip">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Installation in progress... {0:0.##}% ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.last_version_av">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die This is the last version available. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.launcher_version">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Launcher version {0} ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.opensource">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Powered by open-source software ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.other_options">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Other options ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.path_too_long">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die The game is installed in a path too long, this may cause problems playing with the &quot;New Engine&quot; option enabled. Please, move the launcher folder to a shorter path or uncheck the &quot;New Engine&quot; option from the settings. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.play">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Play ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.recover">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Recover ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.recovery">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Game recovery ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.recovery_text">
+             <summary>
+               Sucht eine lokalisierte Zeichenfolge, die All game files will be deleted and the last version available will be downloaded.
+            You will not loose your save data.
+            Do you want to continue? ähnelt.
+             </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.reinstall_fonts">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Reinstall fonts ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.save_picker">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Select save ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.save1">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Save 1 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.save2">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Save 2 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.save3">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Save 3 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.save4">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Save 4 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.save5">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Save 5 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.save6">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Save 6 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.settings">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die &lt; Settings ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.sownload_progress">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Download in progress... {0:0.##}% ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.third_party">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Third-party software used in XVLauncher ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.unable_download">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Unable to download the game: {0} ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.uninstall">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Uninstall ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.update">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Update ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.update_not_possible">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die It is not possible to check for updates now. Check your internet connection or try again in a few minutes. You can still play the game. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.use_engine">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Use new engine ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.use_engine_tooltip">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die It is recommended to keep this setting active. However, it can be disabled if your computer is not compatible with the new engine. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.version">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Version {0}.  ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.version_available">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Version {0} available for the download. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.warning">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Warning! ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang_your_lang.xvlauncher">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Based on XVLauncher, the open-source launcher for your app ähnelt.
+            </summary>
+        </member>
+        <member name="T:XVLauncher.Properties.Langs.Lang">
+            <summary>
+              Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.ResourceManager">
+            <summary>
+              Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.Culture">
+            <summary>
+              Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+              Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.deleting">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Löschen von Dateien... ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.download">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Download ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.download_completed">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Download abgeschlossen. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.download_not_possible">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Es ist nicht möglich, das Spiel zu installieren. Überprüfen Sie Ihre Internetverbindung. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.download_progress">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Download in Arbeit... {0:0.##}% ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.download_progress_unknown">
+             <summary>
+               Sucht eine lokalisierte Zeichenfolge, die Download in Arbeit... Heruntergeladen: {0:0.##} {1}
+            Hinweis: Die Downloadgröße beträgt ungefähr {2}. ähnelt.
+             </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.exe_not_found">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Die Datei {0} wurde nicht gefunden. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.game_version">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Spielversion {0} ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.installation_error">
+             <summary>
+               Sucht eine lokalisierte Zeichenfolge, die Es ist ein Fehler beim Dekomprimieren des Spiels aufgetreten. Bitte versuchen Sie, es über das Einstellungsmenü zu deinstallieren und dann erneut herunterzuladen.
+            Fehlerdetails: {0} ähnelt.
+             </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.installation_ip">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Installation in Arbeit... {0:0.##}% ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.last_version_av">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Dies ist die letzte verfügbare Version. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.launcher_version">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Launcher-Version {0} ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.opensource">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Mit Open-Source-Software betrieben ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.other_options">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Weitere Optionen ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.play">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Spielen ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.recover">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Wiederherstellen ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.recovery">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Spielwiederherstellung ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.recovery_text">
+             <summary>
+               Sucht eine lokalisierte Zeichenfolge, die Alle Spieldateien werden gelöscht und die letzte verfügbare Version wird heruntergeladen.
+            Ihre Speicherdaten gehen nicht verloren.
+            Möchten Sie fortfahren? ähnelt.
+             </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.save_picker">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Speicherstand auswählen ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.save1">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Spielstand 1 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.save2">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Spielstand 2 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.save3">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Spielstand 3 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.save4">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Spielstand 4 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.save5">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Spielstand 5 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.save6">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Spielstand 6 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.settings">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die &lt; Einstellungen ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.third_party">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die In XVLauncher verwendete Software von Drittanbietern ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.unable_download">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Das Spiel kann nicht heruntergeladen werden: {0} ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.uninstall">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Deinstallieren ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.update">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Update ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.update_not_possible">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Es ist jetzt nicht möglich, nach Updates zu suchen. Überprüfen Sie Ihre Internetverbindung oder versuchen Sie es in ein paar Minuten erneut. Sie können das Spiel trotzdem spielen. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.version">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Version {0}.  ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.version_available">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Version {0} zum Download verfügbar. ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.warning">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Warnung! ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Langs.Lang.xvlauncher">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Basierend auf XVLauncher, dem Open-Source-Startprogramm für Ihre Anwendung ähnelt.
+            </summary>
+        </member>
+        <member name="T:XVLauncher.Properties.Resources">
+            <summary>
+              Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Resources.ResourceManager">
+            <summary>
+              Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Resources.Culture">
+            <summary>
+              Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+              Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Resources.AccessToken">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die glpat-bU7DFCszvMykuFL3-mVp ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Resources.ButtonBG">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die #00DDDDDD ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Resources.ButtonBorder">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die #FF406380 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Resources.ButtonSelectedBG">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die #FF062640 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Resources.ButtonSelectedBorder">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die #FF1B86FF ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Resources.Executable">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Pokemon Illusion.exe ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Resources.InstallDirectory">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Pokemon Illusion ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Resources.LauncherVersion">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die 1.0.0 ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Resources.SaveDirectory">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die Pokemon Illusion ähnelt.
+            </summary>
+        </member>
+        <member name="P:XVLauncher.Properties.Resources.UpdateUrl">
+            <summary>
+              Sucht eine lokalisierte Zeichenfolge, die https://gitlab.com/schlingelentwicklerstudio/Schlingel/-/raw/{0}/ ähnelt.
+            </summary>
+        </member>
+        <member name="T:XVLauncher.Resources.PhpManager">
+            <summary>
+            This class provides methods to dialog with php files. To implement the methods of this class you need a server to host php files and a database.<br/>
+            Php files and MySQL query to create the appropriate table are provided in the GitHub repository.
+            </summary>
+        </member>
+        <member name="F:XVLauncher.Resources.PhpManager.USE_PHP">
+            <summary>
+            Set it to true if you want to use php files to communicate with your server. Check the documntation for more details.
+            </summary>
+        </member>
+        <member name="M:XVLauncher.Resources.PhpManager.GetMegaUrl">
+            <summary>
+            Getter method for <see cref="F:XVLauncher.Resources.PhpManager.megaUrl"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:XVLauncher.Resources.PhpManager.GetLastVer">
+            <summary>
+            Getter method for lastVer.
+            </summary>
+            <returns>Last version available.</returns>
+        </member>
+        <member name="M:XVLauncher.Resources.PhpManager.GetID(System.String)">
+            <summary>
+            Assign to user a new auto-increment ID.
+            </summary>
+            <param name="version">current game version tag.</param>
+            <returns>ID.</returns>
+        </member>
+        <member name="M:XVLauncher.Resources.PhpManager.UpdateVersion(System.String)">
+            <summary>
+            Update user current version in the database.<br/>
+            Since in the database the column last_date is setted as ON UPDATE CURRENT_TIMESTAMP, this method can also be used to update that column.<br/>
+            For example, it can be called whenever the game is launched, so the database will register the last time each id has launched the game.<br/>
+            It can be useful to know if someone is still playing the game (using the application/using whatever this launcher is used to) after months or years.
+            </summary>
+            <param name="newVer">User current version.</param>
+        </member>
+        <member name="M:XVLauncher.Resources.PhpManager.FirstContact">
+            <summary>
+            Try to contact server and, if the connection is successful, set url to mega archive in <c>megaurl</c>
+            and the tag of the last version available in <c>lastVer</c>.<br/>
+            This method should not be used if the game is stored in a GitLab repository, in that case version tag can be retrieved with <see cref="M:XVLauncher.UpdateHandler.GetLatestRelease"/>, while <c>megaurl</c> is no more useful.
+            </summary>
+            <returns><c>true</c> if the conncection is successful, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:XVLauncher.Resources.PhpManager.ReportError(System.String)">
+            <summary>
+            Store error message in last_error column.<br/>
+            Also update error_date column with current timestamp.
+            </summary>
+            <param name="error">Error message.</param>
+        </member>
+        <member name="M:XVLauncher.Resources.PhpManager.SendPost(System.String,System.String,System.Boolean)">
+            <summary>
+            Helper method provided by makim on this Stack Overflow thread: https://stackoverflow.com/questions/6960426/c-sharp-xml-documentation-website-link.
+            </summary>
+            <param name="url"></param>
+            <param name="postData"></param>
+            <param name="report">In case of Exception, don't call ReportError if it is <c>false</c>. Default is <c>true</c>, but in some cases it can be useful to set it to <c>false</c> to avoid loops.</param>
+            <returns>webpage content.</returns>
+        </member>
+        <member name="T:XVLauncher.SecurityManager">
+            <summary>
+            Singleton class to generate php files path, just to avoid to put it as plain text.
+            It is a really basic security system, do not use it to protect sensible data.
+            </summary>
+        </member>
+        <member name="M:XVLauncher.SecurityManager.GetInstance">
+            <summary>
+            Singleton pattern's getter method.
+            </summary>
+            <returns>Singleton instance of <see cref="T:XVLauncher.SecurityManager"/>.</returns>
+        </member>
+        <member name="T:XVLauncher.UpdateDownloader">
+            <summary>
+            Subclass of <see cref="T:XVLauncher.Downloader"/> that handle updates from GitLab repository.
+            </summary>
+        </member>
+        <member name="M:XVLauncher.UpdateDownloader.#ctor(XVLauncher.MainWindow,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},XVLauncher.UpdateHandler)">
+            <summary>
+            Constructor method.
+            </summary>
+            <param name="window"><see cref="T:XVLauncher.MainWindow"/> instance where are placed GUI elements to be updated to show progress.</param>
+            <param name="url"></param>
+            <param name="oldPath">List of path that do not exists in the new update, because file have been mooved or deleted.</param>
+            <param name="newPath">List of new path</param>
+            <param name="handler">An instance of <see cref="T:XVLauncher.UpdateHandler"/></param>
+        </member>
+        <member name="T:XVLauncher.UpdateHandler">
+            <summary>
+            Class for handling updates with git-based repositories.
+            </summary>
+        </member>
+        <member name="F:XVLauncher.UpdateHandler.Window">
+            <summary>
+            The instance of MainWindow that contains GUI elements which show update progress and status.
+            </summary>
+        </member>
+        <member name="M:XVLauncher.UpdateHandler.#ctor(XVLauncher.MainWindow)">
+            <summary>
+            Constructor of the UpdateHandler class.
+            </summary>
+            <param name="window">The window where the updater will be called.</param>
+        </member>
+        <member name="M:XVLauncher.UpdateHandler.CheckUpdateAvailability">
+            <summary>
+            Check if it there is a new release on GitLab repo.
+            </summary>
+            <returns>true if there is an update available, false otherwise.</returns>
+        </member>
+        <member name="M:XVLauncher.UpdateHandler.Compare(System.String)">
+            <summary>
+            Compares the currently stored commit id with a target commit id and returns a tuple of list with the old paths and new paths of changed files.
+            </summary>
+            <param name="targetCommit">The target commit id using for comparing.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XVLauncher.UpdateHandler.GetLatestRelease">
+            <summary>
+            Retrieves the latest github release informations.
+            </summary>
+            <returns>last release download link, last commit name, last release tag.</returns>
+        </member>
+        <member name="T:XVLauncher.WebDownloader">
+            <summary>
+            Subclass of <see cref="T:XVLauncher.Downloader"/> that use <see cref="T:System.Net.WebClient"/> to download a zipped version of the project from a direct download url.
+            </summary>
+        </member>
+        <member name="M:XVLauncher.WebDownloader.#ctor(XVLauncher.MainWindow,System.String)">
+            <summary>
+            Constructor method.
+            </summary>
+            <param name="window"><see cref="T:XVLauncher.MainWindow"/> where are placed GUI elements to be updated to show progress.</param>
+            <param name="url">direct link to download a .zip including the .exe to be launched and all the files needed.</param>
+        </member>
+        <member name="T:XVLauncher.MegaDownloader">
+            <summary>
+            Subclass of <see cref="T:XVLauncher.Downloader"/> that use <see cref="T:CG.Web.MegaApiClient.MegaApiClient"/> to download a zipped version of the project from a mega.nz url.
+            </summary>
+        </member>
+        <member name="M:XVLauncher.MegaDownloader.#ctor(XVLauncher.MainWindow,System.String)">
+            <summary>
+            Constructor method.
+            </summary>
+            <param name="window"><see cref="T:XVLauncher.MainWindow"/> where are placed GUI elements to be updated to show progress.</param>
+            <param name="url">mega.nz link to download a .zip including the .exe to be launched and all the files needed.</param>
+        </member>
+        <member name="T:XVLauncher.Downloader">
+            <summary>
+            Abstract class that provides the template method Download(). It is implemented by <see cref="T:XVLauncher.WebDownloader"/> and <see cref="T:XVLauncher.MegaDownloader"/>.
+            </summary>
+        </member>
+        <member name="M:XVLauncher.Downloader.#ctor(XVLauncher.MainWindow,System.String)">
+            <summary>
+            Constructor method.
+            </summary>
+            <param name="window"><see cref="T:XVLauncher.MainWindow"/> instance where are placed GUI elements to be updated to show progress.</param>
+            <param name="url"></param>
+        </member>
+        <member name="M:XVLauncher.Downloader.Download">
+            <summary>
+            Template method that only handle exceptions and do some simples GUI changes.<br/>
+            Real Download implementation is delegated to sublasses that must implement the abstract method <see cref="M:XVLauncher.Downloader.DownloadImplementation"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:XVLauncher.Downloader.DownloadImplementation">
+            <summary>
+            Abstract method to be implemented by subclasses, that must provide download implementation, possibly asynchronously. <br/>
+            It is called by the template method <see cref="M:XVLauncher.Downloader.Download"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:XVLauncher.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:XVLauncher.MainWindow.#ctor">
+            <summary>
+            This method is called when the program starts.<br/>
+            It checks if the user has an ID assigned, if not it try to get a new ID from the database and assign it to the user.<br/>
+            Then check if there are fonts to be installed and, if it is the case, installs them.<br/>
+            Finally, initialise the GUI.
+            </summary>
+        </member>
+        <member name="M:XVLauncher.MainWindow.Window_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            It is called when the GUI is loaded. It implements the main logic of the program.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:XVLauncher.MainWindow.Tick(System.Object,System.EventArgs)">
+            <summary>
+            Tick on the dispatchtimer called every 10 seconds. Used to update background Images.
+            </summary>
+        </member>
+        <member name="M:XVLauncher.MainWindow.DisplayNextImage(System.Windows.Controls.Image)">
+            <summary>
+            Animation code for the image changing
+            </summary>
+        </member>
+        <member name="M:XVLauncher.MainWindow.DownloadAndInstall(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Start download. When it finishes, start unzipping.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:XVLauncher.MainWindow.Unzip(System.String)">
+            <summary>
+            Unzip a file and show progress in <see cref="F:XVLauncher.MainWindow.BarGrid"/>.
+            </summary>
+            <param name="zipPath">Archive to uzip's full path.</param>
+        </member>
+        <member name="M:XVLauncher.MainWindow.LaunchGame(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Search for program executable and launch it.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:XVLauncher.MainWindow.InitPlayButton">
+            <summary>
+            Enable <see cref="F:XVLauncher.MainWindow.button"/>, change its color and content and set <see cref="M:XVLauncher.MainWindow.LaunchGame(System.Object,System.Windows.RoutedEventArgs)"/> as function to be called on click.
+            </summary>
+        </member>
+        <member name="M:XVLauncher.MainWindow.MoveWindow(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Make top Rectangle draggable
+            </summary>
+        </member>
+        <member name="M:XVLauncher.MainWindow.CloseWindow(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Close the window and display any catched exception message in a popup window.
+            </summary>
+        </member>
+        <member name="M:XVLauncher.MainWindow.ToggleOptions(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Show/hide options windows. In addition hide notice window. 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:XVLauncher.MainWindow.UpdateBarProgress(System.Double)">
+            <summary>
+            Updates the progress bar to the given value.
+            </summary>
+            <param name="value">The target value.</param>
+        </member>
+        <member name="M:XVLauncher.MainWindow.SetBarIdle(System.Boolean)">
+            <summary>
+            Set ProgressBar.IsIndeterminate = idle
+            </summary>
+            <param name="idle">true for show indeterminate loading, false otherwise</param>
+        </member>
+        <member name="M:XVLauncher.MainWindow.RemoveRoutedEventHandlers(System.Windows.UIElement,System.Windows.RoutedEvent)">
+            <summary>
+            Removes all event handlers subscribed to the specified routed event from the specified element.
+            Credit: https://stackoverflow.com/a/16392387/1149773
+            </summary>
+            <param name="element">The UI element on which the routed event is defined.</param>
+            <param name="routedEvent">The routed event for which to remove the event handlers.</param>
+        </member>
+        <member name="M:XVLauncher.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:XVLauncher.App">
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:XVLauncher.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:XVLauncher.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+    </members>
+</doc>
