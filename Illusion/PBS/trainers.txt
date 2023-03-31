@@ -247,6 +247,15 @@ Pokemon = BARBOACH,4
     IV = 20,20,20,20,20,20
     Ball = NESTBALL
 #-------------------------------
+[PICNICKER,Schmiri,2]
+Items = MEGARING
+LoseText = ...
+Pokemon = VENUSAUR,3
+    AbilityIndex = 2
+    Item = VENUSAURITE
+    IV = 20,20,20,20,20,20
+    Ball = NESTBALL
+#-------------------------------
 [SUPERNERD,Reese,1]
 LoseText = ...
 Pokemon = CHARMANDER,4
