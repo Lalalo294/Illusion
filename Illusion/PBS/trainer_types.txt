@@ -424,4 +424,13 @@ Gender = Male
 BaseMoney = 100
 BattleBGM = Wootze_Theme
 VictoryBGM = Battle victory leader
-
+#-------------------------------
+[BACKPACKER_M]
+Name = Backpacker
+Gender = Male
+BaseMoney = 56
+#-------------------------------
+[BACKPACKER_F]
+Name = Backpacker
+Gender = Female
+BaseMoney = 56

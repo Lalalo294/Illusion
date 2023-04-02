@@ -4,6 +4,10 @@
 10,North,0,11,South,0
 # Safari Zone: Marsh (12) - Safari Zone: Desert (11)
 12,South,2,11,North,0
+# Berheide (15) - Hornfeld (17)
+15,West,0,17,East,23
+# Hornfeld (17) - Hornbach (30)
+17,West,21,30,East,0
 # Trees (18) - Schwalbenweg (86)
 18,South,0,86,North,30
 # Gronhafen (87) - Trees (18)
@@ -24,6 +28,14 @@
 20,West,24,86,East,0
 # Trees (20) - Gronhafen (87)
 20,South,0,87,North,0
+# Schmidrütli (31) - Hornbach (30)
+31,East,0,30,West,0
+# Wishing Well (50) - Hornbach (30)
+50,South,50,30,North,0
+# Wishing Well (50) - Schmidrütli (31)
+50,South,0,31,North,0
+# Wanderweg (95) - Schmidrütli (31)
+95,East,17,31,West,0
 # Siedlerforst (200) - Siedlingen (32)
 200,South,13,32,North,0
 # Wiesenflur (77) - Siedlingen (32)
@@ -48,6 +60,8 @@
 52,North,30,45,South,0
 # water2 (47) - Route 8 (45)
 47,West,0,45,East,0
+# Wanderweg (95) - Wishing Well (50)
+95,East,0,50,West,22
 # Route 10 (55) - Downpour City (52)
 55,East,0,52,West,44
 # Keishan City (59) - Downpour City (52)
@@ -56,6 +70,8 @@
 56,North,0,59,South,38
 # Wishing Well (64) - Liliko'i (89)
 64,East,0,89,West,16
+# MAP066 (66) - Nuri version buggy (83)
+66,North,0,83,South,24
 # Route 13 (75) - Route 12 (74)
 75,West,0,74,East,42
 # Normallichtung (133) - Wiesenflur (77)
@@ -74,13 +90,17 @@
 125,East,1,127,West,0
 # Hagerode (203) - Siedlerforst (200)
 203,South,13,200,North,0
-# Schmidrütli (31) - Wanderweg (95)
-31,West,0,95,East,17
-# Wishing Well (50) - Wanderweg (95)
-50,West,22,95,East,0
-# Hornbach (30) - Schmidrütli (31)
-30,West,0,31,East,0
-# Wishing Well (50) - Schmidrütli (31)
-50,South,0,31,North,0
-# Wishing Well (50) - Hornbach (30)
-50,South,50,30,North,0
+# Bermoor (76) - Tümpelhain (69)
+76,North,0,69,South,16
+# MAP350 (350) - Tümpelhain (69)
+350,East,0,69,West,0
+# MAP351 (351) - MAP350 (350)
+351,East,0,350,West,0
+# MAP352 (352) - MAP351 (351)
+352,East,0,351,West,0
+# Goodvale (353) - MAP352 (352)
+353,East,9,352,West,0
+# Brennende Felder (354) - Goodvale (353)
+354,East,8,353,West,0
+# Gangervill (355) - Brennende Felder (354)
+355,East,0,354,West,4
