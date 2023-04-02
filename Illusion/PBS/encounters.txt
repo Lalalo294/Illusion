@@ -1,5 +1,19 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
+[015] # Berheide
+Land,21
+    5,MILTANK,22,26
+    5,TAUROS,22,26
+    3,BOUFFALANT,22,26
+    15,SUNKERN,22,26
+    15,DODUO,22,26
+    3,LARVESTA,22,26
+    9,ABRA,22,26
+    5,CASTFORM,1,22,26
+    15,WHISMUR,22,26
+    10,FEAROW,22,26
+    15,PONYTA,22,26
+#-------------------------------
 [030] # Hornbach
 Land,21
     15,HOPPIP,20,25

@@ -78,7 +78,7 @@ MapPosition = 0,13,10
 Name = Cedolan City
 MapPosition = 0,13,10
 #-------------------------------
-[017]
+[017]   # Hornfeld
 Name = Cedolan City
 MapPosition = 0,13,10
 #-------------------------------
@@ -284,7 +284,7 @@ Name = Battle Frontier
 HealingSpot = 52,17,14
 MapPosition = 0,17,10
 #-------------------------------
-[054]
+[054]   # MAP054
 Name = Battle Frontier
 MapPosition = 0,17,10
 #-------------------------------
@@ -343,18 +343,18 @@ Name = Battle Frontier
 MapPosition = 0,17,10
 Flags = DisableBoxLink
 #-------------------------------
-[066]
-Name = Safari Zone
+[066]   # MAP066
+Name = test
 Outdoor = true
-ShowArea = true
+ShowArea = false
 MapPosition = 0,12,12
 BattleBack = field
 #-------------------------------
-[067]
+[067]   # MAP067
 Name = Safari Zone
 MapPosition = 0,12,12
 #-------------------------------
-[068]
+[068]   # MAP068
 Name = Safari Zone
 Outdoor = true
 ShowArea = true
@@ -363,7 +363,7 @@ SafariMap = true
 BattleBack = forest
 Environment = Forest
 #-------------------------------
-[069]
+[069]   # Tümpelhain
 Name = Route 8
 Outdoor = true
 ShowArea = true
@@ -371,7 +371,7 @@ MapPosition = 0,13,13
 DiveMap = 70
 BattleBack = field
 #-------------------------------
-[070]
+[070]   # MAP070
 Name = Route 8
 MapPosition = 0,13,13
 BattleBack = underwater
@@ -381,7 +381,7 @@ Environment = Underwater
 Name = Route 8
 MapPosition = 0,13,13
 #-------------------------------
-[072]
+[072]   # MAP072
 Name = Berth Island
 Outdoor = true
 ShowArea = true
@@ -509,3 +509,6 @@ Outdoor = true
 ShowArea = true
 Bicycle = true
 MapPosition = 0,9,14
+#-------------------------------
+[352]   # MAP352
+Name = MAP352
