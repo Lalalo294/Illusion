@@ -1,0 +1,12 @@
+[032] # Siedlingen
+Land,21
+    20,POOCHYENA,2,4
+    15,SIZZLIPEDE,2,4
+    15,VOLTORB,2,4
+    10,MEOWTH,2,4
+    10,WYNAUT,2,4
+    8,MUNNA,2,4
+    7,HAPPINY,2,4
+    5,AUDINO,2,4
+    5,DITTO,2,4
+    5,KLEFKI,2,4
