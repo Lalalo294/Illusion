@@ -1,0 +1,1103 @@
+Error Log Entry : 
+19:00:56 Dienstag, 4. April 2023
+:
+Moves: (HYDROSTEAM):  CanMirrorMove isn't a valid Flag.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (CHIKORITA): Moves:  LEECHSEED isn't a valid Move.
+Pokemons: (BAYLEEF): Moves:  LEECHSEED isn't a valid Move.
+Pokemons: (CHINCHOU): Abilities:  ILLUMINATE isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (BUDEW): Moves:  STUNSPORE isn't a valid Move.
+Pokemons: (PANSAGE): HiddenAbilities:  isn't a valid ability.
+Pokemons: (SIMISAGE): HiddenAbilities:  isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (PANSEAR): HiddenAbilities:  isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (SIMISEAR): HiddenAbilities:  isn't a valid ability.
+Pokemons: (PANPOUR): HiddenAbilities:  isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (SIMIPOUR): HiddenAbilities:  isn't a valid ability.
+Pokemons: (MEOWSTIC: Types:  FAIRY isn't a valid Type.
+Pokemons: MRRIME has an invalid property - HiddenAbility .
+Pokemons: RUNERIGUS has an invalid property - HiddenAbility .
+Pokemons: WYRDEER has an invalid property - BaseEXP .
+Pokemons: WYRDEER has an invalid property - HiddenAbility .
+Pokemons: KLEAVOR has an invalid property - BaseEXP .
+Pokemons: KLEAVOR has an invalid property - HiddenAbility .
+Pokemons: (URSALUNA: Types:  NORMAL isn't a valid Type.
+Pokemons: URSALUNA has an invalid property - BaseEXP .
+Pokemons: URSALUNA has an invalid property - HiddenAbility .
+Pokemons: BASCULEGION has an invalid property - BaseEXP .
+Pokemons: BASCULEGION has an invalid property - HiddenAbility .
+Pokemons: SNEASLER has an invalid property - BaseEXP .
+Pokemons: SNEASLER has an invalid property - HiddenAbility .
+Pokemons: SNEASLER has an invalid property - Eggmoves .
+Pokemons: OVERQWIL has an invalid property - BaseEXP .
+Pokemons: OVERQWIL has an invalid property - HiddenAbility .
+Pokemons: ENAMORUS has an invalid property - BaseEXP .
+Pokemons: ENAMORUS has an invalid property - HiddenAbility .
+Pokemons: (LECHONK): Abilities:  GLUTTONY isn't a valid ability.
+Pokemons: (OINKOLOGNE): Abilities:  GLUTTONY isn't a valid ability.
+Pokemons: (PAWMI): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (PAWMO): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (PAWMO): Evolutions: Walk is invalid.
+Pokemons: (PAWMOT): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (TANDEMAUS): Abilities:  PICKUP isn't a valid ability.
+Pokemons: (TANDEMAUS): Evolutions: BattleLevelSkipEvoScene is invalid.
+Pokemons: (MAUSHOLD): Abilities:  CHEEKPOUCH isn't a valid ability.
+Pokemons: (SQUAWKABILLY): Abilities:  HUSTLE isn't a valid ability.
+Pokemons: (NACLI): Abilities:  STURDY isn't a valid ability.
+Pokemons: (NACLSTACK): Abilities:  STURDY isn't a valid ability.
+Pokemons: (GARGANACL): Abilities:  STURDY isn't a valid ability.
+Pokemons: (TADBULB): Abilities:  STATIC isn't a valid ability.
+Pokemons: (BELLIBOLT): Abilities:  STATIC isn't a valid ability.
+Pokemons: (WATTREL): Abilities:  VOLTABSORB isn't a valid ability.
+Pokemons: (KILOWATTREL): Abilities:  VOLTABSORB isn't a valid ability.
+Pokemons: (MASCHIFF): Abilities:  RUNAWAY isn't a valid ability.
+Pokemons: (MABOSSTIFF): Abilities:  GUARDDOG isn't a valid ability.
+Pokemons: (SHROODLE): Abilities:  PICKPOCKET isn't a valid ability.
+Pokemons: (GRAFAIAI): Abilities:  POISONTOUCH isn't a valid ability.
+Pokemons: (BRAMBLIN): Evolutions: Walk is invalid.
+Pokemons: (TOEDSCOOL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (TOEDSCRUEL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (KLAWF): Abilities:  SHELLARMOR isn't a valid ability.
+Pokemons: (CAPSAKID): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (SCOVILLAIN): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (RELLOR): Evolutions: Walk is invalid.
+Pokemons: (FLITTLE): Abilities:  FRISK isn't a valid ability.
+Pokemons: (ESPATHRA): Abilities:  FRISK isn't a valid ability.
+Pokemons: (TINKATINK): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATUFF): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATON): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (WIGLETT): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (WUGTRIO): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (BOMBIRDIER): Abilities:  KEENEYE isn't a valid ability.
+Pokemons: (FINIZEN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FINIZEN): Evolutions: LevelWithPartner is invalid.
+Pokemons: (PALAFIN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FLAMIGO): Abilities:  TANGLEDFEET isn't a valid ability.
+Pokemons: (CETODDLE): Abilities:  SNOWCLOAK isn't a valid ability.
+Pokemons: (CETITAN): Abilities:  SLUSHRUSH isn't a valid ability.
+Pokemons: (DONDOZO): Abilities:  OBLIVIOUS isn't a valid ability.
+Pokemons: (ANNIHILAPE): Abilities:  INNERFOCUS isn't a valid ability.
+Pokemons: (CLODSIRE): Abilities:  WATERABSORB isn't a valid ability.
+Pokemons: (FARIGIRAF): Abilities:  ARMORTAIL isn't a valid ability.
+Pokemons: (DUDUNSPARCE): Abilities:  RUNAWAY isn't a valid ability.
+Pokemons: (KINGAMBIT): Abilities:  SUPREMEOVERLORD isn't a valid ability.
+Pokemons: (GIMMIGHOUL): Evolutions: CollectItems is invalid.
+Pokemons: (GHOLDENGO): HiddenAbilities:  isn't a valid ability.
+Pokemons: RATICATE isn't a valid Pokémon.
+Pokemons: FEAROW isn't a valid Pokémon.
+Pokemons: ARBOK isn't a valid Pokémon.
+Pokemons: RAICHU isn't a valid Pokémon.
+Pokemons: SANDSLASH isn't a valid Pokémon.
+Pokemons: NIDORANfE isn't a valid Pokémon.
+Pokemons: NIDORANmA isn't a valid Pokémon.
+Pokemons: NIDORINA isn't a valid Pokémon.
+Pokemons: NIDOQUEEN isn't a valid Pokémon.
+Pokemons: NIDORANfE isn't a valid Pokémon.
+Pokemons: NIDORANmA isn't a valid Pokémon.
+Pokemons: NIDORINO isn't a valid Pokémon.
+Pokemons: NIDOKING isn't a valid Pokémon.
+Pokemons: WIGGLYTUFF isn't a valid Pokémon.
+Pokemons: GOLBAT isn't a valid Pokémon.
+Pokemons: GLOOM isn't a valid Pokémon.
+Pokemons: VILEPLUME isn't a valid Pokémon.
+Pokemons: PARASECT isn't a valid Pokémon.
+Pokemons: POLIWHIRL isn't a valid Pokémon.
+Pokemons: POLIWRATH isn't a valid Pokémon.
+Pokemons: PIKACHU isn't a valid Pokémon.
+Pokemons: CLEFAIRY isn't a valid Pokémon.
+PokemonForms: (RATTATA_1): Evolutions: RATICATE isn't a valid Pokemon.
+PokemonForms ([RATICATE,1]): RATICATE isn't a valid Pokemon.
+PokemonForms ([RAICHU,1]): RAICHU isn't a valid Pokemon.
+PokemonForms: _1 is repeated.
+PokemonForms ([SANDSHREW,1]): SANDSHREW isn't a valid Pokemon.
+PokemonForms: (_1): Evolutions: SANDSLASH isn't a valid Pokemon.
+PokemonForms: _1 is repeated.
+PokemonForms ([SANDSLASH,1]): SANDSLASH isn't a valid Pokemon.
+PokemonForms: _1 is repeated.
+PokemonForms: (PICHU_2): Evolutions: PIKACHU isn't a valid Pokemon.
+PokemonForms: (BASCULIN_2): Evolutions: LevelRecoilDamage is invalid.
+PokemonForms: (WOOPER_1): Abilities:  WATERABSORB isn't a valid ability.
+PokemonForms: (TAUROS_3: Types:  WATER isn't a valid Type.
+PokemonForms: Contains an empty line.
+Encounters: (    10,FEAROW,22,26): FEAROW isn't a valid Pokemon.
+Encounters: (    15,GOLBAT,15,35): GOLBAT isn't a valid Pokemon.
+Encounters: (    10,ODDISH,8,11): ODDISH isn't a valid Pokemon.
+Encounters: (    5,NIDORANfE,8,11): NIDORANfE isn't a valid Pokemon.
+Encounters: (    5,NIDORANmA,8,11): NIDORANmA isn't a valid Pokemon.
+Encounters: (    10,EKANS,18,22): EKANS isn't a valid Pokemon.
+Trainers (Pokemon = EKANS,11): EKANS isn't a valid Pokemon.
+Trainers (Pokemon = SPEAROW,16): SPEAROW isn't a valid Pokemon.
+Trainers (Pokemon = FEAROW,29): FEAROW isn't a valid Pokemon.
+Trainers (Pokemon = PIKACHU,6): PIKACHU isn't a valid Pokemon.
+Trainers (Pokemon = POLIWHIRL,12): POLIWHIRL isn't a valid Pokemon.
+Trainers (Pokemon = RATICATE,20): RATICATE isn't a valid Pokemon.
+Trainers (Pokemon = POLIWHIRL,26): POLIWHIRL isn't a valid Pokemon.
+-------------------
+Error Log Entry : 
+19:03:01 Dienstag, 4. April 2023
+:
+Moves: (HYDROSTEAM):  CanMirrorMove isn't a valid Flag.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (CHIKORITA): Moves:  LEECHSEED isn't a valid Move.
+Pokemons: (BAYLEEF): Moves:  LEECHSEED isn't a valid Move.
+Pokemons: (CHINCHOU): Abilities:  ILLUMINATE isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (BUDEW): Moves:  STUNSPORE isn't a valid Move.
+Pokemons: (PANSAGE): HiddenAbilities:  isn't a valid ability.
+Pokemons: (SIMISAGE): HiddenAbilities:  isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (PANSEAR): HiddenAbilities:  isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (SIMISEAR): HiddenAbilities:  isn't a valid ability.
+Pokemons: (PANPOUR): HiddenAbilities:  isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (SIMIPOUR): HiddenAbilities:  isn't a valid ability.
+Pokemons: (MEOWSTIC: Types:  FAIRY isn't a valid Type.
+Pokemons: MRRIME has an invalid property - HiddenAbility .
+Pokemons: RUNERIGUS has an invalid property - HiddenAbility .
+Pokemons: WYRDEER has an invalid property - BaseEXP .
+Pokemons: WYRDEER has an invalid property - HiddenAbility .
+Pokemons: KLEAVOR has an invalid property - BaseEXP .
+Pokemons: KLEAVOR has an invalid property - HiddenAbility .
+Pokemons: (URSALUNA: Types:  NORMAL isn't a valid Type.
+Pokemons: URSALUNA has an invalid property - BaseEXP .
+Pokemons: URSALUNA has an invalid property - HiddenAbility .
+Pokemons: BASCULEGION has an invalid property - BaseEXP .
+Pokemons: BASCULEGION has an invalid property - HiddenAbility .
+Pokemons: SNEASLER has an invalid property - BaseEXP .
+Pokemons: SNEASLER has an invalid property - HiddenAbility .
+Pokemons: SNEASLER has an invalid property - Eggmoves .
+Pokemons: OVERQWIL has an invalid property - BaseEXP .
+Pokemons: OVERQWIL has an invalid property - HiddenAbility .
+Pokemons: ENAMORUS has an invalid property - BaseEXP .
+Pokemons: ENAMORUS has an invalid property - HiddenAbility .
+Pokemons: (LECHONK): Abilities:  GLUTTONY isn't a valid ability.
+Pokemons: (OINKOLOGNE): Abilities:  GLUTTONY isn't a valid ability.
+Pokemons: (PAWMI): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (PAWMO): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (PAWMO): Evolutions: Walk is invalid.
+Pokemons: (PAWMOT): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (TANDEMAUS): Abilities:  PICKUP isn't a valid ability.
+Pokemons: (TANDEMAUS): Evolutions: BattleLevelSkipEvoScene is invalid.
+Pokemons: (MAUSHOLD): Abilities:  CHEEKPOUCH isn't a valid ability.
+Pokemons: (SQUAWKABILLY): Abilities:  HUSTLE isn't a valid ability.
+Pokemons: (NACLI): Abilities:  STURDY isn't a valid ability.
+Pokemons: (NACLSTACK): Abilities:  STURDY isn't a valid ability.
+Pokemons: (GARGANACL): Abilities:  STURDY isn't a valid ability.
+Pokemons: (TADBULB): Abilities:  STATIC isn't a valid ability.
+Pokemons: (BELLIBOLT): Abilities:  STATIC isn't a valid ability.
+Pokemons: (WATTREL): Abilities:  VOLTABSORB isn't a valid ability.
+Pokemons: (KILOWATTREL): Abilities:  VOLTABSORB isn't a valid ability.
+Pokemons: (MASCHIFF): Abilities:  RUNAWAY isn't a valid ability.
+Pokemons: (MABOSSTIFF): Abilities:  GUARDDOG isn't a valid ability.
+Pokemons: (SHROODLE): Abilities:  PICKPOCKET isn't a valid ability.
+Pokemons: (GRAFAIAI): Abilities:  POISONTOUCH isn't a valid ability.
+Pokemons: (BRAMBLIN): Evolutions: Walk is invalid.
+Pokemons: (TOEDSCOOL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (TOEDSCRUEL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (KLAWF): Abilities:  SHELLARMOR isn't a valid ability.
+Pokemons: (CAPSAKID): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (SCOVILLAIN): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (RELLOR): Evolutions: Walk is invalid.
+Pokemons: (FLITTLE): Abilities:  FRISK isn't a valid ability.
+Pokemons: (ESPATHRA): Abilities:  FRISK isn't a valid ability.
+Pokemons: (TINKATINK): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATUFF): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATON): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (WIGLETT): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (WUGTRIO): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (BOMBIRDIER): Abilities:  KEENEYE isn't a valid ability.
+Pokemons: (FINIZEN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FINIZEN): Evolutions: LevelWithPartner is invalid.
+Pokemons: (PALAFIN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FLAMIGO): Abilities:  TANGLEDFEET isn't a valid ability.
+Pokemons: (CETODDLE): Abilities:  SNOWCLOAK isn't a valid ability.
+Pokemons: (CETITAN): Abilities:  SLUSHRUSH isn't a valid ability.
+Pokemons: (DONDOZO): Abilities:  OBLIVIOUS isn't a valid ability.
+Pokemons: (ANNIHILAPE): Abilities:  INNERFOCUS isn't a valid ability.
+Pokemons: (CLODSIRE): Abilities:  WATERABSORB isn't a valid ability.
+Pokemons: (FARIGIRAF): Abilities:  ARMORTAIL isn't a valid ability.
+Pokemons: (DUDUNSPARCE): Abilities:  RUNAWAY isn't a valid ability.
+Pokemons: (KINGAMBIT): Abilities:  SUPREMEOVERLORD isn't a valid ability.
+Pokemons: (GIMMIGHOUL): Evolutions: CollectItems is invalid.
+Pokemons: (GHOLDENGO): HiddenAbilities:  isn't a valid ability.
+Pokemons: RATICATE isn't a valid Pokémon.
+Pokemons: FEAROW isn't a valid Pokémon.
+Pokemons: ARBOK isn't a valid Pokémon.
+Pokemons: RAICHU isn't a valid Pokémon.
+Pokemons: SANDSLASH isn't a valid Pokémon.
+Pokemons: NIDORANfE isn't a valid Pokémon.
+Pokemons: NIDORANmA isn't a valid Pokémon.
+Pokemons: NIDORINA isn't a valid Pokémon.
+Pokemons: NIDOQUEEN isn't a valid Pokémon.
+Pokemons: NIDORANfE isn't a valid Pokémon.
+Pokemons: NIDORANmA isn't a valid Pokémon.
+Pokemons: NIDORINO isn't a valid Pokémon.
+Pokemons: NIDOKING isn't a valid Pokémon.
+Pokemons: WIGGLYTUFF isn't a valid Pokémon.
+Pokemons: GOLBAT isn't a valid Pokémon.
+Pokemons: GLOOM isn't a valid Pokémon.
+Pokemons: VILEPLUME isn't a valid Pokémon.
+Pokemons: PARASECT isn't a valid Pokémon.
+Pokemons: POLIWHIRL isn't a valid Pokémon.
+Pokemons: POLIWRATH isn't a valid Pokémon.
+Pokemons: PIKACHU isn't a valid Pokémon.
+Pokemons: CLEFAIRY isn't a valid Pokémon.
+PokemonForms: (RATTATA_1): Evolutions: RATICATE isn't a valid Pokemon.
+PokemonForms ([RATICATE,1]): RATICATE isn't a valid Pokemon.
+PokemonForms ([RAICHU,1]): RAICHU isn't a valid Pokemon.
+PokemonForms: _1 is repeated.
+PokemonForms ([SANDSHREW,1]): SANDSHREW isn't a valid Pokemon.
+PokemonForms: (_1): Evolutions: SANDSLASH isn't a valid Pokemon.
+PokemonForms: _1 is repeated.
+PokemonForms ([SANDSLASH,1]): SANDSLASH isn't a valid Pokemon.
+PokemonForms: _1 is repeated.
+PokemonForms: (PICHU_2): Evolutions: PIKACHU isn't a valid Pokemon.
+PokemonForms: (BASCULIN_2): Evolutions: LevelRecoilDamage is invalid.
+PokemonForms: (WOOPER_1): Abilities:  WATERABSORB isn't a valid ability.
+PokemonForms: (TAUROS_3: Types:  WATER isn't a valid Type.
+PokemonForms: Contains an empty line.
+Encounters: (    10,FEAROW,22,26): FEAROW isn't a valid Pokemon.
+Encounters: (    15,GOLBAT,15,35): GOLBAT isn't a valid Pokemon.
+Encounters: (    10,ODDISH,8,11): ODDISH isn't a valid Pokemon.
+Encounters: (    5,NIDORANfE,8,11): NIDORANfE isn't a valid Pokemon.
+Encounters: (    5,NIDORANmA,8,11): NIDORANmA isn't a valid Pokemon.
+Encounters: (    10,EKANS,18,22): EKANS isn't a valid Pokemon.
+Trainers (Pokemon = EKANS,11): EKANS isn't a valid Pokemon.
+Trainers (Pokemon = SPEAROW,16): SPEAROW isn't a valid Pokemon.
+Trainers (Pokemon = FEAROW,29): FEAROW isn't a valid Pokemon.
+Trainers (Pokemon = PIKACHU,6): PIKACHU isn't a valid Pokemon.
+Trainers (Pokemon = POLIWHIRL,12): POLIWHIRL isn't a valid Pokemon.
+Trainers (Pokemon = RATICATE,20): RATICATE isn't a valid Pokemon.
+Trainers (Pokemon = POLIWHIRL,26): POLIWHIRL isn't a valid Pokemon.
+-------------------
+Error Log Entry : 
+19:04:49 Dienstag, 4. April 2023
+:
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (CHIKORITA): Moves:  LEECHSEED isn't a valid Move.
+Pokemons: (BAYLEEF): Moves:  LEECHSEED isn't a valid Move.
+Pokemons: (CHINCHOU): Abilities:  ILLUMINATE isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (BUDEW): Moves:  STUNSPORE isn't a valid Move.
+Pokemons: (PANSAGE): HiddenAbilities:  isn't a valid ability.
+Pokemons: (SIMISAGE): HiddenAbilities:  isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (PANSEAR): HiddenAbilities:  isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (SIMISEAR): HiddenAbilities:  isn't a valid ability.
+Pokemons: (PANPOUR): HiddenAbilities:  isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (SIMIPOUR): HiddenAbilities:  isn't a valid ability.
+Pokemons: (MEOWSTIC: Types:  FAIRY isn't a valid Type.
+Pokemons: MRRIME has an invalid property - HiddenAbility .
+Pokemons: RUNERIGUS has an invalid property - HiddenAbility .
+Pokemons: WYRDEER has an invalid property - BaseEXP .
+Pokemons: WYRDEER has an invalid property - HiddenAbility .
+Pokemons: KLEAVOR has an invalid property - BaseEXP .
+Pokemons: KLEAVOR has an invalid property - HiddenAbility .
+Pokemons: (URSALUNA: Types:  NORMAL isn't a valid Type.
+Pokemons: URSALUNA has an invalid property - BaseEXP .
+Pokemons: URSALUNA has an invalid property - HiddenAbility .
+Pokemons: BASCULEGION has an invalid property - BaseEXP .
+Pokemons: BASCULEGION has an invalid property - HiddenAbility .
+Pokemons: SNEASLER has an invalid property - BaseEXP .
+Pokemons: SNEASLER has an invalid property - HiddenAbility .
+Pokemons: SNEASLER has an invalid property - Eggmoves .
+Pokemons: OVERQWIL has an invalid property - BaseEXP .
+Pokemons: OVERQWIL has an invalid property - HiddenAbility .
+Pokemons: ENAMORUS has an invalid property - BaseEXP .
+Pokemons: ENAMORUS has an invalid property - HiddenAbility .
+Pokemons: (LECHONK): Abilities:  GLUTTONY isn't a valid ability.
+Pokemons: (OINKOLOGNE): Abilities:  GLUTTONY isn't a valid ability.
+Pokemons: (PAWMI): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (PAWMO): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (PAWMO): Evolutions: Walk is invalid.
+Pokemons: (PAWMOT): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (TANDEMAUS): Abilities:  PICKUP isn't a valid ability.
+Pokemons: (TANDEMAUS): Evolutions: BattleLevelSkipEvoScene is invalid.
+Pokemons: (MAUSHOLD): Abilities:  CHEEKPOUCH isn't a valid ability.
+Pokemons: (SQUAWKABILLY): Abilities:  HUSTLE isn't a valid ability.
+Pokemons: (NACLI): Abilities:  STURDY isn't a valid ability.
+Pokemons: (NACLSTACK): Abilities:  STURDY isn't a valid ability.
+Pokemons: (GARGANACL): Abilities:  STURDY isn't a valid ability.
+Pokemons: (TADBULB): Abilities:  STATIC isn't a valid ability.
+Pokemons: (BELLIBOLT): Abilities:  STATIC isn't a valid ability.
+Pokemons: (WATTREL): Abilities:  VOLTABSORB isn't a valid ability.
+Pokemons: (KILOWATTREL): Abilities:  VOLTABSORB isn't a valid ability.
+Pokemons: (MASCHIFF): Abilities:  RUNAWAY isn't a valid ability.
+Pokemons: (MABOSSTIFF): Abilities:  GUARDDOG isn't a valid ability.
+Pokemons: (SHROODLE): Abilities:  PICKPOCKET isn't a valid ability.
+Pokemons: (GRAFAIAI): Abilities:  POISONTOUCH isn't a valid ability.
+Pokemons: (BRAMBLIN): Evolutions: Walk is invalid.
+Pokemons: (TOEDSCOOL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (TOEDSCRUEL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (KLAWF): Abilities:  SHELLARMOR isn't a valid ability.
+Pokemons: (CAPSAKID): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (SCOVILLAIN): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (RELLOR): Evolutions: Walk is invalid.
+Pokemons: (FLITTLE): Abilities:  FRISK isn't a valid ability.
+Pokemons: (ESPATHRA): Abilities:  FRISK isn't a valid ability.
+Pokemons: (TINKATINK): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATUFF): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATON): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (WIGLETT): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (WUGTRIO): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (BOMBIRDIER): Abilities:  KEENEYE isn't a valid ability.
+Pokemons: (FINIZEN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FINIZEN): Evolutions: LevelWithPartner is invalid.
+Pokemons: (PALAFIN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FLAMIGO): Abilities:  TANGLEDFEET isn't a valid ability.
+Pokemons: (CETODDLE): Abilities:  SNOWCLOAK isn't a valid ability.
+Pokemons: (CETITAN): Abilities:  SLUSHRUSH isn't a valid ability.
+Pokemons: (DONDOZO): Abilities:  OBLIVIOUS isn't a valid ability.
+Pokemons: (ANNIHILAPE): Abilities:  INNERFOCUS isn't a valid ability.
+Pokemons: (CLODSIRE): Abilities:  WATERABSORB isn't a valid ability.
+Pokemons: (FARIGIRAF): Abilities:  ARMORTAIL isn't a valid ability.
+Pokemons: (DUDUNSPARCE): Abilities:  RUNAWAY isn't a valid ability.
+Pokemons: (KINGAMBIT): Abilities:  SUPREMEOVERLORD isn't a valid ability.
+Pokemons: (GIMMIGHOUL): Evolutions: CollectItems is invalid.
+Pokemons: (GHOLDENGO): HiddenAbilities:  isn't a valid ability.
+Pokemons: RATICATE isn't a valid Pokémon.
+Pokemons: FEAROW isn't a valid Pokémon.
+Pokemons: ARBOK isn't a valid Pokémon.
+Pokemons: RAICHU isn't a valid Pokémon.
+Pokemons: SANDSLASH isn't a valid Pokémon.
+Pokemons: NIDORANfE isn't a valid Pokémon.
+Pokemons: NIDORANmA isn't a valid Pokémon.
+Pokemons: NIDORINA isn't a valid Pokémon.
+Pokemons: NIDOQUEEN isn't a valid Pokémon.
+Pokemons: NIDORANfE isn't a valid Pokémon.
+Pokemons: NIDORANmA isn't a valid Pokémon.
+Pokemons: NIDORINO isn't a valid Pokémon.
+Pokemons: NIDOKING isn't a valid Pokémon.
+Pokemons: WIGGLYTUFF isn't a valid Pokémon.
+Pokemons: GOLBAT isn't a valid Pokémon.
+Pokemons: GLOOM isn't a valid Pokémon.
+Pokemons: VILEPLUME isn't a valid Pokémon.
+Pokemons: PARASECT isn't a valid Pokémon.
+Pokemons: POLIWHIRL isn't a valid Pokémon.
+Pokemons: POLIWRATH isn't a valid Pokémon.
+Pokemons: PIKACHU isn't a valid Pokémon.
+Pokemons: CLEFAIRY isn't a valid Pokémon.
+PokemonForms: (RATTATA_1): Evolutions: RATICATE isn't a valid Pokemon.
+PokemonForms ([RATICATE,1]): RATICATE isn't a valid Pokemon.
+PokemonForms ([RAICHU,1]): RAICHU isn't a valid Pokemon.
+PokemonForms: _1 is repeated.
+PokemonForms ([SANDSHREW,1]): SANDSHREW isn't a valid Pokemon.
+PokemonForms: (_1): Evolutions: SANDSLASH isn't a valid Pokemon.
+PokemonForms: _1 is repeated.
+PokemonForms ([SANDSLASH,1]): SANDSLASH isn't a valid Pokemon.
+PokemonForms: _1 is repeated.
+PokemonForms: (PICHU_2): Evolutions: PIKACHU isn't a valid Pokemon.
+PokemonForms: (BASCULIN_2): Evolutions: LevelRecoilDamage is invalid.
+PokemonForms: (WOOPER_1): Abilities:  WATERABSORB isn't a valid ability.
+PokemonForms: (TAUROS_3: Types:  WATER isn't a valid Type.
+PokemonForms: Contains an empty line.
+Encounters: (    10,FEAROW,22,26): FEAROW isn't a valid Pokemon.
+Encounters: (    15,GOLBAT,15,35): GOLBAT isn't a valid Pokemon.
+Encounters: (    10,ODDISH,8,11): ODDISH isn't a valid Pokemon.
+Encounters: (    5,NIDORANfE,8,11): NIDORANfE isn't a valid Pokemon.
+Encounters: (    5,NIDORANmA,8,11): NIDORANmA isn't a valid Pokemon.
+Encounters: (    10,EKANS,18,22): EKANS isn't a valid Pokemon.
+Trainers (Pokemon = EKANS,11): EKANS isn't a valid Pokemon.
+Trainers (Pokemon = SPEAROW,16): SPEAROW isn't a valid Pokemon.
+Trainers (Pokemon = FEAROW,29): FEAROW isn't a valid Pokemon.
+Trainers (Pokemon = PIKACHU,6): PIKACHU isn't a valid Pokemon.
+Trainers (Pokemon = POLIWHIRL,12): POLIWHIRL isn't a valid Pokemon.
+Trainers (Pokemon = RATICATE,20): RATICATE isn't a valid Pokemon.
+Trainers (Pokemon = POLIWHIRL,26): POLIWHIRL isn't a valid Pokemon.
+-------------------
+Error Log Entry : 
+19:08:25 Dienstag, 4. April 2023
+:
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (CHIKORITA): Moves:  LEECHSEED isn't a valid Move.
+Pokemons: (BAYLEEF): Moves:  LEECHSEED isn't a valid Move.
+Pokemons: (CHINCHOU): Abilities:  ILLUMINATE isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (BUDEW): Moves:  STUNSPORE isn't a valid Move.
+Pokemons: (PANSAGE): HiddenAbilities:  isn't a valid ability.
+Pokemons: (SIMISAGE): HiddenAbilities:  isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (PANSEAR): HiddenAbilities:  isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (SIMISEAR): HiddenAbilities:  isn't a valid ability.
+Pokemons: (PANPOUR): HiddenAbilities:  isn't a valid ability.
+Pokemons: Contains an empty line.
+Pokemons: Contains an empty line.
+Pokemons: (SIMIPOUR): HiddenAbilities:  isn't a valid ability.
+Pokemons: (MEOWSTIC: Types:  FAIRY isn't a valid Type.
+Pokemons: MRRIME has an invalid property - HiddenAbility .
+Pokemons: RUNERIGUS has an invalid property - HiddenAbility .
+Pokemons: WYRDEER has an invalid property - BaseEXP .
+Pokemons: WYRDEER has an invalid property - HiddenAbility .
+Pokemons: KLEAVOR has an invalid property - BaseEXP .
+Pokemons: KLEAVOR has an invalid property - HiddenAbility .
+Pokemons: (URSALUNA: Types:  NORMAL isn't a valid Type.
+Pokemons: URSALUNA has an invalid property - BaseEXP .
+Pokemons: URSALUNA has an invalid property - HiddenAbility .
+Pokemons: BASCULEGION has an invalid property - BaseEXP .
+Pokemons: BASCULEGION has an invalid property - HiddenAbility .
+Pokemons: SNEASLER has an invalid property - BaseEXP .
+Pokemons: SNEASLER has an invalid property - HiddenAbility .
+Pokemons: SNEASLER has an invalid property - Eggmoves .
+Pokemons: OVERQWIL has an invalid property - BaseEXP .
+Pokemons: OVERQWIL has an invalid property - HiddenAbility .
+Pokemons: ENAMORUS has an invalid property - BaseEXP .
+Pokemons: ENAMORUS has an invalid property - HiddenAbility .
+Pokemons: (LECHONK): Abilities:  GLUTTONY isn't a valid ability.
+Pokemons: (OINKOLOGNE): Abilities:  GLUTTONY isn't a valid ability.
+Pokemons: (PAWMI): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (PAWMO): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (PAWMO): Evolutions: Walk is invalid.
+Pokemons: (PAWMOT): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (TANDEMAUS): Abilities:  PICKUP isn't a valid ability.
+Pokemons: (TANDEMAUS): Evolutions: BattleLevelSkipEvoScene is invalid.
+Pokemons: (MAUSHOLD): Abilities:  CHEEKPOUCH isn't a valid ability.
+Pokemons: (SQUAWKABILLY): Abilities:  HUSTLE isn't a valid ability.
+Pokemons: (NACLI): Abilities:  STURDY isn't a valid ability.
+Pokemons: (NACLSTACK): Abilities:  STURDY isn't a valid ability.
+Pokemons: (GARGANACL): Abilities:  STURDY isn't a valid ability.
+Pokemons: (TADBULB): Abilities:  STATIC isn't a valid ability.
+Pokemons: (BELLIBOLT): Abilities:  STATIC isn't a valid ability.
+Pokemons: (WATTREL): Abilities:  VOLTABSORB isn't a valid ability.
+Pokemons: (KILOWATTREL): Abilities:  VOLTABSORB isn't a valid ability.
+Pokemons: (MASCHIFF): Abilities:  RUNAWAY isn't a valid ability.
+Pokemons: (MABOSSTIFF): Abilities:  GUARDDOG isn't a valid ability.
+Pokemons: (SHROODLE): Abilities:  PICKPOCKET isn't a valid ability.
+Pokemons: (GRAFAIAI): Abilities:  POISONTOUCH isn't a valid ability.
+Pokemons: (BRAMBLIN): Evolutions: Walk is invalid.
+Pokemons: (TOEDSCOOL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (TOEDSCRUEL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (KLAWF): Abilities:  SHELLARMOR isn't a valid ability.
+Pokemons: (CAPSAKID): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (SCOVILLAIN): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (RELLOR): Evolutions: Walk is invalid.
+Pokemons: (FLITTLE): Abilities:  FRISK isn't a valid ability.
+Pokemons: (ESPATHRA): Abilities:  FRISK isn't a valid ability.
+Pokemons: (TINKATINK): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATUFF): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATON): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (WIGLETT): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (WUGTRIO): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (BOMBIRDIER): Abilities:  KEENEYE isn't a valid ability.
+Pokemons: (FINIZEN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FINIZEN): Evolutions: LevelWithPartner is invalid.
+Pokemons: (PALAFIN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FLAMIGO): Abilities:  TANGLEDFEET isn't a valid ability.
+Pokemons: (CETODDLE): Abilities:  SNOWCLOAK isn't a valid ability.
+Pokemons: (CETITAN): Abilities:  SLUSHRUSH isn't a valid ability.
+Pokemons: (DONDOZO): Abilities:  OBLIVIOUS isn't a valid ability.
+Pokemons: (ANNIHILAPE): Abilities:  INNERFOCUS isn't a valid ability.
+Pokemons: (CLODSIRE): Abilities:  WATERABSORB isn't a valid ability.
+Pokemons: (FARIGIRAF): Abilities:  ARMORTAIL isn't a valid ability.
+Pokemons: (DUDUNSPARCE): Abilities:  RUNAWAY isn't a valid ability.
+Pokemons: (KINGAMBIT): Abilities:  SUPREMEOVERLORD isn't a valid ability.
+Pokemons: (GIMMIGHOUL): Evolutions: CollectItems is invalid.
+Pokemons: (GHOLDENGO): HiddenAbilities:  isn't a valid ability.
+Pokemons: RATICATE isn't a valid Pokémon.
+Pokemons: FEAROW isn't a valid Pokémon.
+Pokemons: ARBOK isn't a valid Pokémon.
+Pokemons: RAICHU isn't a valid Pokémon.
+Pokemons: SANDSLASH isn't a valid Pokémon.
+Pokemons: NIDORANfE isn't a valid Pokémon.
+Pokemons: NIDORANmA isn't a valid Pokémon.
+Pokemons: NIDORINA isn't a valid Pokémon.
+Pokemons: NIDOQUEEN isn't a valid Pokémon.
+Pokemons: NIDORANfE isn't a valid Pokémon.
+Pokemons: NIDORANmA isn't a valid Pokémon.
+Pokemons: NIDORINO isn't a valid Pokémon.
+Pokemons: NIDOKING isn't a valid Pokémon.
+Pokemons: WIGGLYTUFF isn't a valid Pokémon.
+Pokemons: GOLBAT isn't a valid Pokémon.
+Pokemons: GLOOM isn't a valid Pokémon.
+Pokemons: VILEPLUME isn't a valid Pokémon.
+Pokemons: PARASECT isn't a valid Pokémon.
+Pokemons: POLIWHIRL isn't a valid Pokémon.
+Pokemons: POLIWRATH isn't a valid Pokémon.
+Pokemons: PIKACHU isn't a valid Pokémon.
+Pokemons: CLEFAIRY isn't a valid Pokémon.
+PokemonForms: (RATTATA_1): Evolutions: RATICATE isn't a valid Pokemon.
+PokemonForms ([RATICATE,1]): RATICATE isn't a valid Pokemon.
+PokemonForms ([RAICHU,1]): RAICHU isn't a valid Pokemon.
+PokemonForms: _1 is repeated.
+PokemonForms ([SANDSHREW,1]): SANDSHREW isn't a valid Pokemon.
+PokemonForms: (_1): Evolutions: SANDSLASH isn't a valid Pokemon.
+PokemonForms: _1 is repeated.
+PokemonForms ([SANDSLASH,1]): SANDSLASH isn't a valid Pokemon.
+PokemonForms: _1 is repeated.
+PokemonForms: (PICHU_2): Evolutions: PIKACHU isn't a valid Pokemon.
+PokemonForms: (BASCULIN_2): Evolutions: LevelRecoilDamage is invalid.
+PokemonForms: (WOOPER_1): Abilities:  WATERABSORB isn't a valid ability.
+PokemonForms: (TAUROS_3: Types:  WATER isn't a valid Type.
+PokemonForms: Contains an empty line.
+Encounters: (    10,FEAROW,22,26): FEAROW isn't a valid Pokemon.
+Encounters: (    15,GOLBAT,15,35): GOLBAT isn't a valid Pokemon.
+Encounters: (    10,ODDISH,8,11): ODDISH isn't a valid Pokemon.
+Encounters: (    5,NIDORANfE,8,11): NIDORANfE isn't a valid Pokemon.
+Encounters: (    5,NIDORANmA,8,11): NIDORANmA isn't a valid Pokemon.
+Encounters: (    10,EKANS,18,22): EKANS isn't a valid Pokemon.
+Trainers (Pokemon = EKANS,11): EKANS isn't a valid Pokemon.
+Trainers (Pokemon = SPEAROW,16): SPEAROW isn't a valid Pokemon.
+Trainers (Pokemon = FEAROW,29): FEAROW isn't a valid Pokemon.
+Trainers (Pokemon = PIKACHU,6): PIKACHU isn't a valid Pokemon.
+Trainers (Pokemon = POLIWHIRL,12): POLIWHIRL isn't a valid Pokemon.
+Trainers (Pokemon = RATICATE,20): RATICATE isn't a valid Pokemon.
+Trainers (Pokemon = POLIWHIRL,26): POLIWHIRL isn't a valid Pokemon.
+-------------------
+Error Log Entry : 
+19:11:01 Dienstag, 4. April 2023
+:
+Pokemons: (CHIKORITA): Moves:  LEECHSEED isn't a valid Move.
+Pokemons: (BAYLEEF): Moves:  LEECHSEED isn't a valid Move.
+Pokemons: (CHINCHOU): Abilities:  ILLUMINATE isn't a valid ability.
+Pokemons: (BUDEW): Moves:  STUNSPORE isn't a valid Move.
+Pokemons: (PANSAGE): HiddenAbilities:  isn't a valid ability.
+Pokemons: (SIMISAGE): HiddenAbilities:  isn't a valid ability.
+Pokemons: (PANSEAR): HiddenAbilities:  isn't a valid ability.
+Pokemons: (SIMISEAR): HiddenAbilities:  isn't a valid ability.
+Pokemons: (PANPOUR): HiddenAbilities:  isn't a valid ability.
+Pokemons: (SIMIPOUR): HiddenAbilities:  isn't a valid ability.
+Pokemons: (MEOWSTIC: Types:  FAIRY isn't a valid Type.
+Pokemons: MRRIME has an invalid property - HiddenAbility .
+Pokemons: RUNERIGUS has an invalid property - HiddenAbility .
+Pokemons: WYRDEER has an invalid property - BaseEXP .
+Pokemons: WYRDEER has an invalid property - HiddenAbility .
+Pokemons: KLEAVOR has an invalid property - BaseEXP .
+Pokemons: KLEAVOR has an invalid property - HiddenAbility .
+Pokemons: (URSALUNA: Types:  NORMAL isn't a valid Type.
+Pokemons: URSALUNA has an invalid property - BaseEXP .
+Pokemons: URSALUNA has an invalid property - HiddenAbility .
+Pokemons: BASCULEGION has an invalid property - BaseEXP .
+Pokemons: BASCULEGION has an invalid property - HiddenAbility .
+Pokemons: SNEASLER has an invalid property - BaseEXP .
+Pokemons: SNEASLER has an invalid property - HiddenAbility .
+Pokemons: SNEASLER has an invalid property - Eggmoves .
+Pokemons: OVERQWIL has an invalid property - BaseEXP .
+Pokemons: OVERQWIL has an invalid property - HiddenAbility .
+Pokemons: ENAMORUS has an invalid property - BaseEXP .
+Pokemons: ENAMORUS has an invalid property - HiddenAbility .
+Pokemons: (LECHONK): Abilities:  GLUTTONY isn't a valid ability.
+Pokemons: (OINKOLOGNE): Abilities:  GLUTTONY isn't a valid ability.
+Pokemons: (PAWMI): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (PAWMO): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (PAWMO): Evolutions: Walk is invalid.
+Pokemons: (PAWMOT): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (TANDEMAUS): Abilities:  PICKUP isn't a valid ability.
+Pokemons: (TANDEMAUS): Evolutions: BattleLevelSkipEvoScene is invalid.
+Pokemons: (MAUSHOLD): Abilities:  CHEEKPOUCH isn't a valid ability.
+Pokemons: (SQUAWKABILLY): Abilities:  HUSTLE isn't a valid ability.
+Pokemons: (NACLI): Abilities:  STURDY isn't a valid ability.
+Pokemons: (NACLSTACK): Abilities:  STURDY isn't a valid ability.
+Pokemons: (GARGANACL): Abilities:  STURDY isn't a valid ability.
+Pokemons: (TADBULB): Abilities:  STATIC isn't a valid ability.
+Pokemons: (BELLIBOLT): Abilities:  STATIC isn't a valid ability.
+Pokemons: (WATTREL): Abilities:  VOLTABSORB isn't a valid ability.
+Pokemons: (KILOWATTREL): Abilities:  VOLTABSORB isn't a valid ability.
+Pokemons: (MASCHIFF): Abilities:  RUNAWAY isn't a valid ability.
+Pokemons: (MABOSSTIFF): Abilities:  GUARDDOG isn't a valid ability.
+Pokemons: (SHROODLE): Abilities:  PICKPOCKET isn't a valid ability.
+Pokemons: (GRAFAIAI): Abilities:  POISONTOUCH isn't a valid ability.
+Pokemons: (BRAMBLIN): Evolutions: Walk is invalid.
+Pokemons: (TOEDSCOOL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (TOEDSCRUEL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (KLAWF): Abilities:  SHELLARMOR isn't a valid ability.
+Pokemons: (CAPSAKID): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (SCOVILLAIN): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (RELLOR): Evolutions: Walk is invalid.
+Pokemons: (FLITTLE): Abilities:  FRISK isn't a valid ability.
+Pokemons: (ESPATHRA): Abilities:  FRISK isn't a valid ability.
+Pokemons: (TINKATINK): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATUFF): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATON): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (WIGLETT): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (WUGTRIO): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (BOMBIRDIER): Abilities:  KEENEYE isn't a valid ability.
+Pokemons: (FINIZEN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FINIZEN): Evolutions: LevelWithPartner is invalid.
+Pokemons: (PALAFIN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FLAMIGO): Abilities:  TANGLEDFEET isn't a valid ability.
+Pokemons: (CETODDLE): Abilities:  SNOWCLOAK isn't a valid ability.
+Pokemons: (CETITAN): Abilities:  SLUSHRUSH isn't a valid ability.
+Pokemons: (DONDOZO): Abilities:  OBLIVIOUS isn't a valid ability.
+Pokemons: (ANNIHILAPE): Abilities:  INNERFOCUS isn't a valid ability.
+Pokemons: (CLODSIRE): Abilities:  WATERABSORB isn't a valid ability.
+Pokemons: (FARIGIRAF): Abilities:  ARMORTAIL isn't a valid ability.
+Pokemons: (DUDUNSPARCE): Abilities:  RUNAWAY isn't a valid ability.
+Pokemons: (KINGAMBIT): Abilities:  SUPREMEOVERLORD isn't a valid ability.
+Pokemons: (GIMMIGHOUL): Evolutions: CollectItems is invalid.
+Pokemons: (GHOLDENGO): HiddenAbilities:  isn't a valid ability.
+PokemonForms: (BASCULIN_2): Evolutions: LevelRecoilDamage is invalid.
+PokemonForms: (WOOPER_1): Abilities:  WATERABSORB isn't a valid ability.
+PokemonForms: (TAUROS_3: Types:  WATER isn't a valid Type.
+PokemonForms: Contains an empty line.
+-------------------
+Error Log Entry : 
+19:32:01 Dienstag, 4. April 2023
+:
+Pokemons: (CHIKORITA): TutorMoves:  isn't a valid move.
+Pokemons: (SIMIPOUR): HiddenAbilities:  isn't a valid ability.
+Pokemons: (URSALUNA: Types:  NORMAL isn't a valid Type.
+Pokemons: SNEASLER has an invalid property - Eggmoves .
+Pokemons: (PAWMOT): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (TANDEMAUS): Evolutions: BattleLevelSkipEvoScene is invalid.
+Pokemons: (TOEDSCOOL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (TOEDSCRUEL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (KLAWF): Abilities:  SHELLARMOR isn't a valid ability.
+Pokemons: (CAPSAKID): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (SCOVILLAIN): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (FLITTLE): Abilities:  FRISK isn't a valid ability.
+Pokemons: (ESPATHRA): Abilities:  FRISK isn't a valid ability.
+Pokemons: (TINKATINK): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATUFF): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATON): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (WIGLETT): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (WUGTRIO): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (BOMBIRDIER): Abilities:  KEENEYE isn't a valid ability.
+Pokemons: (FINIZEN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FINIZEN): Evolutions: LevelWithPartner is invalid.
+Pokemons: (PALAFIN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FLAMIGO): Abilities:  TANGLEDFEET isn't a valid ability.
+Pokemons: (CETODDLE): Abilities:  SNOWCLOAK isn't a valid ability.
+Pokemons: (CETITAN): Abilities:  SLUSHRUSH isn't a valid ability.
+Pokemons: (DONDOZO): Abilities:  OBLIVIOUS isn't a valid ability.
+Pokemons: (ANNIHILAPE): Abilities:  INNERFOCUS isn't a valid ability.
+Pokemons: (CLODSIRE): Abilities:  WATERABSORB isn't a valid ability.
+Pokemons: (FARIGIRAF): Abilities:  ARMORTAIL isn't a valid ability.
+Pokemons: (DUDUNSPARCE): Abilities:  RUNAWAY isn't a valid ability.
+Pokemons: (KINGAMBIT): Abilities:  SUPREMEOVERLORD isn't a valid ability.
+Pokemons: (GIMMIGHOUL): Evolutions: CollectItems is invalid.
+Pokemons: (GHOLDENGO): HiddenAbilities:  isn't a valid ability.
+PokemonForms: (BASCULIN_2): Evolutions: LevelRecoilDamage is invalid.
+PokemonForms: (WOOPER_1): Abilities:  WATERABSORB isn't a valid ability.
+PokemonForms: (TAUROS_3: Types:  WATER isn't a valid Type.
+PokemonForms: Contains an empty line.
+-------------------
+Error Log Entry : 
+22:05:46 Dienstag, 4. April 2023
+:
+Pokemons: (SIMIPOUR): HiddenAbilities:  isn't a valid ability.
+Pokemons: (URSALUNA: Types:  NORMAL isn't a valid Type.
+Pokemons: SNEASLER has an invalid property - Eggmoves .
+Pokemons: (PAWMOT): Abilities:  NATURALCURE isn't a valid ability.
+Pokemons: (TANDEMAUS): Evolutions: BattleLevelSkipEvoScene is invalid.
+Pokemons: (TOEDSCOOL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (TOEDSCRUEL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (KLAWF): Abilities:  SHELLARMOR isn't a valid ability.
+Pokemons: (CAPSAKID): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (SCOVILLAIN): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (FLITTLE): Abilities:  FRISK isn't a valid ability.
+Pokemons: (ESPATHRA): Abilities:  FRISK isn't a valid ability.
+Pokemons: (TINKATINK): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATUFF): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATON): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (WIGLETT): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (WUGTRIO): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (BOMBIRDIER): Abilities:  KEENEYE isn't a valid ability.
+Pokemons: (FINIZEN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FINIZEN): Evolutions: LevelWithPartner is invalid.
+Pokemons: (PALAFIN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FLAMIGO): Abilities:  TANGLEDFEET isn't a valid ability.
+Pokemons: (CETODDLE): Abilities:  SNOWCLOAK isn't a valid ability.
+Pokemons: (CETITAN): Abilities:  SLUSHRUSH isn't a valid ability.
+Pokemons: (DONDOZO): Abilities:  OBLIVIOUS isn't a valid ability.
+Pokemons: (ANNIHILAPE): Abilities:  INNERFOCUS isn't a valid ability.
+Pokemons: (CLODSIRE): Abilities:  WATERABSORB isn't a valid ability.
+Pokemons: (FARIGIRAF): Abilities:  ARMORTAIL isn't a valid ability.
+Pokemons: (DUDUNSPARCE): Abilities:  RUNAWAY isn't a valid ability.
+Pokemons: (KINGAMBIT): Abilities:  SUPREMEOVERLORD isn't a valid ability.
+Pokemons: (GIMMIGHOUL): Evolutions: CollectItems is invalid.
+Pokemons: (GHOLDENGO): HiddenAbilities:  isn't a valid ability.
+PokemonForms: (BASCULIN_2): Evolutions: LevelRecoilDamage is invalid.
+PokemonForms: (WOOPER_1): Abilities:  WATERABSORB isn't a valid ability.
+PokemonForms: (TAUROS_3: Types:  WATER isn't a valid Type.
+PokemonForms: Contains an empty line.
+-------------------
+Error Log Entry : 
+22:10:07 Dienstag, 4. April 2023
+:
+Pokemons: (TOEDSCOOL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (TOEDSCRUEL): HiddenAbilities:  isn't a valid ability.
+Pokemons: (KLAWF): Abilities:  SHELLARMOR isn't a valid ability.
+Pokemons: (CAPSAKID): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (SCOVILLAIN): Abilities:  INSOMNIA isn't a valid ability.
+Pokemons: (FLITTLE): Abilities:  FRISK isn't a valid ability.
+Pokemons: (ESPATHRA): Abilities:  FRISK isn't a valid ability.
+Pokemons: (TINKATINK): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATUFF): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (TINKATON): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (WIGLETT): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (WUGTRIO): Abilities:  RATTLED isn't a valid ability.
+Pokemons: (BOMBIRDIER): Abilities:  KEENEYE isn't a valid ability.
+Pokemons: (FINIZEN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FINIZEN): Evolutions: LevelWithPartner is invalid.
+Pokemons: (PALAFIN): HiddenAbilities:  isn't a valid ability.
+Pokemons: (FLAMIGO): Abilities:  TANGLEDFEET isn't a valid ability.
+Pokemons: (CETODDLE): Abilities:  SNOWCLOAK isn't a valid ability.
+Pokemons: (CETITAN): Abilities:  SLUSHRUSH isn't a valid ability.
+Pokemons: (DONDOZO): Abilities:  OBLIVIOUS isn't a valid ability.
+Pokemons: (ANNIHILAPE): Abilities:  INNERFOCUS isn't a valid ability.
+Pokemons: (CLODSIRE): Abilities:  WATERABSORB isn't a valid ability.
+Pokemons: (FARIGIRAF): Abilities:  ARMORTAIL isn't a valid ability.
+Pokemons: (DUDUNSPARCE): Abilities:  RUNAWAY isn't a valid ability.
+Pokemons: (KINGAMBIT): Abilities:  SUPREMEOVERLORD isn't a valid ability.
+Pokemons: (GIMMIGHOUL): Evolutions: CollectItems is invalid.
+Pokemons: (GHOLDENGO): HiddenAbilities:  isn't a valid ability.
+PokemonForms: (BASCULIN_2): Evolutions: LevelRecoilDamage is invalid.
+PokemonForms: (WOOPER_1): Abilities:  WATERABSORB isn't a valid ability.
+PokemonForms: (TAUROS_3: Types:  WATER isn't a valid Type.
+PokemonForms: Contains an empty line.
+-------------------
+Error Log Entry : 
+22:18:48 Dienstag, 4. April 2023
+:
+Pokemons: (TINKATON): Abilities:  OWNTEMPO isn't a valid ability.
+Pokemons: (GHOLDENGO): HiddenAbilities:  isn't a valid ability.
+-------------------
