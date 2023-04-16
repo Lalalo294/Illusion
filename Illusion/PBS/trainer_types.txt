@@ -490,3 +490,13 @@ Gender = Male
 BaseMoney = 100
 BattleBGM = Krabu_Theme
 VictoryBGM = Battle victory leader
+#-------------------------------
+[Kimono_Girl]
+Name = Kimono Girl
+Gender = Female
+BaseMoney = 60
+#-------------------------------
+[Ninja_1]
+Name = Ninja
+Gender = Male
+BaseMoney = 60

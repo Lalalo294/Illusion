@@ -1,0 +1,235 @@
+# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[015] # Berheide
+Land,21
+    5,MILTANK,22,26
+    5,TAUROS,22,26
+    3,BOUFFALANT,22,26
+    15,SUNKERN,22,26
+    15,DODUO,22,26
+    3,LARVESTA,22,26
+    9,ABRA,22,26
+    15,WHISMUR,22,26
+    10,FEAROW,22,26
+    15,PONYTA,22,26
+#-------------------------------
+[030] # Hornbach
+Land,21
+    15,HOPPIP,20,25
+    10,BUIZEL,20,25
+    10,DUCKLETT,20,25
+    10,KARRABLAST,20,25
+    10,PETILIL,20,25
+    10,PSYDUCK,20,25
+    10,ROOKIDEE,20,25
+    10,SHELMET,20,25
+    5,EMOLGA,20,25
+    5,FARFETCHD,20,25
+    5,FARFETCHD_1,20,25
+Water,2
+    25,SURSKIT,20,25
+    25,WOOPER,20,25
+    20,DEWPIDER,20,25
+    20,MARILL,20,25
+    5,OSHAWOTT,20,25
+OldRod
+    35,MAGIKARP,20,25
+    25,BARBOACH,20,25
+    25,POLIWAG,20,25
+    5,BASCULIN,20,25
+    5,BASCULIN_1,20,25
+    5,FEEBAS,20,25
+#-------------------------------
+[031] # Schmidrütli
+Water,2
+    20,LOTAD,13,14
+    20,MARILL,14
+    20,PSYDUCK,5
+    15,WINGULL,15
+    10,CROAGUNK,5
+    10,SURSKIT,5
+    5,CRAMORANT,5
+OldRod
+    20,BARBOACH,10,17
+    20,GOLDEEN,5
+    20,REMORAID,5
+    15,CORPHISH,5
+    10,QWILFISH,6,11
+    8,BASCULIN,5
+    7,BASCULIN_1,5
+#-------------------------------
+[032] # Siedlingen
+Land,21
+    20,POOCHYENA,2,4
+    15,SIZZLIPEDE,2,4
+    15,VOLTORB,2,4
+    10,MEOWTH,2,4
+    10,WYNAUT,2,4
+    8,MUNNA,2,4
+    7,HAPPINY,2,4
+    5,AUDINO,2,4
+    5,DITTO,2,4
+    5,KLEFKI,2,4
+#-------------------------------
+[077] # Wiesenflur
+Land,21
+    20,CATERPIE,2,5
+    20,FLETCHLING,2,5
+    10,PIDGEY,2,5
+    10,PIDOVE,2,5
+    10,SCATTERBUG,2,5
+    6,CUTIEFLY,2,5
+    6,LEDYBA,2,5
+    5,PICHU,2,5
+    5,YAMPER,2,5
+    4,CHESPIN,2,5
+    4,MUNCHLAX,2,5
+#-------------------------------
+[082] # Dunkelpfad
+Cave,5
+    15,GEODUDE,5,9
+    15,ROGGENROLA,5,9
+    15,ZUBAT,5,9
+    10,CUBONE,5,9
+    10,DWEBBLE,5,9
+    10,NOSEPASS,5,9
+    10,WOOBAT,5,9
+    6,GOLETT,5,9
+    6,MISDREAVUS,5,9
+    3,ARON,5,9
+Water,2
+    35,TENTACRUEL,25,35
+    30,SEAKING,25,35
+    15,GOLBAT,15,35
+    10,RELICANTH,25,35
+    10,REMORAID,25,35
+OldRod
+    45,MAGIKARP,10,20
+    30,TENTACOOL,10,20
+    19,SLOWPOKE,10,20
+    5,FEEBAS,10,20
+    1,PHIONE,15,25
+#-------------------------------
+[085] # Frostfeld
+Land,21
+    20,BERGMITE,50,55
+    20,CRYOGONAL,50,55
+    20,DELIBIRD,50,55
+    20,GLASTRIER,50,55
+    20,MRMIME_1,50,55
+    20,SNEASEL,50,55
+    20,SNOM,50,55
+    20,SNOVER,50,55
+    20,SWINUB,50,55
+    20,VULPIX_1,50,55
+#-------------------------------
+[086] # Schwalbenweg
+Land,21
+    10,COMBEE,8,11
+    10,KRICKETOT,8,11
+    10,ODDISH,8,11
+    10,SEEDOT,8,11
+    10,WEEDLE,8,11
+    9,TAILLOW,8,11
+    8,GRUBBIN,8,11
+    8,SHROOMISH,8,11
+    6,MACHOP,8,11
+    6,SHINX,8,11
+    5,NIDORANfE,8,11
+    5,NIDORANmA,8,11
+    3,SCORBUNNY,8,11
+#-------------------------------
+[089] # Liliko'i
+Land,21
+    15,BINACLE,10,12
+    15,CHEWTLE,10,12
+    15,CRABRAWLER,10,12
+    15,INKAY,10,12
+    10,CLOBBOPUS,10,12
+    10,TIRTOUGA,10,12
+    8,SANDYGAST,10,12
+    4,COMFEY,10,12
+    4,KOMALA,10,12
+    4,PINCURCHIN,10,12
+OldRod
+    25,CLAMPERL,5,15
+    20,CHINCHOU,5,15
+    20,WAILMER,5,15
+    10,CLAUNCHER,5,15
+    10,RELICANTH,5,15
+    10,SKRELP,5,15
+    5,SQUIRTLE,5,15
+Water,2
+    35,MANTYKE,5
+    25,CORSOLA,5
+    20,MAREANIE,5
+    15,WISHIWASHI,5
+    5,POPPLIO,5
+#-------------------------------
+[095] # Wanderweg
+Land,21
+    10,BUNNELBY,18,22
+    10,EKANS,18,22
+    10,MANKEY,18,22
+    10,SKIDDO,18,22
+    10,SNUBBULL,18,22
+    10,STARLY,18,22
+    10,TEDDIURSA,18,22
+    9,HELIOPTILE,18,22
+    8,RUFFLET,18,22
+    8,STANTLER,18,22
+    5,ROCKRUFF,18,22
+#-------------------------------
+[133] # Normallichtung
+Land,21
+    12,BIDOOF,2,5
+    12,BUNNELBY,2,5
+    12,PATRAT,2,5
+    12,RATTATA,2,5
+    12,SENTRET,2,5
+    12,SKWOVET,2,5
+    12,YUNGOOS,2,5
+    12,ZIGZAGOON,2,5
+    6,LILLIPUP,2,5
+    6,WOOLOO,2,5
+    4,EEVEE,2,5
+#-------------------------------
+[200] # Siedlerforst
+Land,21
+    10,BELLSPROUT,12,14
+    10,BLIPBUG,12,14
+    10,BURMY,12,14
+    10,HOOTHOOT,12,14
+    10,PARAS,12,14
+    10,SPINARAK,12,14
+    10,VENONAT,12,14
+    10,WURMPLE,12,14
+    8,PINECO,12,14
+    8,SEWADDLE,12,14
+    4,BULBASAUR,12,14
+Water,2
+    20,DEWPIDER,18,22
+    20,MARILL,18,22
+    20,POLIWAG,18,22
+    20,SURSKIT,18,22
+    20,TYMPOLE,18,22
+OldRod
+    40,GOLDEEN,18,22
+    25,BARBOACH,18,22
+    25,CORPHISH,18,22
+    10,FEEBAS,18,22
+#-------------------------------
+[203] # Hagerode
+Land,21
+    16,EXEGGCUTE,12,15
+    16,FOONGUS,12,15
+    16,SHELLDER,12,15
+    16,TRUBBISH,12,15
+    10,GRIMER_1,12,15
+    8,MORPEKO,12,15
+    8,WISHIWASHI,12,15
+    4,BASCULIN,12,15
+    4,BASCULIN_1,12,15
+    4,INDEEDEE,12,15
+    4,INDEEDEE_1,12,15
+    4,LITTEN,12,15
