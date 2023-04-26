@@ -4,9 +4,9 @@
 10,North,0,11,South,0
 # Safari Zone: Marsh (12) - Safari Zone: Desert (11)
 12,South,2,11,North,0
-# Berheide (15) - Hornfeld (17)
+# Berheide (15) - Hornfeldcity (17)
 15,West,0,17,East,23
-# Hornfeld (17) - Hornbach (30)
+# Hornfeldcity (17) - Hornbach (30)
 17,West,21,30,East,0
 # Trees (18) - Schwalbenweg (86)
 18,South,0,86,North,30
@@ -36,71 +36,41 @@
 50,South,0,31,North,0
 # Wanderweg (95) - Schmidrütli (31)
 95,East,17,31,West,0
-# Siedlerforst (200) - Siedlingen (32)
-200,South,13,32,North,0
-# Wiesenflur (77) - Siedlingen (32)
-77,West,0,32,East,19
-# Normallichtung (133) - Siedlingen (32)
-133,West,13,32,East,0
-# Enursia City (37) - Route 7 (41)
-37,South,35,41,North,0
-# Route 9 (49) - Enursia City (37)
-49,South,0,37,North,38
-# Royal River (44) - Route 7 (41)
-44,North,0,41,South,0
-# water1 (46) - Route 7 (41)
-46,West,0,41,East,55
-# Route 8 (45) - Royal River (44)
-45,North,0,44,South,7
-# water2 (47) - Royal River (44)
-47,North,0,44,South,37
-# water1 (46) - Royal River (44)
-46,South,0,44,North,31
-# Downpour City (52) - Route 8 (45)
-52,North,30,45,South,0
-# water2 (47) - Route 8 (45)
-47,West,0,45,East,0
 # Wanderweg (95) - Wishing Well (50)
 95,East,0,50,West,22
-# Route 10 (55) - Downpour City (52)
-55,East,0,52,West,44
-# Keishan City (59) - Downpour City (52)
-59,East,140,52,West,0
-# Route 11 (56) - Keishan City (59)
-56,North,0,59,South,38
 # Wishing Well (64) - Liliko'i (89)
 64,East,0,89,West,16
-# MAP066 (66) - Nuri version buggy (83)
-66,North,0,83,South,24
-# Route 13 (75) - Route 12 (74)
-75,West,0,74,East,42
-# Normallichtung (133) - Wiesenflur (77)
-133,South,0,77,North,0
-# Gallenstedt (78) - Wiesenflur (77)
-78,West,3,77,East,0
-# Frostfeld (85) - Hagerode (203)
-85,South,0,203,North,9
+# Bermoor (76) - Bad Bernau-Tempel (69)
+76,North,0,69,South,16
+# Pfützenpfad (350) - Bad Bernau-Tempel (69)
+350,East,0,69,West,0
 # Gronhafen (87) - Schwalbenweg (86)
 87,West,4,86,East,0
 # Gronsee (300) - Schwalbenweg (86)
 300,West,0,86,East,53
 # Gronsee (300) - Gronhafen (87)
 300,North,0,87,South,0
-# Eterna City (125) - Route 211 (127)
-125,East,1,127,West,0
-# Hagerode (203) - Siedlerforst (200)
-203,South,13,200,North,0
-# Bermoor (76) - Tümpelhain (69)
-76,North,0,69,South,16
-# MAP350 (350) - Tümpelhain (69)
-350,East,0,69,West,0
-# MAP351 (351) - MAP350 (350)
+# Teufelsbrücke (351) - Pfützenpfad (350)
 351,East,0,350,West,0
-# MAP352 (352) - MAP351 (351)
+# Zwielichtung (352) - Teufelsbrücke (351)
 352,East,0,351,West,0
-# Goodvale (353) - MAP352 (352)
+# Goodvale (353) - Zwielichtung (352)
 353,East,9,352,West,0
 # Brennende Felder (354) - Goodvale (353)
 354,East,8,353,West,0
 # Gangervill (355) - Brennende Felder (354)
 355,East,0,354,West,4
+# Siedlingen (32) - Wiesenflur (77)
+32,East,19,77,West,0
+# Normallichtung (133) - Wiesenflur (77)
+133,South,0,77,North,0
+# Gallenstedt (78) - Wiesenflur (77)
+78,West,3,77,East,0
+# Siedlerforst (200) - Siedlingen (32)
+200,South,13,32,North,0
+# Normallichtung (133) - Siedlingen (32)
+133,West,13,32,East,0
+# Hagerode (203) - Siedlerforst (200)
+203,South,13,200,North,0
+# Frostfeld (85) - Hagerode (203)
+85,South,0,203,North,9

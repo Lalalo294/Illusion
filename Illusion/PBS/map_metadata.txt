@@ -1,16 +1,16 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
-[001]   # PokéCenter
+[001]
 Name = Intro
 #-------------------------------
-[002]   # Spear Pillar
+[002]
 Name = Lappet Town
 Outdoor = true
 ShowArea = true
 MapPosition = 0,13,12
 BattleBack = field
 #-------------------------------
-[003]   # Distortion World
+[003]
 Name = \PN's house
 HealingSpot = 2,8,8
 MapPosition = 0,13,12
@@ -20,14 +20,14 @@ Name = Pokémon Lab
 ShowArea = false
 MapPosition = 0,13,12
 #-------------------------------
-[005]   # Hailgem Gym
+[005]
 Name = Route 1
 Outdoor = true
 ShowArea = true
 MapPosition = 0,13,11
 BattleBack = field
 #-------------------------------
-[006]   # cutscene
+[006]
 Name = Route 1
 MapPosition = 0,13,11
 #-------------------------------
@@ -74,11 +74,11 @@ MapPosition = 0,13,10
 Name = Cedolan City
 MapPosition = 0,13,10
 #-------------------------------
-[016]   # PokéCenter
+[016]   # Pokecenter
 Name = Cedolan City
 MapPosition = 0,13,10
 #-------------------------------
-[017]   # Hornfeld
+[017]   # Hornfeldcity
 Name = Cedolan City
 MapPosition = 0,13,10
 #-------------------------------
@@ -103,13 +103,13 @@ MapPosition = 0,14,8
 BattleBack = field
 MapSize = 1,11
 #-------------------------------
-[023]   # Greystone Cave
+[023]
 Name = Lerucean Town
 Outdoor = true
 ShowArea = true
 MapPosition = 0,15,8
 #-------------------------------
-[024]   # Gate
+[024]
 Name = Lerucean Town
 HealingSpot = 23,11,15
 MapPosition = 0,15,8
@@ -118,15 +118,15 @@ MapPosition = 0,15,8
 Name = Lerucean Town
 MapPosition = 0,15,8
 #-------------------------------
-[026]   # House
+[026]
 Name = Lerucean Town
 MapPosition = 0,15,8
 #-------------------------------
-[027]   # House
+[027]
 Name = Lerucean Town
 MapPosition = 0,15,8
 #-------------------------------
-[028]   # House
+[028]
 Name = Natural Park
 Outdoor = true
 ShowArea = true
@@ -160,6 +160,9 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,15,12
 #-------------------------------
+[033]   # Lab
+Name = Lab
+#-------------------------------
 [034]   # Heggate Houses
 Name = Route 3
 Bicycle = true
@@ -179,7 +182,7 @@ Name = Ingido Plateau
 HealingSpot = 35,17,7
 MapPosition = 0,13,6
 #-------------------------------
-[037]   # Enursia City
+[037]
 Name = Ingido Plateau
 MapPosition = 0,13,6
 BattleBack = elite1
@@ -190,7 +193,7 @@ Name = Ingido Plateau
 MapPosition = 0,13,6
 Flags = DisableBoxLink
 #-------------------------------
-[039]   # Pokémon Fan Club
+[039]
 Name = Route 4
 Outdoor = true
 ShowArea = true
@@ -198,14 +201,14 @@ MapPosition = 0,11,6
 BattleBack = field
 MapSize = 2,11
 #-------------------------------
-[040]   # Enursia City Gym
+[040]
 Name = Route 4
 Outdoor = true
 ShowArea = true
 BicycleAlways = true
 MapPosition = 0,11,6
 #-------------------------------
-[041]   # Route 7
+[041]
 Name = Route 5
 Outdoor = true
 ShowArea = true
@@ -217,7 +220,7 @@ MapSize = 1,111
 Name = \PN's Home
 HealingSpot = 42,6,7
 #-------------------------------
-[044]   # Royal River
+[044]
 Name = Route 6
 Outdoor = true
 ShowArea = true
@@ -225,19 +228,19 @@ MapPosition = 0,11,10
 BattleBack = field
 MapSize = 2,11
 #-------------------------------
-[045]   # Route 8
+[045]
 Name = Route 6
 Outdoor = true
 ShowArea = true
 BicycleAlways = true
 MapPosition = 0,11,10
 #-------------------------------
-[046]   # water1
+[046]
 Name = Route 4
 Bicycle = true
 MapPosition = 0,12,6
 #-------------------------------
-[047]   # water2
+[047]
 Name = Route 7
 Outdoor = true
 ShowArea = true
@@ -264,7 +267,7 @@ BattleBack = cave3
 Environment = Cave
 Flags = Magnetic,DistortionWorld
 #-------------------------------
-[051]   # PokéCenter
+[051]
 Name = Route 7
 Bicycle = true
 MapPosition = 0,16,10
@@ -273,7 +276,7 @@ BattleBack = cave2
 Environment = Cave
 Flags = Magnetic,DistortionWorld
 #-------------------------------
-[052]   # Downpour City
+[052]
 Name = Battle Frontier
 Outdoor = true
 ShowArea = true
@@ -284,7 +287,7 @@ Name = Battle Frontier
 HealingSpot = 52,17,14
 MapPosition = 0,17,10
 #-------------------------------
-[054]   # MAP054
+[054]   # Berheide-Häuser-innen
 Name = Battle Frontier
 MapPosition = 0,17,10
 #-------------------------------
@@ -293,27 +296,27 @@ Name = Battle Frontier
 HealingSpot = 52,30,10
 MapPosition = 0,17,10
 #-------------------------------
-[056]   # Route 11
+[056]
 Name = Battle Frontier
 MapPosition = 0,17,10
 BattleBack = indoor1
 Flags = DisableBoxLink
 #-------------------------------
-[057]   # PokéCenter
+[057]
 Name = Battle Frontier
 MapPosition = 0,17,10
 #-------------------------------
-[058]   # Downpour Gym
+[058]
 Name = Battle Frontier
 MapPosition = 0,17,10
 #-------------------------------
-[059]   # Keishan City
+[059]
 Name = Battle Frontier
 MapPosition = 0,17,10
 BattleBack = indoor1
 Flags = DisableBoxLink
 #-------------------------------
-[060]   # Keishan City Gym
+[060]
 Name = Battle Frontier
 MapPosition = 0,17,10
 #-------------------------------
@@ -323,7 +326,7 @@ MapPosition = 0,17,10
 BattleBack = indoor1
 Flags = DisableBoxLink
 #-------------------------------
-[062]   # PokéCenter
+[062]
 Name = Battle Frontier
 MapPosition = 0,17,10
 #-------------------------------
@@ -343,18 +346,18 @@ Name = Battle Frontier
 MapPosition = 0,17,10
 Flags = DisableBoxLink
 #-------------------------------
-[066]   # MAP066
+[066]
 Name = test
 Outdoor = true
 ShowArea = false
 MapPosition = 0,12,12
 BattleBack = field
 #-------------------------------
-[067]   # MAP067
+[067]   # Berheide-Pension
 Name = Safari Zone
 MapPosition = 0,12,12
 #-------------------------------
-[068]   # MAP068
+[068]   # Bad Bernau-Häuser-innen
 Name = Safari Zone
 Outdoor = true
 ShowArea = true
@@ -363,7 +366,7 @@ SafariMap = true
 BattleBack = forest
 Environment = Forest
 #-------------------------------
-[069]   # Tümpelhain
+[069]   # Bad Bernau-Tempel
 Name = Route 8
 Outdoor = true
 ShowArea = true
@@ -371,17 +374,18 @@ MapPosition = 0,13,13
 DiveMap = 70
 BattleBack = field
 #-------------------------------
-[070]   # MAP070
+[070]   # HornfeldCity-Häuser-innen
+
 Name = Route 8
 MapPosition = 0,13,13
 BattleBack = underwater
 Environment = Underwater
 #-------------------------------
-[071]   # Interstellar Path
+[071]
 Name = Route 8
 MapPosition = 0,13,13
 #-------------------------------
-[072]   # MAP072
+[072]   # Bad Bernau-Arena
 Name = Berth Island
 Outdoor = true
 ShowArea = true
@@ -390,7 +394,7 @@ MapPosition = 0,18,17
 BattleBack = field
 Flags = DistortionWorld
 #-------------------------------
-[073]   # Map for free
+[073]
 Name = Faraday Island
 Outdoor = true
 ShowArea = true
@@ -403,7 +407,7 @@ Name = Route 6
 Bicycle = true
 MapPosition = 0,12,10
 #-------------------------------
-[075]   # Route 13
+[075]
 Name = Tiall Region
 Outdoor = true
 MapPosition = 1,13,16
@@ -416,6 +420,7 @@ ShowArea = true
 MapPosition = 0,17,13
 BattleBack = newroute_day
 TrainerBattleBGM = Trainer_Battle_Theme_1.ogg
+MapSize = 0,
 #-------------------------------
 [078]   # Gallenstedt
 Name = Gallenstedt
@@ -460,19 +465,26 @@ ShowArea = true
 Bicycle = true
 MapPosition = 0,27,17
 #-------------------------------
+[090]   # Norpeak Island
+Name = Norpeak Island
+MapPosition = 0,29,19
+#-------------------------------
 [095]   # Wanderweg
 Name = Wanderweg
 Outdoor = true
 ShowArea = true
 MapPosition = 0,2,9
 #-------------------------------
-[097]   # Cyberhole City
+[097]
 Name = Cyberhole City
 MapPosition = 0,14,5
 #-------------------------------
-[117]   # Hailgem City
+[117]
 Name = Hailgem City
 MapPosition = 0,20,4
+#-------------------------------
+[120]   # Intro
+Name = Intro
 #-------------------------------
 [133]   # Normallichtung
 Name = Waldlichtung
@@ -510,5 +522,17 @@ ShowArea = true
 Bicycle = true
 MapPosition = 0,9,14
 #-------------------------------
-[352]   # MAP352
+[352]   # Zwielichtung
 Name = MAP352
+#-------------------------------
+[353]   # Goodvale
+Name = Goodvale
+MapPosition = 0,24,9
+#-------------------------------
+[355]   # Gangervill
+Name = Gangervill
+MapPosition = 0,4,7
+#-------------------------------
+[600]   # Bad Bernau
+Name = Bad Bernau
+MapPosition = 0,14,7

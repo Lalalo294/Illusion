@@ -62,13 +62,13 @@ module EliteBattle
       #EliteBattle.log.debug("Loading status #{status.id} with pos #{status.icon_position} and returning #{iconpos}")
       return iconpos
   end
-
+  
   def self.ShowStatusIcon(_status)
       status = GetStatusIconPosition(_status) 
       return status > 0 if status.is_a?(Numeric)
       return status.icon_position > 0
   end
-  
+
   def self.InitializeSpecies 
     GameData::Species.each_species { |s| @full_species.push(s.species) }
   end

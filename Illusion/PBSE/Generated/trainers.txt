@@ -1,0 +1,636 @@
+# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[CAMPER,Liam]
+LoseText = A very good battle, indeed!
+Pokemon = DIGLETT,10
+Pokemon = BONSLY,11
+#-------------------------------
+[LEADER_Brock,Brock]
+Items = FULLRESTORE,FULLRESTORE
+LoseText = Very good.
+Pokemon = GEODUDE,12
+    Gender = male
+    Moves = DEFENSECURL,HEADSMASH,ROCKPOLISH,ROCKTHROW
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+Pokemon = ONIX,14
+    Name = Rocky
+    Gender = male
+    Shiny = yes
+    Moves = HEADSMASH,ROCKTHROW,RAGE,ROCKTOMB
+    AbilityIndex = 0
+    Item = SITRUSBERRY
+    IV = 20,20,20,20,20,20
+    Ball = HEAVYBALL
+#-------------------------------
+[TEAMROCKET_M,Grunt,1]
+LoseText = You're too good for me!
+Pokemon = WEEPINBELL,21
+    Shadow = yes
+#-------------------------------
+[TEAMROCKET_F,Grunt,1]
+LoseText = You're too good for me!
+Pokemon = BURMY,19
+Pokemon = WINGULL,19
+Pokemon = ELECTABUZZ,20
+    Shadow = yes
+#-------------------------------
+[YOUNGSTER,Ben]
+LoseText = Aww, I lost.
+Pokemon = RATTATA,11
+Pokemon = EKANS,11
+#-------------------------------
+[CAMPER,Jeff]
+LoseText = A very good battle, indeed!
+Pokemon = SPEAROW,16
+Pokemon = SENTRET,16
+#-------------------------------
+[CAMPER,Jeff,1]
+LoseText = You beat me again!
+Pokemon = FEAROW,29
+Pokemon = FURRET,29
+#-------------------------------
+[PICNICKER,Susie]
+LoseText = Defeated! Oh my!
+Pokemon = MEOWTH,18
+#-------------------------------
+[PICNICKER,Susie,1]
+LoseText = Defeated! Oh my!
+Pokemon = PERSIAN,32
+#-------------------------------
+[HIKER,Ford]
+LoseText = You're too good for me!
+Pokemon = MACHOP,19
+#-------------------------------
+[FISHERMAN,Andrew]
+LoseText = Washed out!
+Pokemon = MAGIKARP,14
+Pokemon = MAGIKARP,18
+#-------------------------------
+[BEAUTY,Bridget]
+LoseText = My Skitty!
+Pokemon = SKITTY,18
+#-------------------------------
+[LASS,Crissy]
+LoseText = You didn't have to win so convincingly!
+Pokemon = PLUSLE,17
+Pokemon = MINUN,17
+#-------------------------------
+[COOLCOUPLE,Alice & Bob]
+LoseText = Our teamwork failed!
+Pokemon = TURTWIG,19
+Pokemon = CHIMCHAR,19
+#-------------------------------
+[POKEMONTRAINER_May,May]
+LoseText = ...
+Pokemon = COMBUSKEN,19
+#-------------------------------
+[SWIMMER2_F,Ariel]
+LoseText = Washed out!
+Pokemon = STARYU,15
+Pokemon = GOLDEEN,11
+#-------------------------------
+[RIVAL1,Blue]
+LoseText = Not too shabby.
+Pokemon = PIDGEOTTO,17
+Pokemon = RATTATA,15
+Pokemon = BULBASAUR,18
+#-------------------------------
+[RIVAL1,Blue,1]
+LoseText = Not too shabby.
+Pokemon = PIDGEOTTO,17
+Pokemon = RATTATA,15
+Pokemon = CHARMANDER,18
+#-------------------------------
+[RIVAL1,Blue,2]
+LoseText = Not too shabby.
+Pokemon = PIDGEOTTO,17
+Pokemon = RATTATA,15
+Pokemon = SQUIRTLE,18
+#-------------------------------
+[CHAMPION,Blue]
+LoseText = A good battle indeed!
+Pokemon = VENUSAUR,63
+    Item = SITRUSBERRY
+Pokemon = CHARIZARD,63
+    Item = SITRUSBERRY
+Pokemon = BLASTOISE,63
+    Item = SITRUSBERRY
+#-------------------------------
+[RIVALE_David,David]
+LoseText = ...
+Pokemon = WURMPLE,5
+#-------------------------------
+[RIVALE_David,David,2]
+LoseText = "Zu rild"
+Pokemon = MIENFOO,5
+#-------------------------------
+[RIVALE_David,David,3]
+LoseText = "Zu rild"
+Pokemon = ESPURR,5
+#-------------------------------
+[RIVALE_David,David,4]
+LoseText = "Zu rild"
+Pokemon = VULLABY,5
+#-------------------------------
+[BUGCATCHER,Jagga,1]
+LoseText = ...
+Pokemon = KRICKETOT,4
+    Moves = POUND,GROWL,FURYCUTTER,WORKUP
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = NETBALL
+Pokemon = SIZZLIPEDE,5
+    Moves = EMBER,SMOKESCREEN,WRAP,BITE
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = NETBALL
+#-------------------------------
+[HIKER,Benedetto,1]
+LoseText = ...
+Pokemon = ROGGENROLA,8
+    Moves = TACKLE,HARDEN,STEALTHROCK,SANDATTACK
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = ULTRABALL
+Pokemon = MORELULL,9
+    Moves = ABSORB,ASTONISH,CONFUSERAY,SWIFT
+    AbilityIndex = 1
+    Item = BIGROOT
+    IV = 20,20,20,20,20,20
+    Ball = ULTRABALL
+#-------------------------------
+[HIKER,Manbubies,1]
+LoseText = ...
+Pokemon = WOOBAT,9
+    Moves = GUST,ATTRACT,CONFUSION,ENDEAVOR
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = LOVEBALL
+Pokemon = MAKUHITA,10
+    Moves = FAKEOUT,ARMTHRUST,FOCUSENERGY,TACKLE
+    AbilityIndex = 0
+    Item = FIGYBERRY
+    Nature = BRAVE
+    IV = 20,20,20,20,20,20
+    Ball = LOVEBALL
+#-------------------------------
+[YOUNGSTER,Andy,1]
+LoseText = ...
+Pokemon = MIMIKYU,12
+    Moves = SHADOWSNEAK,COPYCAT,BEATUP,BABYDOLLEYES
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = PREMIERBALL
+Pokemon = STUFFUL,13
+    Moves = DEFENSECURL,ROLLOUT,BRUTALSWING,ARMTHRUST
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = PREMIERBALL
+Pokemon = TRUBBISH,14
+    Moves = CLEARSMOG,ACIDSPRAY,RECYCLE,POISONGAS
+    AbilityIndex = 2
+    Item = SITRUSBERRY
+    IV = 20,20,20,20,20,20
+    Ball = PREMIERBALL
+#-------------------------------
+[LASS,Flammenrad,1]
+LoseText = ...
+Pokemon = WYNAUT,13
+    Moves = ENCORE,COUNTER,MIRRORCOAT,DESTINYBOND
+    AbilityIndex = 0
+    Item = SITRUSBERRY
+    IV = 20,20,20,20,20,20
+    Ball = POKEBALL
+Pokemon = PANSAGE,15
+    Moves = VINEWHIP,BITE,LICK,SCRATCH
+    AbilityIndex = 0
+    Item = MIRACLESEED
+    IV = 20,20,20,20,20,20
+    Ball = POKEBALL
+Pokemon = QUILAVA,16
+    Moves = FLAMEWHEEL,QUICKATTACK,SANDSTORM,MUDSLAP
+    AbilityIndex = 2
+    Item = CHARCOAL
+    IV = 20,20,20,20,20,20
+    Ball = POKEBALL
+#-------------------------------
+[POKEMANIAC,Magno,1]
+LoseText = ...
+Pokemon = FARFETCHD,14
+    Moves = BRANCHPOKE,FURYCUTTER,PECK,CURSE
+    AbilityIndex = 0
+    Item = LEEK
+    IV = 20,20,20,20,20,20
+    Ball = TIMERBALL
+Pokemon = WHIRLIPEDE,16
+    Moves = POISONTAIL,DEFENSECURL,ROLLOUT,BUGBITE
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = TIMERBALL
+Pokemon = GUMSHOOS,18
+    Moves = ROCKTOMB,PURSUIT,THUNDERFANG,PAYDAY
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = TIMERBALL
+#-------------------------------
+[PICNICKER,Schmiri,1]
+LoseText = ...
+Pokemon = STARYU,3
+    Moves = WATERGUN,TACKLE,HARDEN
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = NESTBALL
+Pokemon = BARBOACH,4
+    Moves = MUDSLAP,WHIRLPOOL,TICKLE
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = NESTBALL
+#-------------------------------
+[SUPERNERD,Reese,1]
+LoseText = ...
+Pokemon = CHARMANDER,4
+    Moves = EMBER,SCRATCH,GROWL
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = SAFARIBALL
+Pokemon = WOOLOO,5
+    Moves = TACKLE,DEFENSECURL,GROWL
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = SAFARIBALL
+Pokemon = PIKACHU,6
+    Moves = THUNDERSHOCK,DISARMINGVOICE,NUZZLE,SWEETKISS
+    AbilityIndex = 1
+    IV = 20,20,20,20,20,20
+    Ball = SAFARIBALL
+#-------------------------------
+[CAMPER,Asvin,1]
+LoseText = ...
+Pokemon = HONEDGE,14
+    Moves = SHADOWSNEAK,METALCLAW,AERIALACE,AUTOTOMIZE
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = GREATBALL
+Pokemon = BAYLEEF,16
+    Moves = LEECHSEED,MEGADRAIN,GROWTH,TACKLE
+    AbilityIndex = 0
+    Item = BIGROOT
+    IV = 20,20,20,20,20,20
+    Ball = GREATBALL
+#-------------------------------
+[BLACKBELT,BartdDragon,1]
+LoseText = ...
+Pokemon = POLIWHIRL,12
+    Moves = FORCEPALM,HYPNOSIS,AQUAJET,MUDSLAP
+    AbilityIndex = 0
+    Item = WIDELENS
+    IV = 20,20,20,20,20,20
+    Ball = REPEATBALL
+Pokemon = CLOBBOPUS,13
+    Moves = BULLETPUNCH,SEISMICTOSS,OCTAZOOKA,ROCKSMASH
+    AbilityIndex = 0
+    Item = LEFTOVERS
+    IV = 20,20,20,20,20,20
+    Ball = REPEATBALL
+#-------------------------------
+[RIVALE_David,David,1]
+LoseText = ...
+Pokemon = WURMPLE,5
+#-------------------------------
+[ARENALEITER_Krabu,Krabu,1]
+Items = SUPERPOTION
+LoseText = ...
+Pokemon = TIMBURR,12
+    Moves = MACHPUNCH,FOCUSENERGY,ROCKTHROW,LOWKICK
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = FASTBALL
+Pokemon = CRABRAWLER,14
+    Moves = AQUAJET,ROCKSMASH,BUBBLE,PURSUIT
+    AbilityIndex = 2
+    Item = MUSCLEBAND
+    IV = 20,20,20,20,20,20
+    Ball = FASTBALL
+Pokemon = SQUIRTLE,15
+    Form = 1
+    Moves = FEINTATTACK,MIRRORCOAT,CLAMP,DOUBLEKICK
+    AbilityIndex = 0
+    Item = BLACKGLASSES
+    IV = 20,20,20,20,20,20
+    Ball = FASTBALL
+#-------------------------------
+[AROMALADY,Jessifun,1]
+LoseText = ...
+Pokemon = ROSELIA,18
+    Moves = MEGADRAIN,SLEEPPOWDER,LEECHSEED,POISONSTING
+    AbilityIndex = 1
+    Item = POISONBARB
+    IV = 20,20,20,20,20,20
+    Ball = HEALBALL
+Pokemon = SKIPLOOM,18
+    Moves = AERIALACE,SYNTHESIS,MEGADRAIN,FAIRYWIND
+    AbilityIndex = 1
+    Item = FOCUSSASH
+    IV = 20,20,20,20,20,20
+    Ball = HEALBALL
+#-------------------------------
+[CAMPER,Triklin,1]
+LoseText = ...
+Pokemon = WHIMSICOTT,19
+    Moves = MEGADRAIN,AURASPHERE,CONFUSION,FAIRYWIND
+    AbilityIndex = 1
+    Item = WISEGLASSES
+    IV = 20,20,20,20,20,20
+    Ball = LUXURYBALL
+Pokemon = CORSOLA,20
+    Moves = ANCIENTPOWER,BUBBLEBEAM,AQUARING,MUDSLAP
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = LUXURYBALL
+#-------------------------------
+[CAMPER,Necitero,1]
+LoseText = ...
+Pokemon = IVYSAUR,20
+    Moves = MAGICALLEAF,LEECHSEED,ANCIENTPOWER,SLUDGE
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = HEALBALL
+Pokemon = LILEEP,20
+    Moves = ANCIENTPOWER,BRINE,MEGADRAIN,CONFUSERAY
+    AbilityIndex = 2
+    Item = EVIOLITE
+    IV = 20,20,20,20,20,20
+    Ball = HEALBALL
+#-------------------------------
+[Kimono_Girl,Wannabee,1]
+Items = SUPERPOTION
+LoseText = ...
+Pokemon = CHARMANDER,1
+    Gender = male
+    Moves = MEGAHORN,POWDER,THIEF,OUTRAGE
+    Ability = STENCH
+    Nature = TIMID
+    IV = 20,20,20,20,20,20
+    EV = 0,0,0,0,0,0
+    Ball = HEALBALL
+#-------------------------------
+[CAMPER,Robin,1]
+LoseText = ...
+Pokemon = RATICATE,20
+    Moves = PURSUIT,POISONTAIL,WATERGUN,HYPERFANG
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = POKEBALL
+Pokemon = LUXIO,22
+    Moves = SNARL,THUNDERWAVE,BITE,THUNDERFANG
+    AbilityIndex = 1
+    Item = SITRUSBERRY
+    IV = 25,25,20,20,20,20
+    Ball = MOONBALL
+Pokemon = TORKOAL,22
+    Moves = LAVAPLUME,PROTECT,CLEARSMOG,RAPIDSPIN
+    AbilityIndex = 1
+    IV = 25,20,20,20,25,20
+    Ball = POKEBALL
+#-------------------------------
+[POKEMANIAC,Wooky,1]
+LoseText = ...
+Pokemon = BAGON,21
+    Moves = HEADBUTT,BITE,DRAGONBREATH,SCARYFACE
+    AbilityIndex = 2
+    Item = AIRBALLOON
+    IV = 20,20,20,20,20,20
+    Ball = GREATBALL
+Pokemon = TAUROS,23
+    Moves = TACKLE,WORKUP,ROCKTHROW,BREAKINGSWIPE
+    AbilityIndex = 0
+    Item = SILKSCARF
+    IV = 20,20,20,20,20,20
+    Ball = POKEBALL
+#-------------------------------
+[COOLTRAINER_M,Patte521,1]
+LoseText = ...
+Pokemon = TRAPINCH,20
+    Moves = DIG,ROCKTOMB,BUGBITE,FEINT
+    AbilityIndex = 0
+    Item = SITRUSBERRY
+    IV = 20,20,20,20,20,20
+    Ball = POKEBALL
+Pokemon = CACNEA,22
+    Moves = SPIKYSHIELD,LEECHSEED,POWERUPPUNCH,POISONSTING
+    AbilityIndex = 2
+    Item = SITRUSBERRY
+    IV = 20,20,20,20,20,20
+    Ball = SAFARIBALL
+Pokemon = PIGNITE,23
+    Moves = THUNDERPUNCH,ARMTHRUST,FLAMECHARGE,ROLLOUT
+    AbilityIndex = 1
+    IV = 20,20,20,20,20,20
+    Ball = POKEBALL
+Pokemon = ALOMOMOLA,24
+    Moves = WHIRLPOOL,PROTECT,AQUARING,DOUBLESLAP
+    AbilityIndex = 2
+    Item = SHELLBELL
+    IV = 20,20,20,20,20,20
+    Ball = DIVEBALL
+#-------------------------------
+[YOUNGSTER,Gengchen,1]
+LoseText = ...
+Pokemon = HAUNTER,24
+    Moves = CURSE,SHADOWSNEAK,HYPNOSIS,HEX
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = DUSKBALL
+Pokemon = ROTOM,24
+    Moves = ELECTROBALL,HEX,CHARGE,CONFUSERAY
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = DUSKBALL
+Pokemon = SINISTEA,25
+    Moves = MEGADRAIN,SUCKERPUNCH,NASTYPLOT,CONFUSION
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = DUSKBALL
+#-------------------------------
+[GENTLEMAN,Royalstardro,1]
+LoseText = ...
+Pokemon = PACHIRISU,25
+    Moves = BRANCHPOKE,QUICKATTACK,NUZZLE,DIG
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = FASTBALL
+Pokemon = DEDENNE,25
+    Moves = PARABOLICCHARGE,DISARMINGVOICE,HEARTSTAMP,BRICKBREAK
+    AbilityIndex = 0
+    Item = SITRUSBERRY
+    IV = 20,20,20,20,20,20
+    Ball = FASTBALL
+Pokemon = EMOLGA,26
+    Moves = PURSUIT,ACROBATICS,WORKUP,SPARK
+    AbilityIndex = 1
+    IV = 20,20,20,20,20,20
+    Ball = FASTBALL
+#-------------------------------
+[YOUNGSTER,Pipo_svb,1]
+LoseText = ...
+Pokemon = STARAVIA,24
+    Moves = WINGATTACK,QUICKATTACK,FEINTATTACK,WHIRLWIND
+    AbilityIndex = 0
+    Item = SHARPBEAK
+    IV = 20,20,20,20,20,20
+    Ball = POKEBALL
+Pokemon = MARSHTOMP,24
+    Moves = WATERPULSE,BULLDOZE,ROCKSMASH,ROCKTHROW
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = DIVEBALL
+Pokemon = SEALEO,24
+    Moves = AURORABEAM,BRINE,BULLDOZE,PROTECT
+    AbilityIndex = 0
+    Item = LEFTOVERS
+    IV = 20,20,20,20,20,20
+    Ball = DIVEBALL
+#-------------------------------
+[FISHERMAN,Guddeguddi,1]
+LoseText = ...
+Pokemon = MAGIKARP,22
+    Moves = TACKLE,FLAIL,SPLASH
+    AbilityIndex = 0
+    Item = SITRUSBERRY
+    IV = 31,31,31,31,31,31
+    Ball = LUREBALL
+Pokemon = MAGIKARP,22
+    Moves = TACKLE,FLAIL,SPLASH
+    AbilityIndex = 0
+    Item = SITRUSBERRY
+    IV = 31,31,31,31,31,31
+    Ball = LUREBALL
+Pokemon = MAGIKARP,22
+    Moves = TACKLE,FLAIL,SPLASH
+    AbilityIndex = 0
+    Item = SITRUSBERRY
+    IV = 31,31,31,31,31,31
+    Ball = LUREBALL
+Pokemon = MAGIKARP,22
+    Moves = TACKLE,FLAIL,SPLASH
+    AbilityIndex = 0
+    Item = SITRUSBERRY
+    IV = 31,31,31,31,31,31
+    Ball = LUREBALL
+Pokemon = MAGIKARP,22
+    Moves = TACKLE,FLAIL,SPLASH
+    AbilityIndex = 0
+    Item = SITRUSBERRY
+    IV = 31,31,31,31,31,31
+    Ball = LUREBALL
+Pokemon = MAGIKARP,22
+    Moves = TACKLE,FLAIL,SPLASH
+    AbilityIndex = 0
+    Item = SITRUSBERRY
+    IV = 31,31,31,31,31,31
+    Ball = LUREBALL
+#-------------------------------
+[BIKER,Derimwegsteher,1]
+LoseText = ...
+Pokemon = CROAGUNK,25
+    Moves = POISONJAB,SUCKERPUNCH,FLATTER,ROCKSMASH
+    AbilityIndex = 1
+    Item = BLACKSLUDGE
+    IV = 20,20,20,20,20,20
+    Ball = ULTRABALL
+Pokemon = BEEDRILL,27
+    Moves = PURSUIT,INFESTATION,TOXICSPIKES,TWINEEDLE
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = ULTRABALL
+Pokemon = HITMONTOP,25
+    Moves = BULLETPUNCH,FAKEOUT,TRIPLEKICK,AERIALACE
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = ULTRABALL
+Pokemon = GURDURR,26
+    Moves = MACHPUNCH,ROCKSLIDE,BULLDOZE,BULKUP
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = ULTRABALL
+#-------------------------------
+[FISHERMAN,Erik Erfkamp,1]
+LoseText = ...
+Pokemon = FINNEON,28
+    Moves = TWISTER,WATERPULSE,AIRCUTTER,SILVERWIND
+    AbilityIndex = 1
+    IV = 20,20,20,20,20,20
+    Ball = LUREBALL
+Pokemon = GOLDEEN,28
+    Moves = FLIPTURN,HORNATTACK,MUDSHOT,WATERFALL
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = LUREBALL
+#-------------------------------
+[FISHERMAN,Vegetto,1]
+LoseText = ...
+Pokemon = POLIWHIRL,26
+    Moves = AQUAJET,ICYWIND,FORCEPALM,BUBBLEBEAM
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = LUREBALL
+Pokemon = LUDICOLO,26
+    Moves = FAKEOUT,MEGADRAIN,BUBBLEBEAM,AQUAJET
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = LUREBALL
+#-------------------------------
+[BACKPACKER_M,Azunyan,1]
+LoseText = ...
+Pokemon = MILTANK,28
+    Gender = female
+    Moves = HEADBUTT,BULLDOZE,ATTRACT,AMNESIA
+    AbilityIndex = 0
+    Item = SILKSCARF
+    IV = 20,20,20,20,20,20
+    Ball = POKEBALL
+Pokemon = SKIDDO,30
+    Moves = SEEDBOMB,LEECHSEED,BULLDOZE,ROCKTHROW
+    AbilityIndex = 0
+    Item = MIRACLESEED
+    IV = 20,20,20,20,20,20
+    Ball = NESTBALL
+#-------------------------------
+[BACKPACKER_M,Dr_Sachsenstein,1]
+LoseText = ...
+Pokemon = APPLIN,28
+    Moves = LEECHSEED,DRAGONBREATH,BUGBITE,LEAFTORNADO
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = POKEBALL
+Pokemon = COMBUSKEN,26
+    Moves = TRIPLEKICK,AERIALACE,FLAMECHARGE,SLASH
+    AbilityIndex = 2
+    IV = 20,20,20,20,20,20
+    Ball = FRIENDBALL
+Pokemon = MUDSDALE,30
+    Moves = PAYBACK,IRONHEAD,BULLDOZE,SMACKDOWN
+    AbilityIndex = 1
+    Item = LEFTOVERS
+    IV = 20,20,20,20,20,20
+    Ball = ULTRABALL
+#-------------------------------
+[BACKPACKER_F,RandomSarah,1]
+LoseText = ...
+Pokemon = GREEDENT,30
+    Moves = SUPERFANG,GYROBALL,STUFFCHEEKS,CRUNCH
+    AbilityIndex = 0
+    Item = SITRUSBERRY
+    IV = 20,20,20,20,20,20
+    Ball = POKEBALL
+Pokemon = HERDIER,30
+    Moves = HEADBUTT,ROCKTOMB,QUICKATTACK,CRUNCH
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = FRIENDBALL
+Pokemon = DODRIO,32
+    Moves = FLY,PURSUIT,TWINEEDLE,QUICKATTACK
+    AbilityIndex = 0
+    IV = 20,20,20,20,20,20
+    Ball = GREATBALL
